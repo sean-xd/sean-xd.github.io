@@ -33,9 +33,11 @@
 .reading-hiragana, .reading-kanji { font-size: 1.25em; padding-right: 6px; }
 .reading-definition { padding-top: 2px; }
 
-.reading-kanji {}
-
 @media(max-width: 600px) {
     #left, #right { height: 50% !important; width: 100% !important; }
+    #left .title { display: none !important; }
+    #single { height: 100% !important; }
     #right { top: 50% !important; }
+    #search { display: none !important; }
+    #list { height: calc(100% - 34px) !important; }
 }
