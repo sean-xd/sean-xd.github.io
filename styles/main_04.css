@@ -2,10 +2,9 @@
 
 /* --- Left --- */
 
-#left .title { font-size: 2em; height: 50px; }
-
-#single { height: calc(100% - 50px); position: relative; }
+#single { height: 100%; position: relative; }
 .single-left, .single-right { padding-top: 12px; }
+.single-right { overflow-y: scroll; scrollbar-color: rgb(20,20,20) rgb(10,10,10); scrollbar-width: thin; }
 
 #single .rank { left: 6px; top: 18px; }
 #single .kanji { font-size: 8em; height: 200px; }
@@ -16,13 +15,13 @@
 .component-definition { padding-top: 12px; }
 
 #left .close { display: none; padding: 6px 12px; }
+.open-kanji .close { display: block !important; }
 
 /* --- Right --- */
 
-#search { font-size: 1.25em; height: 50px; padding-left: 12px; }
-
-.filters-title { padding: 6px 12px; }
-.filter { display: none; padding: 6px 12px; }
+#filters { display: flex; padding-right: 16px; }
+.filters-title { padding: 12px 0; }
+.filter { display: none; padding: 12px 0; }
 .filter-enabled .filters-title { background: rgb(200,200,200); color: rgb(10,10,10); }
 .filter-enabled .filter { display: inline-block; }
 
@@ -32,23 +31,18 @@
 .enable-M-0 .filter-M-0,
 .enable-N4-6 .filter-N4-6 { background: rgb(200,200,200); color: rgb(10,10,10); }
 
-#list { height: calc(100% - 84px); overflow-y: scroll; padding-right: 12px; scrollbar-color: rgb(10,10,10) rgb(20,20,20); scrollbar-width: thin;}
+#list { height: calc(100% - 46px); overflow-y: scroll; padding-right: 12px; scrollbar-color: rgb(10,10,10) rgb(20,20,20); scrollbar-width: thin; }
 #list .kanji { font-size: 4em; }
 
 .kunyomi, .onyomi, .words { padding: 0 0 12px 12px; }
-.reading-title { padding-bottom: 6px; }
+.reading-title, .word { padding-bottom: 12px; }
 .reading-hiragana, .reading-kanji { font-size: 1.25em; padding-right: 6px; }
 .reading-definition { padding-top: 2px; }
 
 @media(max-width: 600px) {
     #left { height: 0% !important; width: 100% !important; }
     .open-kanji #left { height: 75% !important; }
-    #left .title { display: none !important; }
-    #single { height: 100% !important; }
-    #left .close { display: block !important; }
     
     #right { height: 100% !important; width: 100% !important; }
     .open-kanji #right { height: 25% !important; top: 75% !important; }
-    #search { display: none !important; }
-    #list { height: calc(100% - 34px) !important; }
 }

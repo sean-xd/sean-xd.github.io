@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>二言語</title>
+    <title>Nion</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,14 +18,12 @@
 </head>
 <body class="b-20 c-220">
     <div id="left" class="abs-tl h-100 w-50 b-10 p-16">
-        <div class="title jp pointer bold" onclick="selectKanji()">二言語</div>
         <div id="single"></div>
-        <div class="close abs-tr c-red bold" onclick="selectKanji()">X</div>
+        <div class="close abs-tr c-red bold pointer" onclick="selectKanji()">X</div>
     </div>
     <div id="right" class="abs-tr h-100 w-50 b-20 p-16">
-        <input id="search" class="w-100 b-10 c-220 jp" placeholder="Search Kanji">
         <div id="filters" class="b-10">
-            <div class="filters-title inline" onclick="toggleFilter()">Filter</div>
+            <div class="filters-title inline w-20 text-center pointer" onclick="toggleFilter()">Filter</div>
         </div>
         <div id="list" class="w-100"></div>
     </div>

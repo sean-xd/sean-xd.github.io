@@ -20,7 +20,7 @@ append(dom.list, kanji.filter(e => e.R).sort((a, b) => a.R - b.R).reduce((list, 
 append(dom.filters, reduce(kanji, (arr, e) => {
     if(e.T) e.T.forEach(t => !isIn(arr, t) ? arr.push(t) : null);
     return arr;
-}, []).sort().map(e => t("div", { class: "filter pointer filter-" + e, onclick: `toggleFilter('${e}')` }, e)));
+}, []).sort().map(e => t("div", { class: "filter pointer w-20 text-center filter-" + e, onclick: `toggleFilter('${e}')` }, e)));
 
 /* --- Actions --- */
 
