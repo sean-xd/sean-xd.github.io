@@ -8,18 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main_02.css">
-    <link rel="stylesheet" href="styles/classes.css">
+    <link rel="stylesheet" href="styles/main_03.css">
+    <link rel="stylesheet" href="styles/classes_03.css">
     <script src="util/util.js" defer></script>
     <script src="util/dom.js" defer></script>
     <script src="data/kanji.js" defer></script>
     <script src="data/words.js" defer></script>
-    <script src="app.js" defer></script>
+    <script src="app_03.js" defer></script>
 </head>
 <body class="b-20 c-220">
     <div id="left" class="abs-tl h-100 w-50 b-10 p-16">
         <div class="title jp pointer bold" onclick="selectKanji()">二言語</div>
         <div id="single"></div>
+        <div class="close abs-tr c-red bold" onclick="selectKanji()">X</div>
     </div>
     <div id="right" class="abs-tr h-100 w-50 b-20 p-16">
         <input id="search" class="w-100 b-10 c-220 jp" placeholder="Search Kanji">

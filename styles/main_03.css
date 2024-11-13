@@ -1,3 +1,5 @@
+#left, #right { transition: .3s all ease-in-out; }
+
 /* --- Left --- */
 
 #left .title { font-size: 2em; height: 50px; }
@@ -13,17 +15,22 @@
 .component-kanji { font-size: 2em; padding: 4px 12px 0 6px; }
 .component-definition { padding-top: 12px; }
 
+#left .close { display: none; padding: 6px 12px; }
+
 /* --- Right --- */
 
 #search { font-size: 1.25em; height: 50px; padding-left: 12px; }
 
-.filters-title, .filter { padding: 6px; }
-.filter { display: none; }
+.filters-title { padding: 6px 12px; }
+.filter { display: none; padding: 6px 12px; }
+.filter-enabled .filters-title { background: rgb(200,200,200); color: rgb(10,10,10); }
 .filter-enabled .filter { display: inline-block; }
 
 .filter-enabled .kanji { display: none; }
-.filter-M-0 .kanji.tag-M-0,
-.filter-N4-6 .kanji.tag-N4-6 { display: inline-block; }
+.enable-M-0 .kanji.tag-M-0,
+.enable-N4-6 .kanji.tag-N4-6 { display: inline-block; }
+.enable-M-0 .filter-M-0,
+.enable-N4-6 .filter-N4-6 { background: rgb(200,200,200); color: rgb(10,10,10); }
 
 #list { height: calc(100% - 84px); overflow-y: scroll; padding-right: 12px; scrollbar-color: rgb(10,10,10) rgb(20,20,20); scrollbar-width: thin;}
 #list .kanji { font-size: 4em; }
@@ -34,10 +41,14 @@
 .reading-definition { padding-top: 2px; }
 
 @media(max-width: 600px) {
-    #left, #right { height: 50% !important; width: 100% !important; }
+    #left { height: 0% !important; width: 100% !important; }
+    .open-kanji #left { height: 75% !important; }
     #left .title { display: none !important; }
     #single { height: 100% !important; }
-    #right { top: 50% !important; }
+    #left .close { display: block !important; }
+    
+    #right { height: 100% !important; width: 100% !important; }
+    .open-kanji #right { height: 25% !important; top: 75% !important; }
     #search { display: none !important; }
     #list { height: calc(100% - 34px) !important; }
 }

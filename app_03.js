@@ -20,18 +20,19 @@ append(dom.list, kanji.filter(e => e.R).sort((a, b) => a.R - b.R).reduce((list, 
 append(dom.filters, reduce(kanji, (arr, e) => {
     if(e.T) e.T.forEach(t => !isIn(arr, t) ? arr.push(t) : null);
     return arr;
-}, []).sort().map(e => t("div", { class: "filter pointer", onclick: `toggleFilter('${e}')` }, e)));
+}, []).sort().map(e => t("div", { class: "filter pointer filter-" + e, onclick: `toggleFilter('${e}')` }, e)));
 
 /* --- Actions --- */
 
 function toggleFilter(str){
     if(!str) return cl(dom.right, { ["filter-enabled"]: null });
-    cl(dom.right, { ["filter-" + str]: null });
+    cl(dom.right, { ["enable-" + str]: null });
 }
 
 function selectKanji(str){
     clear(dom.single);
-    if(!str) return;
+    if(!str) return cl(document.body, { ["open-kanji"]: false });
+    cl(document.body, { ["open-kanji"]: true });
     var obj = kanji.filter(e => e._ === str)[0];
 
     // Components
