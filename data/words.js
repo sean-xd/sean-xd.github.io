@@ -1,0 +1,96 @@
+var wordList = [
+    // Chapter 0
+
+    { english: "Practice", japanese: [["練", "れん"], ["習", "しゅう"]] },
+    { english: "Review", japanese: [["復", "ふく"], ["習", "しゅう"]] },
+    { english: "Grammar", japanese: [["文", "ぶん"], ["法", "ぽう"]] },
+    { english: "Word", japanese: [["単", "たん"], ["語", "ご"]]  },
+    { english: "Pronunciation", japanese: [["発", "はつ"], ["音", "おん"]] },
+    { english: "Noun", japanese: [["名", "めい"], ["詞", "し"]] },
+    // { english: "Verb", japanese: [], kanji: "", hiragana: "" },
+    // { english: "Adjective", japanese: [], kanji: "", hiragana: "" },
+    // { english: "Particle", japanese: [], kanji: "", hiragana: "" },
+    // { english: "Adverb", japanese: [], kanji: "", hiragana: "" },
+    
+    // 11/13 Kanji Test N4-6 
+    { english: "Training", japanese: [["研", "けん"], ["修", "しゅう"]] },
+    { english: "Research", japanese: [["研", "けん"], ["究", "きゅう"]] },
+    { english: "Researcher", japanese: [["研", "けん"], ["究", "きゅう"], ["者", "しゃ"]] },
+    { english: "Research Group", japanese: [["研", "けん"], ["究", "きゅう"], ["会", "かい"]] },
+    { english: "Research Institute", japanese: [["研", "けん"], ["究", "きゅう"], ["所", "じょ"]] },
+    { english: "Research Presentation", japanese: [["研", "けん"], ["究", "きゅう"], ["発", "はっ"], ["表", "ぴょう"]] },
+
+    { english: "Language", japanese: [["語", "ご"], ["学", "がく"]] },
+    { english: "Japanese Language", japanese: [["日", "に"], ["本", "ほん"], ["語", "ご"]] },
+    { english: "Article", japanese: [["文", "ぶん"], ["章", "しょう"]] },
+    { english: "Native Language", japanese: [["母", "ぼ"], ["語", "ご"]] },
+    { english: "Order", japanese: [["注", "ちゅう"], ["文", "もん"]] },
+    { english: "Essay", japanese: [["作", "さく"], ["文", "ぶん"]] },
+    
+    { english: "English Language", japanese: [["英", "えい"], ["語", "ご"]] },
+    { english: "Hero", japanese: [["英", "えい"], ["雄", "ゆう"]] },
+    { english: "Culture", japanese: [["文", "ぶん"], ["化", "か"]] },
+    { english: "Chemical", japanese: [["化", "か"], ["学", "がく"]] },
+    { english: "Fossil", japanese: [["化", "か"], ["石", "せき"]] },
+    { english: "Change", japanese: [["変", "へん"], ["化", "か"]] },
+    { english: "Makeup", japanese: [["化", "け"], ["粧", "しょう"]] },
+    { english: "Cosmetics", japanese: [["化", "け"], ["粧", "しょう"], ["品", "ひん"]] },
+    
+    { english: "Mathematics", japanese: [["数", "すう"], ["学", "がく"]] },
+    { english: "Numbers", japanese: [["数", "すう"], ["字", "じ"]] },
+    { english: "Several People", japanese: [["数", "すう"], ["人", "にん"]] },
+    { english: "Peace of Mind", japanese: [["安", "あん"], ["心", "しん"]] },
+    { english: "Center", japanese: [["中", "ちゅう"], ["心", "しん"]] },
+
+    { english: "Young People", japanese: [["若", "わか"], ["者", "もの"]] },
+    { english: "Set (Collection)", japanese: [["集", "しゅう"], ["合", "ごう"]] },
+    { english: "Concentration", japanese: [["集", "しゅう"], ["中", "ちゅう"]] },
+    { english: "Literary Collection", japanese: [["文", "ぶん"], ["集", "しゅう"]] },
+    { english: "Recruitment", japanese: [["募", "ぼ"], ["集", "しゅう"]] },
+
+    { english: "Get to Know", japanese: [["知り", "しり"], ["合う", "あう"]] },
+    { english: "Knowledge", japanese: [["知", "ち"], ["識", "しき"]] },
+    { english: "Acquaintance", japanese: [["知", "ち"], ["人", "じん"]] },
+    { english: "Notification", japanese: [["通", "つう"], ["知", "ち"]] },
+    { english: "Izakaya", japanese: [["居", "い"], ["酒", "ざか"], ["屋", "や"]] },
+    { english: "Japanese Alcohol", japanese: [["日", "に"], ["本", "ほん"], ["酒", "しゅ"]] },
+    { english: "Drunk Driving", japanese: [["飲", "いん"], ["酒", "しゅ"], ["運", "うん"], ["転", "てん"]] },
+    
+    { english: "Humming", japanese: [["鼻", "はな"], ["歌", "うた"]] },
+    { english: "Singer", japanese: [["歌", "か"], ["手", "しゅ"]] },
+    { english: "School Song", japanese: [["校", "こう"], ["歌", "か"]] },
+    { english: "Speech", japanese: [["話し", "はなし"], ["声", "ごえ"]] },
+    { english: "Cry", japanese: [["鳴き", "なき"], ["声", "ごえ"]] },
+    { english: "Audio", japanese: [["音", "おん"], ["声", "せい"]] },
+    
+    { english: "Easy (Peasy)", japanese: [["楽", "らく"], ["勝", "しょう"]] },
+    { english: "Instrument", japanese: [["楽", "がっ"], ["器", "き"]] },
+    { english: "Music", japanese: [["音", "おん"], ["楽", "がく"]] },
+    { english: "Vocal", japanese: [["声", "せい"], ["楽", "がく"]] },
+    { english: "Western Music", japanese: [["洋", "よう"], ["楽", "がく"]] },
+
+    { english: "Taste Test", japanese: [["味", "あじ"], ["見", "み"]] },
+    { english: "Seasoning", japanese: [["調", "ちょう"], ["味", "み"], ["料", "りょう"]] },
+    { english: "Meaning", japanese: [["意", "い"], ["味", "み"]] },
+    { english: "Oil", japanese: [["石", "せき"], ["油", "ゆ"]] },
+    { english: "Soy Sauce", japanese: [["醤", "しょう"], ["油", "ゆ"]] },
+
+    { english: "Sun", japanese: [["太", "たい"], ["陽", "よう"]] },
+    { english: "Pacific Ocean", japanese: [["太", "たい"], ["平", "へい"], ["洋", "よう"]] },
+    { english: "Long and Thin", japanese: [["細", "ほそ"], ["長い", "ながい"]] },
+    { english: "Detail", japanese: [["明", "めい"], ["細", "さい"]] },
+    
+    { english: "Small Plates", japanese: [["小", "こ"], ["皿", "ざら"]] },
+    { english: "Side Plate", japanese: [["取", "とり"], ["皿", "ざら"]] },
+    { english: "Ashtray", japanese: [["灰", "はい"], ["皿", "ざら"]] },
+    { english: "Dinner", japanese: [["夕", "ゆう"], ["飯", "はん"]] },
+    { english: "Rice Cooker", japanese: [["炊", "すい"], ["飯", "はん"], ["器", "き"]] },
+    { english: "Lunch", japanese: [["昼", "ひる"], ["ご", "ご"], ["飯", "はん"]] },
+    
+    { english: "Flour", japanese: [["小", "こ"], ["麦", "むぎ"], ["粉", "こ"]] },
+    { english: "Barley", japanese: [["大", "おお"], ["麦", "むぎ"]] },
+    { english: "Barley Tea", japanese: [["麦", "むぎ"], ["茶", "ちゃ"]] },
+    { english: "Straw Hat", japanese: [["麦", "むぎ"], ["藁", "わら"], ["帽", "ぼう"], ["子", "し"]] },
+
+    // { english: "", japanese: [["", ""], ["", ""]] },
+];

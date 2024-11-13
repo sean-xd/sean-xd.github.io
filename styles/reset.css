@@ -1,0 +1,9 @@
+/* --- Reset --- */
+
+html, body { height: 100%; width: 100%; }
+body { font-family: "Noto Sans"; font-size: 16px; margin: 0; }
+* { box-sizing: border-box; }
+
+/* --- Elements --- */
+
+input { border: none; font-family: "Noto Sans"; outline: none; }
