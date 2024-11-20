@@ -12,7 +12,7 @@
 .components-title { padding: 12px 0; }
 .component-container { height: 50px; margin-bottom: 12px; overflow: hidden; }
 .component-kanji { font-size: 2em; padding: 4px 12px 0 6px; }
-.component-definition { padding-top: 12px; }
+.component-definition { padding-top: 6px; width: calc(100% - 50px); }
 
 #left .close { display: none; padding: 6px 12px; }
 .open-kanji .close { display: block !important; }
@@ -27,9 +27,25 @@
 
 .filter-enabled .kanji { display: none; }
 .enable-M-0 .kanji.tag-M-0,
-.enable-N4-6 .kanji.tag-N4-6 { display: inline-block; }
+.enable-N4-1 .kanji.tag-N4-1,
+.enable-N4-2 .kanji.tag-N4-2,
+.enable-N4-3 .kanji.tag-N4-3,
+.enable-N4-4 .kanji.tag-N4-4,
+.enable-N4-5 .kanji.tag-N4-5,
+.enable-N4-6 .kanji.tag-N4-6,
+.enable-N4-7 .kanji.tag-N4-7,
+.enable-N4-8 .kanji.tag-N4-8,
+.enable-N4-9 .kanji.tag-N4-9 { display: inline-block; }
 .enable-M-0 .filter-M-0,
-.enable-N4-6 .filter-N4-6 { background: rgb(200,200,200); color: rgb(10,10,10); }
+.enable-N4-1 .filter-N4-1,
+.enable-N4-2 .filter-N4-2,
+.enable-N4-3 .filter-N4-3,
+.enable-N4-4 .filter-N4-4,
+.enable-N4-5 .filter-N4-5,
+.enable-N4-6 .filter-N4-6,
+.enable-N4-7 .filter-N4-7,
+.enable-N4-8 .filter-N4-8,
+.enable-N4-9 .filter-N4-9 { background: rgb(200,200,200); color: rgb(10,10,10); }
 
 #list { height: calc(100% - 46px); overflow-y: scroll; padding-right: 12px; scrollbar-color: rgb(10,10,10) rgb(20,20,20); scrollbar-width: thin; }
 #list .kanji { font-size: 4em; }

@@ -1,18 +1,18 @@
 var wordList = [
-    // Chapter 0
-
+    // #region Minna no Nihongo 0
     { english: "Practice", japanese: [["練", "れん"], ["習", "しゅう"]] },
     { english: "Review", japanese: [["復", "ふく"], ["習", "しゅう"]] },
     { english: "Grammar", japanese: [["文", "ぶん"], ["法", "ぽう"]] },
     { english: "Word", japanese: [["単", "たん"], ["語", "ご"]]  },
     { english: "Pronunciation", japanese: [["発", "はつ"], ["音", "おん"]] },
     { english: "Noun", japanese: [["名", "めい"], ["詞", "し"]] },
-    // { english: "Verb", japanese: [], kanji: "", hiragana: "" },
-    // { english: "Adjective", japanese: [], kanji: "", hiragana: "" },
-    // { english: "Particle", japanese: [], kanji: "", hiragana: "" },
-    // { english: "Adverb", japanese: [], kanji: "", hiragana: "" },
-    
-    // 11/13 Kanji Test N4-6 
+    { english: "Verb", japanese: [["動", "どう"], ["詞", "し"]] },
+    // { english: "Adjective", japanese: [["", ""], ["", ""]] },
+    // { english: "Particle", japanese: [["", ""], ["", ""]] },
+    // { english: "Adverb", japanese: [["", ""], ["", ""]] },
+    // #endregion
+
+    // #region Kanji N4-6 
     { english: "Training", japanese: [["研", "けん"], ["修", "しゅう"]] },
     { english: "Research", japanese: [["研", "けん"], ["究", "きゅう"]] },
     { english: "Researcher", japanese: [["研", "けん"], ["究", "きゅう"], ["者", "しゃ"]] },
@@ -91,6 +91,7 @@ var wordList = [
     { english: "Barley", japanese: [["大", "おお"], ["麦", "むぎ"]] },
     { english: "Barley Tea", japanese: [["麦", "むぎ"], ["茶", "ちゃ"]] },
     { english: "Straw Hat", japanese: [["麦", "むぎ"], ["藁", "わら"], ["帽", "ぼう"], ["子", "し"]] },
+    // #endregion
 
     // { english: "", japanese: [["", ""], ["", ""]] },
 ];
