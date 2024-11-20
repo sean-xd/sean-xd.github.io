@@ -7,16 +7,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main_05.css">
-    <link rel="stylesheet" href="styles/classes_03.css">
-    <script src="util/util.js" defer></script>
-    <script src="util/dom.js" defer></script>
-    <script src="data/kanji_05.js" defer></script>
-    <script src="data/words_05.js" defer></script>
-    <script src="services/templates.js" defer></script>
-    <script src="services/actions.js" defer></script>
-    <script src="app_05.js" defer></script>
+    <script>
+        /* --- Styles ---*/
+        
+        var styles = ["styles/reset", "styles/main", "styles/classes"];
+        var loadStyles = wait(styles.length, contents => styles.forEach(name => appendHead("style", contents[name])));
+        styles.forEach(name => loadFile("style", name));
+
+        /* --- Scripts --- */
+
+        var scripts = ["util/util", "util/dom", "data/kanji", "data/words", "services/actions", "services/templates", "app"];
+        var loadScripts = wait(scripts.length, contents => scripts.forEach(name => appendHead("script", contents[name])));
+        scripts.forEach(name => loadFile("script", name));
+
+        /* --- Utilities --- */
+        
+        function loadFile(tag, name){
+            var success = res => (tag === "style" ? loadStyles : loadScripts)({ [name]: res });
+            var req = new XMLHttpRequest();
+            req.addEventListener("load", event => success(((event || {}).target || {}).responseText || ""));
+            req.open("GET", `${location.origin}/${name}${tag === "style" ? ".css" : ".js"}?c=${Date.now()}`);
+            req.send(null);
+        }
+        function appendHead(tag, content){
+            if(content.indexOf("<!DOCTYPE html>") > -1) return;
+            var element = document.createElement(tag);              // Create element.
+            if(tag === "script") element.setAttribute("defer", ""); // Add defer tag to script elements.
+            element.innerHTML = content;                            // Add content to element.
+            document.head.appendChild(element);                     // Add element to head.
+        }
+        function wait(num, fn){
+            var i = 0;
+            var obj = {};
+            return (addObj) => {
+                if(addObj) Object.keys(addObj).forEach(key => obj[key] = addObj[key]);
+                i += 1;
+                if(i === num) fn(obj);
+            };
+        }
+    </script>
 </head>
 <body class="b-20 c-220">
     <div id="left" class="abs-tl h-100 w-50 b-10 p-16">
