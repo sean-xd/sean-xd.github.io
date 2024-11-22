@@ -19,7 +19,7 @@
 
 /* --- Right --- */
 
-#filters { display: flex; padding-right: 16px; }
+#filters { display: flex; flex-flow: wrap; height: 46px; padding-right: 12px; overflow-y: scroll; scrollbar-color: rgb(20,20,20) rgb(10,10,10); scrollbar-width: thin; }
 .filters-title { padding: 12px 0; }
 .filter { display: none; padding: 12px 0; }
 .filter-enabled .filters-title { background: rgb(200,200,200); color: rgb(10,10,10); }

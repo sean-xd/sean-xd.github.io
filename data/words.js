@@ -12,6 +12,114 @@ var wordList = [
     // { english: "Adverb", japanese: [["", ""], ["", ""]] },
     // #endregion
 
+    // #region Kanji N4-1
+    { english: "Owner", japanese: [["大", "おお"], ["家", "や"]] },
+    { english: "Rent", japanese: [["家", "や"], ["賃", "ちん"]] },
+    { english: "Politician", japanese: [["政", "せい"], ["治", "じ"], ["家", "か"]] },
+    { english: "Family", japanese: [["家", "か"], ["族", "ぞく"]] },
+    { english: "Clan", japanese: [["一", "いち"], ["族", "ぞく"]] },
+
+    { english: "Parent", japanese: [["父", "ふ"], ["兄", "けい"]] },
+    { english: "Older Brother-in-law", japanese: [["義", "ぎ"], ["兄", "けい"]] },
+    { english: "Brothers", japanese: [["兄", "きょう"], ["弟", "だい"]] },
+    { english: "Younger Brother-in-law", japanese: [["義", "ぎ"], ["弟", "てい"]] },
+    
+    { english: "Older Sister-in-law", japanese: [["義", "ぎ"], ["理", "り"], ["の", "の"], ["姉", "あね"]] },
+    { english: "Sisters", japanese: [["姉", "し"], ["妹", "まい"]] },
+
+    { english: "Private University", japanese: [["私", "し"], ["立", "りつ"], ["大", "だい"], ["学", "がく"]] },
+    { english: "Raising Children", japanese: [["子", "こ"], ["育て", "そだて"]] },
+    { english: "Physical Education", japanese: [["体", "たい"], ["育", "いく"]] },
+    
+    { english: "Department of Literature", japanese: [["文", "ぶん"], ["学", "がく"], ["部", "ぶ"]] },
+    { english: "Subordinate", japanese: [["部", "ぶ"], ["下", "か"]] },
+    { english: "Manager", japanese: [["部", "ぶ"], ["長", "ちょう"]] },
+    { english: "Book Store", japanese: [["本", "ほん"], ["屋", "や"]] },
+    { english: "Roof", japanese: [["屋", "や"], ["根", "ね"]] },
+    { english: "Rooftop", japanese: [["屋", "おく"], ["上", "じょう"]] },
+    
+    { english: "Vast", japanese: [["広", "こう"], ["大", "だい"]] },
+    { english: "Decline", japanese: [["低", "てい"], ["下", "か"]] },
+    { english: "Lower Grades", japanese: [["低", "てい"], ["学", "がく"], ["年", "ねん"]] },
+
+    { english: "Recently", japanese: [["最", "さい"], ["近", "きん"]] },
+    { english: "Excursion, Field Trip", japanese: [["遠", "えん"], ["足", "そく"]] },
+    { english: "Telescope", japanese: [["望", "ぼう"], ["遠", "えん"], ["鏡", "きょう"]] },
+    { english: "Refrain", japanese: [["遠", "えん"], ["慮", "りょ"]] },
+    
+    { english: "Calm", japanese: [["冷", "れい"], ["静", "せい"]] },
+    { english: "Rest", japanese: [["安", "あん"], ["静", "せい"]] },
+    { english: "Static Electricity", japanese: [["静", "せい"], ["電", "でん"], ["気", "き"]] },
+    
+    { english: "Western", japanese: [["西", "せい"], ["洋", "よう"]] },
+    { english: "Eastern", japanese: [["東", "とう"], ["洋", "よう"]] },
+    { english: "Western Music", japanese: [["洋", "よう"], ["楽", "がく"]] },
+    { english: "Western Movies", japanese: [["洋", "よう"], ["画", "が"]] },
+    { english: "Uniform", japanese: [["制", "せい"], ["服", "ふく"]] },
+    { english: "Western Clothes", japanese: [["洋", "よう"], ["服", "ふく"]] },
+    { english: "Japanese Clothes", japanese: [["和", "わ"], ["服", "ふく"]] },
+    { english: "Casual Clothes", japanese: [["私", "し"], ["服", "ふく"]] },
+    
+    { english: "Short Tempered", japanese: [["短", "たん"], ["気", "き"]] },
+    { english: "Negative Points", japanese: [["短", "たん"], ["所", "しょ"]] },
+    { english: "Polka Dots", japanese: [["水", "みず"], ["玉", "たま"]] },
+    { english: "Onion", japanese: [["玉", "たま"], ["ねぎ", "ねぎ"]] },
+    { english: "10yen Coin", japanese: [["十", "じゅう"], ["円", "えん"], ["玉", "だま"]] },
+    { english: "New Year's Gift", japanese: [["お年", "おとし"], ["玉", "だま"]] },
+    { english: "Juggling", japanese: [["お手", "おて"], ["玉", "だま"]] },
+    
+    { english: "Hair", japanese: [["髪", "かみ"], ["の", "の"], ["毛", "け"]] },
+    { english: "Eyelashes", japanese: [["まつ", "まつ"], ["毛", "げ"]] },
+    { english: "Eyebrows", japanese: [["眉", "まゆ"], ["毛", "げ"]] },
+    { english: "Dog Hair", japanese: [["犬", "いぬ"], ["の", "の"], ["毛", "け"]] },
+    { english: "Wool", japanese: [["羊", "よう"], ["毛", "もう"]] },
+    { english: "Blanket", japanese: [["毛", "もう"], ["布", "ふ"]] },
+    { english: "Yarn", japanese: [["毛", "け"], ["糸", "いと"]] },
+    
+    { english: "Sunlight", japanese: [["日", "にっ"], ["光", "こう"]] },
+    { english: "Sightseeing", japanese: [["観", "かん"], ["光", "こう"]] },
+    { english: "Clothing", japanese: [["衣", "い"], ["服", "ふく"]] },
+    { english: "Changing Room", japanese: [["更", "こう"], ["衣", "い"], ["室", "しつ"]] },
+    { english: "Change of Clothes", japanese: [["衣", "ころも"], ["替え", "がえ"]] },
+    { english: "Apparel", japanese: [["衣", "い"], ["料", "りょう"], ["品", "ひん"]] },
+    // #endregion
+
+    // #region Kanji N4-2
+    { english: "Store Manager", japanese: [["店", "てん"], ["長", "ちょう"]], tags: ["N4-2"] },
+    { english: "Main Store", japanese: [["本", "ほん"], ["店", "てん"]], tags: ["N4-2"] },
+    { english: "Branch", japanese: [["支", "し"], ["店", "てん"]], tags: ["N4-2"] },
+    { english: "Coffee Shop", japanese: [["喫", "きっ"], ["茶", "さ"], ["店", "てん"]], tags: ["N4-2"] },
+    { english: "Customer", japanese: [["お客", "おきゃく"], ["様", "さま"]], tags: ["N4-2"] },
+    { english: "Visitor", japanese: [["来", "らい"], ["客", "きゃく"]], tags: ["N4-2"] },
+    { english: "Guest Room", japanese: [["客", "きゃく"], ["間", "ま"]], tags: ["N4-2"] },
+    { english: "Commercial Aircraft", japanese: [["旅", "りょ"], ["客", "かく"], ["機", "き"]], tags: ["N4-2"] },
+    { english: "Clerk", japanese: [["店", "てん"], ["員", "いん"]], tags: ["N4-2"] },
+
+    { english: "Father", japanese: [["父", "ちち"], ["親", "おや"]], tags: ["N4-2"] },
+    { english: "Mother", japanese: [["母", "はは"], ["親", "おや"]], tags: ["N4-2"] },
+    { english: "Parent & Child", japanese: [["親", "おや"], ["子", "こ"]], tags: ["N4-2"] },
+    { english: "Parents", japanese: [["両", "りょう"], ["親", "しん"]], tags: ["N4-2"] },
+    { english: "Best Friend", japanese: [["親", "しん"], ["友", "ゆう"]], tags: ["N4-2"] },
+    { english: "Kindness", japanese: [["親", "しん"], ["切", "せつ"]], tags: ["N4-2"] },
+    { english: "Stamp", japanese: [["切", "きっ"], ["手", "て"]], tags: ["N4-2"] },
+    
+    { english: "Bargain", japanese: [["安", "やす"], ["売り", "うり"]], tags: ["N4-2"] },
+    { english: "Stand", japanese: [["売", "ばい"], ["店", "てん"]], tags: ["N4-2"] },
+    { english: "Lunch Box", japanese: [["弁", "べん"], ["当", "とう"]], tags: ["N4-2"] },
+    { english: "On the Day", japanese: [["当", "とう"], ["日", "じつ"]], tags: ["N4-2"] },
+    { english: "True", japanese: [["本", "ほん"], ["当", "とう"]], tags: ["N4-2"] },
+    
+    { english: "Goods", japanese: [["品", "しな"], ["物", "もの"]], tags: ["N4-2"] },
+    { english: "Number of Items", japanese: [["品", "しな"], ["数", "かず"]], tags: ["N4-2"] },
+    { english: "Magic Trick", japanese: [["手", "て"], ["品", "じな"]], tags: ["N4-2"] },
+    { english: "Food", japanese: [["食", "しょく"], ["品", "ひん"]], tags: ["N4-2"] },
+    { english: "Merchandise", japanese: [["商", "しょう"], ["品", "ひん"]], tags: ["N4-2"] },
+    { english: "Elegant", japanese: [["上", "じょう"], ["品", "ひん"]], tags: ["N4-2"] },
+    { english: "Vulgar", japanese: [["下", "げ"], ["品", "ひん"]], tags: ["N4-2"] },
+    
+    //{ english: "", japanese: [["", ""], ["", ""]], tags: ["N4-2"] },
+    // #endregion
+
     // #region Kanji N4-6 
     { english: "Training", japanese: [["研", "けん"], ["修", "しゅう"]] },
     { english: "Research", japanese: [["研", "けん"], ["究", "きゅう"]] },
@@ -67,7 +175,6 @@ var wordList = [
     { english: "Instrument", japanese: [["楽", "がっ"], ["器", "き"]] },
     { english: "Music", japanese: [["音", "おん"], ["楽", "がく"]] },
     { english: "Vocal", japanese: [["声", "せい"], ["楽", "がく"]] },
-    { english: "Western Music", japanese: [["洋", "よう"], ["楽", "がく"]] },
 
     { english: "Taste Test", japanese: [["味", "あじ"], ["見", "み"]] },
     { english: "Seasoning", japanese: [["調", "ちょう"], ["味", "み"], ["料", "りょう"]] },
