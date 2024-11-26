@@ -117,6 +117,30 @@ var wordList = [
     { english: "Elegant", japanese: [["上", "じょう"], ["品", "ひん"]], tags: ["N4-2"] },
     { english: "Vulgar", japanese: [["下", "げ"], ["品", "ひん"]], tags: ["N4-2"] },
     
+    { english: "Convenient", japanese: [["便", "べん"], ["利", "り"]], tags: ["N4-2"] },
+    { english: "Airmail", japanese: [["航", "こう"], ["空", "くう"], ["便", "びん"]], tags: ["N4-2"] },
+    { english: "Letter Paper", japanese: [["便", "びん"], ["箋", "せん"]], tags: ["N4-2"] },
+    { english: "Post Office", japanese: [["郵", "ゆう"], ["便", "びん"], ["局", "きょく"]], tags: ["N4-2"] },
+    { english: "Use (Application)", japanese: [["利", "り"], ["用", "よう"]], tags: ["N4-2"] },
+    { english: "Interest", japanese: [["利", "り"], ["子", "し"]], tags: ["N4-2"] },
+    
+    { english: "How to Use", japanese: [["使い", "つかい"], ["方", "かた"]], tags: ["N4-2"] },
+    { english: "Ambassador", japanese: [["大", "たい"], ["使", "し"]], tags: ["N4-2"] },
+    { english: "Use (Physical/Tools)", japanese: [["使", "し"], ["用", "よう"]], tags: ["N4-2"] },
+    { english: "Bank", japanese: [["銀", "ぎん"], ["行", "こう"]], tags: ["N4-2"] },
+    { english: "Silver", japanese: [["銀", "ぎん"], ["色", "いろ"]], tags: ["N4-2"] },
+    
+    { english: "Black and White", japanese: [["白", "しろ"], ["黒", "くろ"]], tags: ["N4-2"] },
+    { english: "Swan", japanese: [["白", "はく"], ["鳥", "ちょう"]], tags: ["N4-2"] },
+    { english: "Black Pepper", japanese: [["黒", "くろ"], ["胡", "こ"], ["椒", "しょう"]], tags: ["N4-2"] },
+    { english: "Pitch Black", japanese: [["真っ", "まっ"], ["黒", "くろ"]], tags: ["N4-2"] },
+    { english: "Profit", japanese: [["黒", "くろ"], ["字", "じ"]], tags: ["N4-2"] },
+    { english: "Black Belt", japanese: [["黒", "くろ"], ["帯", "くろ"]], tags: ["N4-2"] },
+    
+    { english: "Origami", japanese: [["折り", "おり"], ["紙", "がみ"]], tags: ["N4-2"] },
+    { english: "Paper (with purpose)", japanese: [["用", "よう"], ["紙", "し"]], tags: ["N4-2"] },
+    { english: "Newspaper Paper", japanese: [["新", "しん"], ["聞", "ぶん"], ["紙", "し"]], tags: ["N4-2"] },
+    
     //{ english: "", japanese: [["", ""], ["", ""]], tags: ["N4-2"] },
     // #endregion
 
