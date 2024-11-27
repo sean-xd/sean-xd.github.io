@@ -27,6 +27,7 @@
 
 .filter-enabled .kanji { display: none; }
 .enable-M-0 .kanji.tag-M-0,
+.enable-N5 .kanji.tag-N5,
 .enable-N4-1 .kanji.tag-N4-1,
 .enable-N4-2 .kanji.tag-N4-2,
 .enable-N4-3 .kanji.tag-N4-3,
@@ -37,6 +38,7 @@
 .enable-N4-8 .kanji.tag-N4-8,
 .enable-N4-9 .kanji.tag-N4-9 { display: inline-block; }
 .enable-M-0 .filter-M-0,
+.enable-N5 .filter-N5,
 .enable-N4-1 .filter-N4-1,
 .enable-N4-2 .filter-N4-2,
 .enable-N4-3 .filter-N4-3,
