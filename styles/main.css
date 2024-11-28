@@ -37,20 +37,22 @@ body { overflow-x: hidden; }
 .actions { font-size: 14px; height: 50px; overflow: hidden; transition: .3s height ease-in-out; }
 
 #filters { height: 50vh; }
-.filters-title { height: 50px; padding-top: 16px; }
+.filters-title { height: 50px; padding-top: 16px; z-index: 1; }
 
-#search { height: 50px; padding-left: 16px; }
+#search { height: 50px; padding-left: 16px; z-index: 1; }
 
 .show-filters #list { height: 50% !important; }
 .show-filters .actions { height: 50%; }
 .show-filters .filters-title { background: rgb(200,200,200); color: rgb(10,10,10); }
 
-.lessons-filters, .types-filters, .status-filters { height: calc(100% - 50px); position: absolute; top: 50px; }
+.lessons-filters, .types-filters, .status-filters { height: calc(100% - 50px); position: absolute; top: 0; }
 .lessons-filters { left: 0; }
 .types-filters { left: 20%; }
 .status-filters { left: 40%; }
 
 .lessons-filters-title, .types-filters-title, .status-filters-title { height: 40px; padding-top: 12px; }
+
+.filter-list { height: calc(100% - 40px); }
 
 .filter { color: rgb(100,100,100); padding: 4px 0; }
 .filter-selected.filter { color: rgb(220,220,220); }
