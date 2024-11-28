@@ -1,23 +1,12 @@
 /* --- List --- */
 
-function listTemplate(){
-    var sortedKanji = kanji.filter(e => e.R).sort((a, b) => a.R - b.R)
+function listTemplate(arr){
+    var sortedKanji = arr.filter(e => e.R).sort((a, b) => a.R - b.R)
     return sortedKanji.reduce((list, e) => (e.R ? list.push(listKanjiTemplate(e)): null, list), []);
 }
 
 function listKanjiTemplate(obj){
-    var tagClasses = (obj.T || []).map(t => "tag-" + t);
-    var className = "kanji w-20 jp pointer inline text-center " + tagClasses.join(" ");
-    return t("div", { class: className, onclick: `selectKanji("${obj._}")` }, obj._);
-}
-
-function filterListTemplate(){
-    var sortedTags = reduce(kanji, (arr, e) => (e.T ? e.T.forEach(t => !isIn(arr, t) ? arr.push(t) : null) : null, arr), []).sort();
-    return sortedTags.map(filterTemplate);
-}
-
-function filterTemplate(str){
-    return t("div", { class: "filter pointer w-20 text-center filter-" + str, onclick: `toggleFilter('${str}')` }, str);
+    return t("div", { class: "kanji w-20 jp pointer inline text-center", onclick: `selectKanji("${obj._}")` }, obj._);
 }
 
 /* --- Single --- */
@@ -28,9 +17,14 @@ function singleKanjiTemplate(kStr){
         t("div", { class: "single-left abs-tl h-100 w-50" }, [
             t("div", { class: "rank abs-tl c-100" }, kObj.R),
             t("div", { class: "kanji jp text-center b-20" }, kObj._),
+            t("div", { class: "status c-100 f-14" }, [
+                t("div", { class: `status-button pointer ${isIn(kObj.T || [], "Known") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Known')` }, "Known"),
+                t("div", { class: `status-button pointer ${isIn(kObj.T || [], "Learning") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Learning')` }, "Learning"),
+                t("div", { class: `status-button pointer ${isIn(kObj.T || [], "Unknown") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Unknown')` }, "Unknown"),
+            ]),
             componentListTemplate(kObj)
         ]),
-        t("div", { class: "single-right abs-tr h-100 w-50" }, [
+        t("div", { class: "single-right abs-tr h-100 w-50 scroll-20-10" }, [
             kunyomiTemplate(kObj),
             onyomiTemplate(kObj),
             kanjiWordsTemplate(kObj)

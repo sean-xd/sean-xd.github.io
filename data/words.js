@@ -331,7 +331,7 @@ var wordList = [
     { english: "Venue", japanese: [["会", "かい"], ["場", "じょう"]], tags: ["N4-4"] },
     
     { english: "Opening Ceremony", japanese: [["始", "し"], ["業", "ぎょう"], ["式", "しき"]], tags: ["N4-4"] },
-    { english: "New Year", japanese: [["年", "ねん"], ["始", "し"]], tags: ["N4-4"] },
+    { english: "New Year (Start)", japanese: [["年", "ねん"], ["始", "し"]], tags: ["N4-4"] },
     { english: "End", japanese: [["終", "しゅう"], ["了", "りょう"]], tags: ["N4-4"] },
     { english: "All Day", japanese: [["終", "しゅう"], ["日", "じつ"]], tags: ["N4-4"] },
     // #endregion
@@ -406,7 +406,7 @@ var wordList = [
     { english: "Internal Medicine", japanese: [["内", "ない"], ["科", "か"]], tags: ["N4-5"] },
     { english: "Surgery", japanese: [["外", "げ"], ["科", "か"]], tags: ["N4-5"] },
     
-    { english: "Cold Medicine", japanese: [["風", "かぜ"], ["邪", ""] ["薬", "ぐすり"]], tags: ["N4-5"] },
+    { english: "Cold Medicine", japanese: [["風", "かぜ"], ["邪", ""], ["薬", "ぐすり"]], tags: ["N4-5"] },
     { english: "Pharmacy", japanese: [["薬", "やっ"], ["局", "きょく"]], tags: ["N4-5"] },
     { english: "Headache Medicine", japanese: [["頭", "ず"], ["痛", "つう"], ["薬", "やく"]], tags: ["N4-5"] },
     { english: "Eyedrops", japanese: [["目", "め"], ["薬", "ぐすり"]], tags: ["N4-5"] },
@@ -593,7 +593,63 @@ var wordList = [
     // #endregion
 
     // #region Kanji N4-8
-    //{ english: "", japanese: [["", ""], ["", ""]], tags: ["N4-8"] },
+    { english: "Study", japanese: [["勉", "べん"], ["強", "きょう"]], tags: ["N4-8"] },
+    { english: "Studious Person", japanese: [["勉", "べん"], ["強", "きょう"], ["家", "か"]], tags: ["N4-8"] },
+    { english: "Diligence", japanese: [["勤", "きん"], ["勉", "べん"]], tags: ["N4-8"] },
+    { english: "Chinese Characters", japanese: [["漢", "かん"], ["字", "じ"]], tags: ["N4-8"] },
+    { english: "Chinese Numerals", japanese: [["漢", "かん"], ["数", "すう"], ["字", "じ"]], tags: ["N4-8"] },
+    { english: "中国-日本 Dictionary", japanese: [["漢", "かん"], ["和", "わ"], ["辞", "じ"], ["典", "てん"]], tags: ["N4-8"] },
+    { english: "Chinese Medicine", japanese: [["漢", "かん"], ["方", "ぽう"], ["薬", "やく"]], tags: ["N4-8"] },
+
+    { english: "Homework", japanese: [["宿", "しゅく"], ["題", "だい"]], tags: ["N4-8"] },
+    { english: "Accomodation", japanese: [["宿", "しゅく"], ["泊", "はく"]], tags: ["N4-8"] },
+    { english: "Training Camp", japanese: [["合", "がっ"], ["宿", "しゅく"]], tags: ["N4-8"] },
+    { english: "Shinjuku Station", japanese: [["新", "しん"], ["宿", "じゅく"], ["駅", "えき"]], tags: ["N4-8"] },
+    { english: "Title", japanese: [["題", "だい"], ["名", "めい"]], tags: ["N4-8"] },
+    { english: "Topic", japanese: [["話", "わ"], ["題", "だい"]], tags: ["N4-8"] },
+    
+    { english: "Question", japanese: [["質", "しつ"], ["問", "もん"]], tags: ["N4-8"] },
+    { english: "Problem", japanese: [["問", "もん"], ["題", "だい"]], tags: ["N4-8"] },
+    { english: "Social Issues", japanese: [["社", "しゃ"], ["会", "かい"], ["問", "もん"], ["題", "だい"]], tags: ["N4-8"] },
+    { english: "Academics", japanese: [["学", "がく"], ["問", "もん"]], tags: ["N4-8"] },
+    { english: "Visit", japanese: [["訪", "ほう"], ["問", "もん"]], tags: ["N4-8"] },
+    
+    { english: "Education", japanese: [["教", "きょう"], ["育", "いく"]], tags: ["N4-8"] },
+    { english: "Classroom", japanese: [["教", "きょう"], ["室", "しつ"]], tags: ["N4-8"] },
+    { english: "Textbook", japanese: [["教", "きょう"], ["科", "か"], ["書", "しょ"]], tags: ["N4-8"] },
+    { english: "Buddhism", japanese: [["仏", "ぶっ"], ["教", "きょう"]], tags: ["N4-8"] },
+    { english: "Professor", japanese: [["教", "きょう"], ["授", "じゅ"]], tags: ["N4-8"] },
+    { english: "Laboratory", japanese: [["研", "けん"], ["究", "きゅう"], ["室", "しつ"]], tags: ["N4-8"] },
+    
+    { english: "Test, Exam", japanese: [["試", "し"], ["験", "けん"]], tags: ["N4-8"] },
+    { english: "Tasting", japanese: [["試", "し"], ["食", "しょく"]], tags: ["N4-8"] },
+    { english: "Try On", japanese: [["試", "し"], ["着", "ちゃく"]], tags: ["N4-8"] },
+    { english: "Game, Match", japanese: [["試", "し"], ["合", "あい"]], tags: ["N4-8"] },
+    { english: "Experiment", japanese: [["実", "じっ"], ["験", "けん"]], tags: ["N4-8"] },
+    { english: "Exam (Formal)", japanese: [["受", "じゅ"], ["験", "けん"]], tags: ["N4-8"] },
+    { english: "Experience", japanese: [["体", "たい"], ["験", "けん"]], tags: ["N4-8"] },
+    
+    { english: "Answer", japanese: [["回", "かい"], ["答", "とう"]], tags: ["N4-8"] },
+    { english: "Way of Thinking", japanese: [["考え", "かんがえ"], ["方", "かた"]], tags: ["N4-8"] },
+    { english: "References", japanese: [["参", "さん"], ["考", "こう"], ["資", "し"], ["料", "りょう"]], tags: ["N4-8"] },
+    { english: "Thinking", japanese: [["思", "し"], ["考", "こう"]], tags: ["N4-8"] },
+    
+    { english: "Accurrate", japanese: [["正", "せい"], ["確", "かく"]], tags: ["N4-8"] },
+    { english: "Correct Answer", japanese: [["正", "せい"], ["解", "かい"]], tags: ["N4-8"] },
+    { english: "New Year (First Month)", japanese: [["正", "しょう"], ["月", "がつ"]], tags: ["N4-8"] },
+    { english: "Shot Put", japanese: [["砲", "ほう"], ["丸", "がん"], ["投", "な"], ["げ", "げ"]], tags: ["N4-8"] },
+    
+    { english: "Inconvenient", japanese: [["不", "ふ"], ["便", "べん"]], tags: ["N4-8"] },
+    { english: "Anxiety", japanese: [["不", "ふ"], ["安", "あん"]], tags: ["N4-8"] },
+    { english: "Failed", japanese: [["不", "ふ"], ["合", "ごう"], ["格", "かく"]], tags: ["N4-8"] },
+    { english: "Strange, Mysterious", japanese: [["不", "ふ"], ["思", "し"], ["議", "ぎ"]], tags: ["N4-8"] },
+    { english: "Shortage", japanese: [["不", "ふ"], ["足", "そく"]], tags: ["N4-8"] },
+    { english: "Lack of Exercise", japanese: [["運", "うん"], ["動", "どう"], ["不", "ふ"], ["足", "そく"]], tags: ["N4-8"] },
+    { english: "Classmate", japanese: [["同", "どう"], ["級", "きゅう"], ["生", "せい"]], tags: ["N4-8"] },
+    { english: "Joint (Collab)", japanese: [["合", "ごう"], ["同", "どう"]], tags: ["N4-8"] },
+    { english: "Simultaneous", japanese: [["同", "どう"], ["時", "じ"]], tags: ["N4-8"] },
+    
+    { english: "", japanese: [["", ""], ["", ""]], tags: ["N4-8"] },
     // #endregion
 
     // #region Kanji N4-9

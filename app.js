@@ -7,10 +7,20 @@ var dom = {
     // Right
     right: el("#right"),
     filters: el("#filters"),
+    search: el("#search"),
     list: el("#list")
+};
+
+var state = {
+    filters: []
+};
+
+var store = localStorage.store ? JSON.parse(localStorage.store) : {
+    status: {}
 };
 
 /* --- Initial Display --- */
 
-append(dom.list, listTemplate());
-append(dom.filters, filterListTemplate());
+dom.search.addEventListener("input", drawList);
+loadStatuses();
+drawList();

@@ -1,66 +1,61 @@
+body { overflow-x: hidden; }
 #left, #right { transition: .3s all ease-in-out; }
 
 /* --- Left --- */
 
-#single { height: 100%; position: relative; }
-.single-left, .single-right { padding-top: 12px; }
-.single-right { overflow-y: scroll; scrollbar-color: rgb(20,20,20) rgb(10,10,10); scrollbar-width: thin; }
+#left { left: -100%; }
+.open-kanji #left { transform: translate3d(100%, 0, 0); }
 
-#single .rank { left: 6px; top: 18px; }
+#single { height: calc(100% - 50px); position: relative; }
+.single-left { padding: 16px 0 0 16px; }
+.single-right { padding: 16px 16px 0 0; }
+
+#single .rank { left: 24px; top: 24px; }
 #single .kanji { font-size: 8em; height: 200px; }
+
+.status { display: flex; justify-content: space-between; }
+.status-button { padding: 6px 0; }
+.active-status.status-button { color: rgb(220,220,220); }
 
 .components-title { padding: 12px 0; }
 .component-container { height: 50px; margin-bottom: 12px; overflow: hidden; }
 .component-kanji { font-size: 2em; padding: 4px 12px 0 6px; }
 .component-definition { padding-top: 6px; width: calc(100% - 50px); }
 
-#left .close { display: none; padding: 6px 12px; }
-.open-kanji .close { display: block !important; }
-
-/* --- Right --- */
-
-#filters { display: flex; flex-flow: wrap; height: 46px; padding-right: 12px; overflow-y: scroll; scrollbar-color: rgb(20,20,20) rgb(10,10,10); scrollbar-width: thin; }
-.filters-title { padding: 12px 0; }
-.filter { display: none; padding: 12px 0; }
-.filter-enabled .filters-title { background: rgb(200,200,200); color: rgb(10,10,10); }
-.filter-enabled .filter { display: inline-block; }
-
-.filter-enabled .kanji { display: none; }
-.enable-M-0 .kanji.tag-M-0,
-.enable-N5 .kanji.tag-N5,
-.enable-N4-1 .kanji.tag-N4-1,
-.enable-N4-2 .kanji.tag-N4-2,
-.enable-N4-3 .kanji.tag-N4-3,
-.enable-N4-4 .kanji.tag-N4-4,
-.enable-N4-5 .kanji.tag-N4-5,
-.enable-N4-6 .kanji.tag-N4-6,
-.enable-N4-7 .kanji.tag-N4-7,
-.enable-N4-8 .kanji.tag-N4-8,
-.enable-N4-9 .kanji.tag-N4-9 { display: inline-block; }
-.enable-M-0 .filter-M-0,
-.enable-N5 .filter-N5,
-.enable-N4-1 .filter-N4-1,
-.enable-N4-2 .filter-N4-2,
-.enable-N4-3 .filter-N4-3,
-.enable-N4-4 .filter-N4-4,
-.enable-N4-5 .filter-N4-5,
-.enable-N4-6 .filter-N4-6,
-.enable-N4-7 .filter-N4-7,
-.enable-N4-8 .filter-N4-8,
-.enable-N4-9 .filter-N4-9 { background: rgb(200,200,200); color: rgb(10,10,10); }
-
-#list { height: calc(100% - 46px); overflow-y: scroll; padding-right: 12px; scrollbar-color: rgb(10,10,10) rgb(20,20,20); scrollbar-width: thin; }
-#list .kanji { font-size: 4em; }
-
 .kunyomi, .onyomi, .words { padding: 0 0 12px 12px; }
 .reading-title, .word { padding-bottom: 12px; }
 .reading-hiragana, .reading-kanji { font-size: 1.25em; padding-right: 6px; }
 .reading-definition { padding-top: 2px; }
 
-@media(max-width: 600px) {
-    #left { height: 0% !important; width: 100% !important; }
-    .open-kanji #left { height: 75% !important; }
-    
-    #right { height: 100% !important; width: 100% !important; }
-    .open-kanji #right { height: 25% !important; top: 75% !important; }
+/* --- Right --- */
+
+.open-kanji #right { transform: translate3d(100%, 0, 0); }
+
+#list { height: calc(100% - 50px); padding-top: 16px; transition: .3s height ease-in-out; }
+#list .kanji { font-size: 3em; padding-bottom: 8px; }
+
+.actions { font-size: 14px; height: 50px; overflow: hidden; transition: .3s height ease-in-out; }
+
+#filters { height: 50vh; }
+.filters-title { height: 50px; padding-top: 16px; }
+
+#search { height: 50px; padding-left: 16px; }
+
+.show-filters #list { height: 50% !important; }
+.show-filters .actions { height: 50%; }
+.show-filters .filters-title { background: rgb(200,200,200); color: rgb(10,10,10); }
+
+.lessons-filters, .types-filters, .status-filters { height: calc(100% - 50px); position: absolute; top: 50px; }
+.lessons-filters { left: 0; }
+.types-filters { left: 20%; }
+.status-filters { left: 40%; }
+
+.lessons-filters-title, .types-filters-title, .status-filters-title { height: 40px; padding-top: 12px; }
+
+.filter { color: rgb(100,100,100); padding: 4px 0; }
+.filter-selected.filter { color: rgb(220,220,220); }
+
+@media (min-width: 600px) {
+    #list .kanji { font-size: 4em; }
+    .lessons-filters { padding-left: 10px; }
 }
