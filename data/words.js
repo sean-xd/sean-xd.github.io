@@ -649,7 +649,33 @@ var wordList = [
     { english: "Joint (Collab)", japanese: [["合", "ごう"], ["同", "どう"]], tags: ["N4-8"] },
     { english: "Simultaneous", japanese: [["同", "どう"], ["時", "じ"]], tags: ["N4-8"] },
     
-    { english: "", japanese: [["", ""], ["", ""]], tags: ["N4-8"] },
+    { english: "Lending", japanese: [["貸し", "かし"], ["出し", "だし"]], tags: ["N4-8"] },
+    { english: "Rental", japanese: [["賃", "ちん"], ["貸", "たい"]], tags: ["N4-8"] },
+    { english: "Exclusive Use", japanese: [["貸し", "かし"], ["切り", "きり"]], tags: ["N4-8"] },
+    { english: "Debt", japanese: [["借", "しゃっ"], ["金", "きん"]], tags: ["N4-8"] },
+    { english: "Land Lease", japanese: [["借", "しゃく"], ["地", "ち"]], tags: ["N4-8"] },
+    
+    { english: "Reply", japanese: [["返", "へん"], ["事", "じ"]], tags: ["N4-8"] },
+    { english: "Returns (Store)", japanese: [["返", "へん"], ["品", "ぴん"]], tags: ["N4-8"] },
+    { english: "One Book", japanese: [["一", "いっ"], ["冊", "さつ"]], tags: ["N4-8"] },
+    { english: "Booklet", japanese: [["冊", "さっ"], ["子", "し"]], tags: ["N4-8"] },
+    { english: "Separate Volume", japanese: [["別", "べっ"], ["冊", "さつ"]], tags: ["N4-8"] },
+    { english: "Poetry Paper", japanese: [["短", "たん"], ["冊", "ざく"]], tags: ["N4-8"] },
+    
+    { english: "History", japanese: [["歴", "れき"], ["史", "し"]], tags: ["N4-8"] },
+    { english: "Resume (CV)", japanese: [["履", "り"], ["歴", "れき"], ["書", "しょ"]], tags: ["N4-8"] },
+    { english: "Lineage", japanese: [["歴", "れき"], ["代", "だい"]], tags: ["N4-8"] },
+    { english: "World History", japanese: [["世", "せ"], ["界", "かい"], ["歴", "れき"]], tags: ["N4-8"] },
+    { english: "Academic Background", japanese: [["学", "がく"], ["歴", "れき"]], tags: ["N4-8"] },
+    { english: "Japanese History", japanese: [["日", "に"], ["本", "ほん"], ["史", "し"]], tags: ["N4-8"] },
+    { english: "Oriental History", japanese: [["東", "とう"], ["洋", "よう"], ["史", "し"]], tags: ["N4-8"] },
+    { english: "Western History", japanese: [["西", "せい"], ["洋", "よう"], ["史", "し"]], tags: ["N4-8"] },
+    { english: "History (Subject)", japanese: [["史", "し"], ["学", "がく"]], tags: ["N4-8"] },
+    
+    { english: "Map", japanese: [["地", "ち"], ["図", "ず"]], tags: ["N4-8"] },
+    { english: "Library", japanese: [["図", "と"], ["書", "しょ"], ["館", "かん"]], tags: ["N4-8"] },
+    { english: "Plant Encyclopedia", japanese: [["植", "しょく"], ["物", "ぶつ"], ["図", "ず"], ["鑑", "かん"]], tags: ["N4-8"] },
+    { english: "Animal Encyclopedia", japanese: [["動", "どう"], ["物", "ぶつ"], ["図", "ず"], ["鑑", "かん"]], tags: ["N4-8"] },
     // #endregion
 
     // #region Kanji N4-9
