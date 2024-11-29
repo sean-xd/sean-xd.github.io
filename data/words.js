@@ -30,8 +30,130 @@ var wordList = [
     { english: "Date of Birth", japanese: [["生", "せい"], ["年", "ねん"], ["月", "がっ"], ["日", "ぴ"]], tags: ["N5-2"] },
     // #endregion
 
-    // #region Kanji N5-3
-    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-3"] },
+    // #region Kanji N5-5
+    { english: "Older", japanese: [["年", "とし"], ["上", "うえ"]], tags: ["N5-5"] },
+    { english: "Good", japanese: [["上", "じょう"], ["手", "ず"]], tags: ["N5-5"] },
+    { english: "Younger", japanese: [["年", "とし"], ["下", "した"]], tags: ["N5-5"] },
+    { english: "Poor, Bad", japanese: [["下", "へ"], ["手", "た"]], tags: ["N5-5"] },
+    { english: "Up and Down", japanese: [["上", "じょう"], ["下", "げ"]], tags: ["N5-5"] },
+
+    { english: "Turn Left", japanese: [["左", "さ"], ["折", "せつ"]], tags: ["N5-5"] },
+    { english: "Turn Right", japanese: [["右", "う"], ["折", "せつ"]], tags: ["N5-5"] },
+    
+    { english: "Outside, Outer", japanese: [["外", "そと"], ["側", "がわ"]], tags: ["N5-5"] },
+    { english: "Going Out", japanese: [["外", "がい"], ["出", "しゅつ"]], tags: ["N5-5"] },
+    { english: "Inside, Inner", japanese: [["内", "うち"], ["側", "がわ"]], tags: ["N5-5"] },
+    { english: "Inside the Premises", japanese: [["構", "こう"], ["内", "ない"]], tags: ["N5-5"] },
+    { english: "Domestic", japanese: [["国", "こく"], ["内", "ない"]], tags: ["N5-5"] },
+
+    { english: "Underwater", japanese: [["水", "すい"], ["中", "ちゅう"]], tags: ["N5-5"] },
+    { english: "At Work", japanese: [["仕", "し"], ["事", "ごと"], ["中", "ちゅう"]], tags: ["N5-5"] },
+    { english: "During Class", japanese: [["授", "じゅ"], ["業", "ぎょう"], ["中", "ちゅう"]], tags: ["N5-5"] },
+    { english: "All Day", japanese: [["一", "いち"], ["日", "にち"], ["中", "じゅう"]], tags: ["N5-5"] },
+    { english: "En Route", japanese: [["途", "と"], ["中", "ちゅう"]], tags: ["N5-5"] },
+    // #endregion
+
+    // #region Kanji N5-6
+    { english: "School", japanese: [["学", "がっ"], ["校", "こう"]], tags: ["N5-6"] },
+    { english: "University", japanese: [["大", "だい"], ["学", "がく"]], tags: ["N5-6"] },
+    { english: "Admission", japanese: [["入", "にゅう"], ["学", "がく"]], tags: ["N5-6"] },
+    { english: "Visit", japanese: [["見", "けん"], ["学", "がく"]], tags: ["N5-6"] },
+    { english: "Principal", japanese: [["校", "こう"], ["長", "ちょう"]], tags: ["N5-6"] },
+    { english: "School Closure", japanese: [["休", "きゅう"], ["校", "こう"]], tags: ["N5-6"] },
+    { english: "Transfer", japanese: [["転", "てん"], ["校", "こう"]], tags: ["N5-6"] },
+    
+    { english: "Teacher", japanese: [["先", "せん"], ["生", "せい"]], tags: ["N5-6"] },
+    { english: "Last Month", japanese: [["先", "せん"], ["月", "げつ"]], tags: ["N5-6"] },
+    { english: "Daily Life", japanese: [["生", "せい"], ["活", "かつ"]], tags: ["N5-6"] },
+    { english: "Life", japanese: [["人", "じん"], ["生", "せい"]], tags: ["N5-6"] },
+    { english: "Lifetime", japanese: [["一", "いっ"], ["生", "しょう"]], tags: ["N5-6"] },
+    
+    { english: "Places of Interest", japanese: [["名", "めい"], ["所", "しょ"]], tags: ["N5-6"] },
+    { english: "Place Name", japanese: [["地", "ち"], ["名", "めい"]], tags: ["N5-6"] },
+    { english: "Famous", japanese: [["有", "ゆう"], ["名", "めい"]], tags: ["N5-6"] },
+    { english: "Character, Letter", japanese: [["文", "も"], ["字", "じ"]], tags: ["N5-6"] },
+    
+    { english: "Japanese Person", japanese: [["日", "に"], ["本", "ほん"], ["人", "じん"]], tags: ["N5-6"] },
+    { english: "Break Time", japanese: [["休み", "やすみ"], ["時", "じ"], ["間", "かん"]], tags: ["N5-6"] },
+    // #endregion
+
+    // #region Kanji N5-7
+    { english: "Hate", japanese: [["大", "だい"], ["嫌い", "きらい"]], tags: ["N5-7"] },
+    { english: "Important, Precious", japanese: [["大", "たい"], ["切", "せつ"]], tags: ["N5-7"] },
+    { english: "Elementary School", japanese: [["小", "しょう"], ["学", "がっ"], ["校", "こう"]], tags: ["N5-7"] },
+    { english: "Small Change, Coins", japanese: [["小", "こ"], ["銭", "ぜに"]], tags: ["N5-7"] },
+    
+    { english: "Highschool Student", japanese: [["高", "こう"], ["校", "こう"], ["生", "せい"]], tags: ["N5-7"] },
+    { english: "Friend", japanese: [["友", "とも"], ["達", "だち"]], tags: ["N5-7"] },
+
+    { english: "Entrance", japanese: [["入", "いり"], ["口", "ぐち"]], tags: ["N5-7"] },
+    { english: "Attendance", japanese: [["出", "しゅうっ"], ["席", "せき"]], tags: ["N5-7"] },
+    
+    { english: "School Gate", japanese: [["校", "こう"], ["門", "もん"]], tags: ["N5-7"] },
+    { english: "Main Gate", japanese: [["正", "せい"], ["門", "もん"]], tags: ["N5-7"] },
+    { english: "Specialty", japanese: [["専", "せん"], ["門", "もん"]], tags: ["N5-7"] },
+    { english: "Introduction, Primer", japanese: [["入", "にゅう"], ["門", "もん"]], tags: ["N5-7"] },
+    { english: "Physical Strength", japanese: [["体", "たい"], ["力", "りょく"]], tags: ["N5-7"] },
+    { english: "Body Weight", japanese: [["体", "たい"], ["重", "じゅう"]], tags: ["N5-7"] },
+    // #endregion
+
+    // #region Kanji N5-8
+    { english: "Grandfather", japanese: [["祖", "そ"], ["父", "ふ"]], tags: ["N5-8"] },
+    { english: "Grandmother", japanese: [["祖", "そ"], ["母", "ぼ"]], tags: ["N5-8"] },
+    { english: "Alma Mater", japanese: [["母", "ぼ"], ["校", "こう"]], tags: ["N5-8"] },
+    { english: "Parents", japanese: [["父", "ふ"], ["母", "ぼ"]], tags: ["N5-8"] },
+    
+    { english: "Children", japanese: [["子", "こ"], ["ども", "ども"]], tags: ["N5-8"] },
+    { english: "Twins", japanese: [["双", "ふた"], ["子", "ご"]], tags: ["N5-8"] },
+    { english: "Boy", japanese: [["男", "おとこ"], ["の", "の"], ["子", "こ"]], tags: ["N5-8"] },
+    { english: "Man", japanese: [["男", "おとこ"], ["の", "の"], ["人", "ひと"]], tags: ["N5-8"] },
+    { english: "Boys", japanese: [["男", "だん"], ["子", "し"]], tags: ["N5-8"] },
+    { english: "Men", japanese: [["男", "だん"], ["性", "せい"]], tags: ["N5-8"] },
+    
+    { english: "Girl", japanese: [["女", "おんな"], ["の", "の"], ["子", "こ"]], tags: ["N5-8"] },
+    { english: "Woman", japanese: [["女", "おんな"], ["の", "の"], ["人", "ひと"]], tags: ["N5-8"] },
+    { english: "Girls", japanese: [["女", "じょ"], ["子", "し"]], tags: ["N5-8"] },
+    { english: "Women", japanese: [["女", "じょ"], ["性", "せい"]], tags: ["N5-8"] },
+    { english: "Gender", japanese: [["男", "だん"], ["女", "じょ"]], tags: ["N5-8"] },
+    { english: "Girlfrield, Her", japanese: [["彼", "かの"], ["女", "じょ"]], tags: ["N5-8"] },
+    { english: "Actress", japanese: [["女", "じょ"], ["優", "ゆう"]], tags: ["N5-8"] },
+    
+    { english: "Puppy", japanese: [["子", "こ"], ["犬", "いぬ"]], tags: ["N5-8"] },
+    { english: "Small Dogs", japanese: [["小", "こ"], ["型", "がた"], ["犬", "けん"]], tags: ["N5-8"] },
+    { english: "Guide Dogs", japanese: [["盲", "もう"], ["導", "どう"], ["犬", "けん"]], tags: ["N5-8"] },
+    // #endregion
+
+    // #region Kanji N5-9
+    { english: "Cherry Blossom Viewing", japanese: [["花", "はな"], ["見", "み"]], tags: ["N5-9"] },
+    { english: "Moon Viewing", japanese: [["月", "つき"], ["見", "み"]], tags: ["N5-9"] },
+    { english: "Opinion", japanese: [["意", "い"], ["見", "けん"]], tags: ["N5-9"] },
+    { english: "Newspaper", japanese: [["新", "しん"], ["聞", "ぶん"]], tags: ["N5-9"] },
+    
+    { english: "Next Year", japanese: [["来", "らい"], ["年", "ねん"]], tags: ["N5-9"] },
+    // #endregion
+
+    // #region Kanji N5-10
+    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-10"] },
+    // #endregion
+
+    // #region Kanji N5-11
+    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-11"] },
+    // #endregion
+    
+    // #region Kanji N5-12
+    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-12"] },
+    // #endregion
+    
+    // #region Kanji N5-13
+    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-13"] },
+    // #endregion
+    
+    // #region Kanji N5-14
+    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-14"] },
+    // #endregion
+    
+    // #region Kanji N5-15
+    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-15"] },
     // #endregion
 
     // #region Kanji N4-1
@@ -783,5 +905,5 @@ var wordList = [
     { english: "", japanese: [["", ""], ["", ""]], tags: ["N4-9"] },
     // #endregion
 
-    // { english: "", japanese: [["", ""], ["", ""]] },
+    // { english: "", japanese: [["", ""], ["", ""]], tags: [""] },
 ];
