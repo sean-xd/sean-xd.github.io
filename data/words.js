@@ -1,7 +1,5 @@
 var wordList = [
     // #region Minna no Nihongo 0
-    { english: "Practice", japanese: [["練", "れん"], ["習", "しゅう"]] },
-    { english: "Review", japanese: [["復", "ふく"], ["習", "しゅう"]] },
     { english: "Grammar", japanese: [["文", "ぶん"], ["法", "ぽう"]] },
     { english: "Word", japanese: [["単", "たん"], ["語", "ご"]]  },
     { english: "Pronunciation", japanese: [["発", "はつ"], ["音", "おん"]] },
@@ -10,6 +8,30 @@ var wordList = [
     // { english: "Adjective", japanese: [["", ""], ["", ""]] },
     // { english: "Particle", japanese: [["", ""], ["", ""]] },
     // { english: "Adverb", japanese: [["", ""], ["", ""]] },
+    // #endregion
+
+    // #region Kanji N5-2
+    { english: "Monday", japanese: [["月", "げつ"], ["曜", "よう"], ["日", "び"]], tags: ["N5-2"] },
+    { english: "This Month", japanese: [["今", "こん"], ["月", "げつ"]], tags: ["N5-2"] },
+    { english: "Tuesday", japanese: [["火", "か"], ["曜", "よう"], ["日", "び"]], tags: ["N5-2"] },
+    
+    { english: "Wednesday", japanese: [["水", "すい"], ["曜", "よう"], ["日", "び"]], tags: ["N5-2"] },
+    { english: "Perfume", japanese: [["香", "こう"], ["水", "すい"]], tags: ["N5-2"] },
+    { english: "Big Tree", japanese: [["大", "たい"], ["木", "ぼく"]], tags: ["N5-2"] },
+    { english: "Thursday", japanese: [["木", "もく"], ["曜", "よう"], ["日", "び"]], tags: ["N5-2"] },
+
+    { english: "Friday", japanese: [["金", "きん"], ["曜", "よう"], ["日", "び"]], tags: ["N5-2"] },
+    { english: "Cash", japanese: [["現", "げん"], ["金", "きん"]], tags: ["N5-2"] },
+    { english: "Saturday", japanese: [["土", "ど"], ["曜", "よう"], ["日", "び"]], tags: ["N5-2"] },
+    
+    { english: "Father's Day", japanese: [["父", "ちち"], ["の", "の"], ["日", "ひ"]], tags: ["N5-2"] },
+    { english: "Birthday", japanese: [["誕", "たん"], ["生", "じょう"], ["日", "び"]], tags: ["N5-2"] },
+    { english: "Holiday", japanese: [["休", "きゅう"], ["日", "じつ"]], tags: ["N5-2"] },
+    { english: "Date of Birth", japanese: [["生", "せい"], ["年", "ねん"], ["月", "がっ"], ["日", "ぴ"]], tags: ["N5-2"] },
+    // #endregion
+
+    // #region Kanji N5-3
+    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-3"] },
     // #endregion
 
     // #region Kanji N4-1
@@ -177,7 +199,7 @@ var wordList = [
 
     // #region Kanji N4-3
     { english: "Luggage", japanese: [["荷", "に"], ["物", "もつ"]], tags: ["N4-3"] },
-    { english: "Baggage", japanese: [["手", "て"]["荷", "に"], ["物", "もつ"]], tags: ["N4-3"] },
+    { english: "Baggage", japanese: [["手", "て"], ["荷", "に"], ["物", "もつ"]], tags: ["N4-3"] },
     { english: "Send", japanese: [["送", "そう"], ["信", "しん"]], tags: ["N4-3"] },
     { english: "Seeing Off", japanese: [["見", "み"], ["送り", "おくり"]], tags: ["N4-3"] },
     { english: "Farewell Party", japanese: [["送", "そう"], ["別", "べつ"], ["会", "かい"]], tags: ["N4-3"] },
@@ -679,7 +701,86 @@ var wordList = [
     // #endregion
 
     // #region Kanji N4-9
-    //{ english: "", japanese: [["", ""], ["", ""]], tags: ["N4-9"] },
+    { english: "Motion, Exercise", japanese: [["運", "うん"], ["動", "どう"]], tags: ["N4-9"] },
+    { english: "Driver", japanese: [["運", "うん"], ["転", "てん"], ["者", "しゃ"]], tags: ["N4-9"] },
+    { english: "Animal", japanese: [["動", "どう"], ["物", "ぶつ"]], tags: ["N4-9"] },
+    { english: "Operation", japanese: [["動", "どう"], ["作", "さ"]], tags: ["N4-9"] },
+    
+    { english: "Practice", japanese: [["練", "れん"], ["習", "しゅう"]], tags: ["N4-9"] },
+    { english: "Training", japanese: [["訓", "くん"], ["練", "れん"]], tags: ["N4-9"] },
+    { english: "Learning", japanese: [["学", "がく"], ["習", "しゅう"]], tags: ["N4-9"] },
+    { english: "Calligraphy", japanese: [["習", "しゅう"], ["字", "じ"]], tags: ["N4-9"] },
+    { english: "Preparation", japanese: [["予", "よ"], ["習", "しゅう"]], tags: ["N4-9"] },
+    { english: "Habits", japanese: [["習", "しゅう"], ["慣", "かん"]], tags: ["N4-9"] },
+    { english: "Evacuation Drills", japanese: [["避", "ひ"], ["難", "なん"], ["訓", "くん"], ["練", "れん"]], tags: ["N4-9"] },
+    { english: "Review", japanese: [["復", "ふく"], ["習", "しゅう"]], tags: ["N4-9"] },
+
+    { english: "Race", japanese: [["競", "きょう"], ["走", "そう"]], tags: ["N4-9"] },
+    { english: "Runner", japanese: [["走", "そう"], ["者", "しゃ"]], tags: ["N4-9"] },
+    { english: "Pedestrian Streets", japanese: [["歩", "ほ"], ["行", "こう"], ["者", "しゃ"], ["天", "てん"], ["国", "ごく"]], tags: ["N4-9"] },
+    { english: "Sidewalk", japanese: [["歩", "ほ"], ["道", "どう"]], tags: ["N4-9"] },
+    { english: "Pedometer", japanese: [["万", "まん"], ["歩", "ぽ"], ["計", "けい"]], tags: ["N4-9"] },
+    { english: "Stroll", japanese: [["散", "さん"], ["歩", "ぽ"]], tags: ["N4-9"] },
+    
+    { english: "Swimming", japanese: [["水", "すい"], ["泳", "えい"]], tags: ["N4-9"] },
+    { english: "Breaststroke", japanese: [["平", "ひら"], ["泳ぎ", "およぎ"]], tags: ["N4-9"] },
+    { english: "Talent", japanese: [["才", "さい"], ["能", "のう"]], tags: ["N4-9"] },
+    { english: "Genius", japanese: [["天", "てん"], ["才", "さい"]], tags: ["N4-9"] },
+    { english: "Talented Woman", japanese: [["才", "さい"], ["女", "じょ"]], tags: ["N4-9"] },
+
+    { english: "Myself", japanese: [["自", "じ"], ["分", "ぶん"]], tags: ["N4-9"] },
+    { english: "One's Home", japanese: [["自", "じ"], ["宅", "たく"]], tags: ["N4-9"] },
+    { english: "Confidence", japanese: [["自", "じ"], ["信", "しん"]], tags: ["N4-9"] },
+    { english: "Automobile", japanese: [["自", "じ"], ["動", "どう"], ["車", "しゃ"]], tags: ["N4-9"] },
+    { english: "Self-Study", japanese: [["自", "じ"], ["習", "しゅう"]], tags: ["N4-9"] },
+    { english: "Self-Help", japanese: [["自", "じ"], ["力", "りき"]], tags: ["N4-9"] },
+    { english: "Nature", japanese: [["自", "じ"], ["然", "ぜん"]], tags: ["N4-9"] },
+    { english: "Natural Monuments", japanese: [["天", "てん"], ["然", "ねん"], ["記", "き"], ["念", "ねん"], ["物", "ぶつ"]], tags: ["N4-9"] },
+    { english: "Of Course", japanese: [["当", "とう"], ["然", "ぜん"]], tags: ["N4-9"] },
+    { english: "Natural Water", japanese: [["天", "てん"], ["然", "ねん"], ["水", "すい"]], tags: ["N4-9"] },
+    { english: "Not at all", japanese: [["全", "ぜん"], ["然", "ぜん"]], tags: ["N4-9"] },
+
+    { english: "Flowers", japanese: [["草", "くさ"], ["花", "ばな"]], tags: ["N4-9"] },
+    { english: "Grassland", japanese: [["草", "そう"], ["原", "げん"]], tags: ["N4-9"] },
+    { english: "Original Work", japanese: [["原", "げん"], ["作", "さく"]], tags: ["N4-9"] },
+    { english: "Cause", japanese: [["原", "げん"], ["因", "いん"]], tags: ["N4-9"] },
+    { english: "Raw Materials", japanese: [["原", "げん"], ["料", "りょう"]], tags: ["N4-9"] },
+    { english: "Plateau", japanese: [["高", "こう"], ["原", "げん"]], tags: ["N4-9"] },
+    
+    { english: "Lake Water", japanese: [["湖", "こ"], ["水", "すい"]], tags: ["N4-9"] },
+    { english: "Lake Yamanaka", japanese: [["山", "やま"], ["中", "なか"], ["湖", "こ"]], tags: ["N4-9"] },
+    { english: "Valley (Metaphorical)", japanese: [["谷", "たに"], ["間", "ま"]], tags: ["N4-9"] },
+    { english: "Ravine, Gorge", japanese: [["渓", "けい"], ["谷", "こく"]], tags: ["N4-9"] },
+    { english: "On the Lake", japanese: [["湖", "こ"], ["上", "じょう"]], tags: ["N4-9"] },
+    
+    { english: "Seaweed", japanese: [["海", "かい"], ["藻", "そう"]], tags: ["N4-9"] },
+    { english: "Sea of Japan", japanese: [["日", "に"], ["本", "ほん"], ["海", "かい"]], tags: ["N4-9"] },
+    { english: "Seaside", japanese: [["海", "うみ"], ["辺", "べ"]], tags: ["N4-9"] },
+    { english: "Riverside", japanese: [["川", "かわ"], ["辺", "べ"]], tags: ["N4-9"] },
+    { english: "Vicinity", japanese: [["近", "きん"], ["辺", "ぺん"]], tags: ["N4-9"] },
+    { english: "International Travel", japanese: [["海", "がい"], ["外", "がい"], ["旅", "りょ"], ["行", "こう"]], tags: ["N4-9"] },
+    
+    { english: "Hometown", japanese: [["ふる", "ふる"], ["里", "さと"]], tags: ["N4-9"] },
+    { english: "Human Settlement", japanese: [["人", "ひと"], ["里", "ざと"]], tags: ["N4-9"] },
+    { english: "Homecoming", japanese: [["里", "さと"], ["帰り", "がえり"]], tags: ["N4-9"] },
+    { english: "Fields and Mountains", japanese: [["野", "の"], ["山", "やま"]], tags: ["N4-9"] },
+    { english: "Open Field", japanese: [["野", "の"], ["原", "はら"]], tags: ["N4-9"] },
+    { english: "Baseball", japanese: [["野", "や"], ["球", "きゅう"]], tags: ["N4-9"] },
+    { english: "Vegetables", japanese: [["野", "や"], ["菜", "さい"]], tags: ["N4-9"] },
+    
+    { english: "Green Tea", japanese: [["緑", "りょく"], ["茶", "ちゃ"]], tags: ["N4-9"] },
+    { english: "Fresh Greenery", japanese: [["新", "しん"], ["緑", "りょく"]], tags: ["N4-9"] },
+    { english: "Battery", japanese: [["電", "でん"], ["池", "ち"]], tags: ["N4-9"] },
+    { english: "Reservoir", japanese: [["貯", "こ"], ["水", "すい"], ["池", "ち"]], tags: ["N4-9"] },
+    
+    { english: "Small Bird", japanese: [["小", "こ"], ["鳥", "とり"]], tags: ["N4-9"] },
+    { english: "Haneda Airport", japanese: [["羽", "はね"], ["田", "だ"], ["空", "くう"], ["港", "こう"]], tags: ["N4-9"] },
+
+    { english: "Stilts", japanese: [["竹", "たけ"], ["馬", "うま"]], tags: ["N4-9"] },
+    { english: "Horse-drawn Carriage", japanese: [["馬", "ば"], ["車", "しゃ"]], tags: ["N4-9"] },
+    { english: "Horse Riding", japanese: [["乗", "じょう"], ["馬", "ば"]], tags: ["N4-9"] },
+    { english: "Scream", japanese: [["悲", "ひ"], ["鳴", "めい"]], tags: ["N4-9"] },
+    { english: "", japanese: [["", ""], ["", ""]], tags: ["N4-9"] },
     // #endregion
 
     // { english: "", japanese: [["", ""], ["", ""]] },

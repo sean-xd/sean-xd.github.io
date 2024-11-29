@@ -6,7 +6,9 @@ function listTemplate(arr){
 }
 
 function listKanjiTemplate(obj){
-    return t("div", { class: "kanji w-20 jp pointer inline text-center", onclick: `selectKanji("${obj._}")` }, obj._);
+    var statusColors = { Known: "c-green", Learning: "c-yellow", Unknown: "c-red" };
+    var className = "kanji w-20 jp pointer inline text-center " + statusColors[store.status[obj._]];
+    return t("div", { class: className, onclick: `selectKanji("${obj._}")` }, obj._);
 }
 
 /* --- Single --- */
@@ -74,7 +76,13 @@ function kanjiWordsTemplate(kObj){
     var words = wordList.filter(e => isIn(mergeNest(e.japanese), kObj._));
     return t("div", { class: "words" }, [t("div", { class: "reading-title" }, "Words")].concat(words.map(wObj => {
         var { japanese, english } = wObj;
-        var kText = japanese.map(e => isIn(e[0], kObj._) ? e[0] :`<span class='c-100'>${e[0]}</span>`).join("");
+        var kText = japanese.map(e => {
+            var ekStr = stripHiragana(e[0]);
+            var isKanji = !!kanji.filter(k => k._ === ekStr)[0];
+            var className = [isKanji ? "pointer" : "", isIn(e[0], kObj._) ? "" : "c-100"].join(" ");
+            var onclick = isKanji ? ` onclick="selectKanji('${ekStr}')"` : "";
+            return `<span class="${className}"${onclick}>${e[0]}</span>`;
+        }).join("");
         var hText = japanese.map(e => isIn(e[0], kObj._) ? e[1] : `<span class='c-100'>${e[1]}</span>`).join("");
         return t("div", { class: "word" }, [
             t("div", { class: "reading-kanji inline" }, kText),
@@ -82,4 +90,9 @@ function kanjiWordsTemplate(kObj){
             t("div", { class: "reading-hiragana c-blue" }, hText)
         ]);
     })));
+}
+
+function stripHiragana(kStr){
+    if(kStr[0] === "お") return kStr[1];
+    else return kStr[0];
 }
