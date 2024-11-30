@@ -30,6 +30,54 @@ var wordList = [
     { english: "Date of Birth", japanese: [["生", "せい"], ["年", "ねん"], ["月", "がっ"], ["日", "ぴ"]], tags: ["N5-2"] },
     // #endregion
 
+    // #region Kanji N5-3
+    { english: "Three People", japanese: [["三", "さん"], ["人", "にん"]], tags: ["N5-3"] },
+    { english: "Big Mouth", japanese: [["大きい", "おおきい"], ["口", "くち"]], tags: ["N5-3"] },
+    { english: "Lipstick", japanese: [["口", "くち"], ["紅", "べに"]], tags: ["N5-3"] },
+    { english: "Ticket Gate", japanese: [["改", "かい"], ["札", "さつ"], ["口", "ぐち"]], tags: ["N5-3"] },
+    { english: "Population", japanese: [["人", "じん"], ["口", "こう"]], tags: ["N5-3"] },
+    
+    { english: "Alarm Clock", japanese: [["目", "め"], ["覚まし", "ざまし"], ["時", "と"], ["計", "けい"]], tags: ["N5-3"] },
+    { english: "Eye Drops", japanese: [["目", "め"], ["薬", "ぐすり"]], tags: ["N5-3"] },
+    { english: "First (In Order)", japanese: [["一つ", "ひとつ"], ["目", "め"]], tags: ["N5-3"] },
+    { english: "Purpose", japanese: [["目", "もく"], [" ", "てき"]], tags: ["N5-3"] },
+    { english: "Eye/Ear/Throat Specialist", japanese: [["耳", "じ"], ["鼻", "び"], ["科", "か"]], tags: ["N5-3"] },
+    
+    { english: "Letter", japanese: [["手", "て"], ["紙", "がみ"]], tags: ["N5-3"] },
+    { english: "Stamp", japanese: [["切", "きっ"], ["手", "て"]], tags: ["N5-3"] },
+    { english: "Handshake", japanese: [["握", "あく"], ["手", "しゅ"]], tags: ["N5-3"] },
+    { english: "Driver (Profession)", japanese: [["運", "うん"], ["転", "てん"], ["手", "しゅ"]], tags: ["N5-3"] },
+    { english: "Limbs", japanese: [["手", "て"], ["足", "あし"]], tags: ["N5-3"] },
+    
+    { english: "Firepower", japanese: [["火", "か"], ["力", "りょく"]], tags: ["N5-3"] },
+    { english: "Cooperation", japanese: [["協", "きょう"], ["力", "りょく"]], tags: ["N5-3"] },
+    { english: "Eyesight", japanese: [["視", "し"], ["力", "りょく"]], tags: ["N5-3"] },
+    { english: "Academic Ability", japanese: [["学", "がく"], ["力", "りょく"]], tags: ["N5-3"] },
+    { english: "King", japanese: [["王", "おう"], ["様", "さま"]], tags: ["N5-3"] },
+    // #endregion
+
+    // #region Kanji N5-4
+    { english: "Mt. Fuji", japanese: [["富", "ふ"], ["士", "じ"], ["山", "さん"]], tags: ["N5-4"] },
+    { english: "Volcano", japanese: [["火", "か"], ["山", "ざん"]], tags: ["N5-4"] },
+    { english: "Amazon River", japanese: [["アマゾン", "あまぞん"], ["川", "がわ"]], tags: ["N5-4"] },
+    
+    { english: "Rice Field", japanese: [["田", "たん"], ["圃", "ぼ"]], tags: ["N5-4"] },
+    { english: "Paddy Field", japanese: [["水", "すい"], ["田", "でん"]], tags: ["N5-4"] },
+    { english: "Pebble", japanese: [["小", "こ"], ["石", "いし"]], tags: ["N5-4"] },
+    { english: "Jewelry", japanese: [["宝", "ほう"], ["石", "せき"]], tags: ["N5-4"] },
+    
+    { english: "Vase", japanese: [["花", "か"], ["瓶", "びん"]], tags: ["N5-4"] },
+    { english: "Fireworks", japanese: [["花", "はな"], ["火", "び"]], tags: ["N5-4"] },
+    { english: "Bouquet", japanese: [["花", "はな"], ["束", "たば"]], tags: ["N5-4"] },
+    { english: "Bamboo Shoots", japanese: [["竹", "たけ"], ["の", "の"], ["子", "こ"]], tags: ["N5-4"] },
+    { english: "Bamboo Forest", japanese: [["竹", "ちく"], ["林", "りん"]], tags: ["N5-4"] },
+    
+    { english: "Heavy Rain", japanese: [["大", "おお"], ["雨", "あめ"]], tags: ["N5-4"] },
+    { english: "Caterpillar", japanese: [["毛", "け"], ["虫", "むし"]], tags: ["N5-4"] },
+    { english: "Cavity", japanese: [["虫", "むし"], ["歯", "ば"]], tags: ["N5-4"] },
+    { english: "Insect", japanese: [["昆", "こん"], ["虫", "ちゅう"]], tags: ["N5-4"] },
+    // #endregion
+
     // #region Kanji N5-5
     { english: "Older", japanese: [["年", "とし"], ["上", "うえ"]], tags: ["N5-5"] },
     { english: "Good", japanese: [["上", "じょう"], ["手", "ず"]], tags: ["N5-5"] },
@@ -133,27 +181,133 @@ var wordList = [
     // #endregion
 
     // #region Kanji N5-10
-    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-10"] },
+    { english: "Brown Rice", japanese: [["玄", "げん"], ["米", "こめ"]], tags: ["N5-10"] },
+    { english: "White Rice", japanese: [["白", "はく"], ["米", "まい"]], tags: ["N5-10"] },
+    { english: "Black Tea", japanese: [["紅", "こう"], ["茶", "ちゃ"]], tags: ["N5-10"] },
+    { english: "Brown", japanese: [["茶", "ちゃ"], ["色", "いろ"]], tags: ["N5-10"] },
+    
+    { english: "Milk", japanese: [["牛", "ぎゅう"], ["乳", "にゅう"]], tags: ["N5-10"] },
+    { english: "Wagyu", japanese: [["和", "わ"], ["牛", "ぎゅう"]], tags: ["N5-10"] },
+    { english: "Beef", japanese: [["牛", "ぎゅう"], ["肉", "にく"]], tags: ["N5-10"] },
+    { english: "Yakiniku", japanese: [["焼", "やき"], ["肉", "にく"]], tags: ["N5-10"] },
+    { english: "Chicken Meat", japanese: [["鶏", "とり"], ["肉", "にく"]], tags: ["N5-10"] },
+    
+    { english: "Grilled Fish", japanese: [["焼", "やき"], ["魚", "ざかな"]], tags: ["N5-10"] },
+    { english: "Fish Market", japanese: [["魚", "うお"], ["市", "いち"], ["場", "ば"]], tags: ["N5-10"] },
+    { english: "Mermaid", japanese: [["人", "にん"], ["魚", "ぎょ"]], tags: ["N5-10"] },
+    { english: "Goldfish", japanese: [["金", "きん"], ["魚", "ぎょ"]], tags: ["N5-10"] },
+    { english: "Ark Shell (Red)", japanese: [["赤", "あか"], ["貝", "がい"]], tags: ["N5-10"] },
+    { english: "Seashell", japanese: [["貝", "かい"], ["殻", "がら"]], tags: ["N5-10"] },
+    
+    { english: "Favorite Food", japanese: [["大", "だい"], ["好", "こう"], ["物", "ぶつ"]], tags: ["N5-10"] },
+    { english: "Shopping", japanese: [["買い", "かい"], ["物", "もの"]], tags: ["N5-10"] },
+    { english: "Food", japanese: [["食べ", "たべ"], ["物", "もの"]], tags: ["N5-10"] },
+    { english: "Price", japanese: [["物", "ぶっ"], ["価", "か"]], tags: ["N5-10"] },
     // #endregion
 
     // #region Kanji N5-11
-    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-11"] },
+    { english: "Time", japanese: [["時", "じ"], ["間", "かん"]], tags: ["N5-11"] },
+    { english: "Daytime", japanese: [["昼", "ひる"], ["間", "ま"]], tags: ["N5-11"] },
+    { english: "Fellow", japanese: [["仲", "なか"], ["間", "ま"]], tags: ["N5-11"] },
+    { english: "Period", japanese: [["期", "き"], ["間", "かん"]], tags: ["N5-11"] },
+    
+    { english: "Half a Year", japanese: [["半", "はん"], ["年", "とし"]], tags: ["N5-11"] },
+    { english: "Half", japanese: [["半", "はん"], ["分", "ぶん"]], tags: ["N5-11"] },
+    
+    { english: "What Hour", japanese: [["何", "なん"], ["時", "じ"]], tags: ["N5-11"] },
+    { english: "What Day of the Week", japanese: [["何", "なん"], ["曜", "よう"], ["日", "び"]], tags: ["N5-11"] },
+    
+    { english: "Dinner", japanese: [["夕", "ゆう"], ["食", "しょく"]], tags: ["N5-11"] },
+    { english: "Evening", japanese: [["夕", "ゆう"], ["方", "がた"]], tags: ["N5-11"] },
+    { english: "Tohoku Region", japanese: [["東", "とう"], ["北", "ほく"], ["地", "ち"], ["方", "ほう"]], tags: ["N5-11"] },
+    { english: "How to Read", japanese: [["読み", "よみ"], ["方", "かた"]], tags: ["N5-11"] },
+    { english: "How to Write", japanese: [["書き", "かき"], ["方", "かた"]], tags: ["N5-11"] },
+    { english: "Method", japanese: [["方", "ほう"], ["法", "ほう"]], tags: ["N5-11"] },
+    { english: "Direction", japanese: [["方", "ほう"], ["向", "こう"]], tags: ["N5-11"] },
     // #endregion
     
     // #region Kanji N5-12
-    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-12"] },
+    { english: "Cedar Forest", japanese: [["杉", "すぎ"], ["林", "ばやし"]], tags: ["N5-12"] },
+    { english: "Mountain Forest", japanese: [["山", "さん"], ["林", "りん"]], tags: ["N5-12"] },
+    { english: "Forest", japanese: [["森", "しん"], ["林", "りん"]], tags: ["N5-12"] },
+    
+    { english: "Fields", japanese: [["田", "た"], ["畑", "はた"]], tags: ["N5-12"] },
+    { english: "Rocky Mountain", japanese: [["岩", "いわ"], ["山", "やま"]], tags: ["N5-12"] },
+    { english: "Lava", japanese: [["溶", "よう"], ["岩", "がん"]], tags: ["N5-12"] },
+    
+    { english: "Sound Quality", japanese: [["音", "ね"], ["色", "いろ"]], tags: ["N5-12"] },
+    
+    { english: "Dawn", japanese: [["明け", "あけ"], ["方", "がた"]], tags: ["N5-12"] },
+    { english: "Explanation", japanese: [["説", "せつ"], ["明", "めい"]], tags: ["N5-12"] },
+    { english: "Light and Dark", japanese: [["明", "めい"], ["暗", "あん"]], tags: ["N5-12"] },
+    { english: "Memorization", japanese: [["暗", "あん"], ["記", "き"]], tags: ["N5-12"] },
+    { english: "Mental Arithmetic", japanese: [["暗", "あん"], ["算", "ざん"]], tags: ["N5-12"] },
     // #endregion
     
     // #region Kanji N5-13
-    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-13"] },
+    { english: "Words", japanese: [["言", "こと"], ["葉", "ば"]], tags: ["N5-13"] },
+    { english: "Dialect", japanese: [["方", "ほう"], ["言", "げん"]], tags: ["N5-13"] },
+    { english: "Message", japanese: [["伝", "でん"], ["言", "ごん"]], tags: ["N5-13"] },
+    { english: "Dictionary", japanese: [["辞", "じ"], ["書", "しょ"]], tags: ["N5-13"] },
+    { english: "Calligraphy (Artistic)", japanese: [["書", "しょ"], ["道", "どう"]], tags: ["N5-13"] },
+    
+    { english: "Reading", japanese: [["読", "どく"], ["書", "しょ"]], tags: ["N5-13"] },
+    { english: "Reading Aloud", japanese: [["音", "おん"], ["読", "どく"]], tags: ["N5-13"] },
+    { english: "Phone", japanese: [["電", "でん"], ["話", "わ"]], tags: ["N5-13"] },
+    { english: "Sign Language", japanese: [["手", "しゅ"], ["話", "わ"]], tags: ["N5-13"] },
+    
+    { english: "Meal", japanese: [["食", "しょく"], ["事", "じ"]], tags: ["N5-13"] },
+    { english: "Cafeteria", japanese: [["食", "しょく"], ["堂", "どう"]], tags: ["N5-13"] },
+    { english: "Restaurant", japanese: [["飲", "いん"], ["食", "しょく"], ["店", "てん"]], tags: ["N5-13"] },
+    
+    { english: "Buying and Selling", japanese: [["売", "ばい"], ["買", "ばい"]], tags: ["N5-13"] },
     // #endregion
     
     // #region Kanji N5-14
-    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-14"] },
+    { english: "Downtown", japanese: [["下", "した"], ["町", "まち"]], tags: ["N5-14"] },
+    { english: "Mayor", japanese: [["町", "ちょう"], ["長", "ちょう"]], tags: ["N5-14"] },
+    { english: "In Town", japanese: [["町", "ちょう"], ["内", "ない"]], tags: ["N5-14"] },
+    { english: "Horyu-ji", japanese: [["法", "ほう"], ["隆", "りゅう"], ["寺", "じ"]], tags: ["N5-14"] },
+    
+    { english: "Electricity", japanese: [["電", "でん"], ["気", "き"]], tags: ["N5-14"] },
+    { english: "Train", japanese: [["電", "でん"], ["車", "しゃ"]], tags: ["N5-14"] },
+    { english: "Electric Power", japanese: [["電", "でん"], ["力", "りょく"]], tags: ["N5-14"] },
+    { english: "Wheelchair", japanese: [["車", "くるま"], ["椅", "い"], ["子", "す"]], tags: ["N5-14"] },
+    { english: "Bicycle", japanese: [["自", "じ"], ["転", "てん"], ["車", "しゃ"]], tags: ["N5-14"] },
+    { english: "Inside the Car", japanese: [["車", "しゃ"], ["内", "ない"]], tags: ["N5-14"] },
+    
+    { english: "East Exit", japanese: [["東", "ひがし"], ["口", "ぐち"]], tags: ["N5-14"] },
+    { english: "Kanto Region", japanese: [["関", "かん"], ["東", "とう"], ["地", "ち"], ["方", "ほう"]], tags: ["N5-14"] },
+    { english: "West Exit", japanese: [["西", "にし"], ["口", "ぐち"]], tags: ["N5-14"] },
+    
+    { english: "South Exit", japanese: [["南", "みなみ"], ["口", "ぐち"]], tags: ["N5-14"] },
+    { english: "Southeast Asia", japanese: [["東", "とう"], ["南", "なん"], ["アジア", "あじあ"]], tags: ["N5-14"] },
+    { english: "Tropical", japanese: [["南", "なん"], ["国", "ごく"]], tags: ["N5-14"] },
+    { english: "North Exit", japanese: [["北", "きた"], ["口", "ぐち"]], tags: ["N5-14"] },
+    { english: "Northwest", japanese: [["北", "ほく"], ["西", "せい"]], tags: ["N5-14"] },
     // #endregion
     
     // #region Kanji N5-15
-    { english: "", japanese: [["", ""], ["", ""]], tags: ["N5-15"] },
+    { english: "New Year", japanese: [["新", "しん"], ["年", "ねん"]], tags: ["N5-15"] },
+    { english: "New Car", japanese: [["新", "しん"], ["車", "しゃ"]], tags: ["N5-15"] },
+    { english: "New Employee", japanese: [["新", "しん"], ["入", "にゅう"], ["社", "しゃ"], ["員", "いん"]], tags: ["N5-15"] },
+    { english: "Secondhand Book", japanese: [["古", "ふる"], ["本", "ほん"]], tags: ["N5-15"] },
+    { english: "Used Car", japanese: [["中", "ちゅう"], ["古", "こ"], ["車", "しゃ"]], tags: ["N5-15"] },
+    
+    { english: "For Many Years", japanese: [["長", "なが"], ["年", "ねん"]], tags: ["N5-15"] },
+    { english: "Company President", japanese: [["社", "しゃ"], ["長", "ちょう"]], tags: ["N5-15"] },
+    { english: "Eldest Daughter", japanese: [["長", "ちょう"], ["女", "じょ"]], tags: ["N5-15"] },
+    { english: "Safety", japanese: [["安", "あん"], ["全", "ぜん"]], tags: ["N5-15"] },
+    
+    { english: "A Large Number of", japanese: [["多", "た"], ["数", "すう"]], tags: ["N5-15"] },
+    { english: "Somewhat", japanese: [["多", "た"], ["少", "しょう"]], tags: ["N5-15"] },
+    { english: "Boy", japanese: [["少", "しょう"], ["年", "ねん"]], tags: ["N5-15"] },
+    { english: "Girl", japanese: [["少", "しょう"], ["女", "じょ"]], tags: ["N5-15"] },
+    { english: "A Small Number of", japanese: [["少", "しょう"], ["数", "すう"]], tags: ["N5-15"] },
+    
+    { english: "New Year's Day", japanese: [["元", "がん"], ["日", "じつ"]], tags: ["N5-15"] },
+    { english: "Fine, Well", japanese: [["元", "げん"], ["気", "き"]], tags: ["N5-15"] },
+    { english: "Feeling (Mood)", japanese: [["気", "き"], ["分", "ぶん"]], tags: ["N5-15"] },
     // #endregion
 
     // #region Kanji N4-1
@@ -586,7 +740,7 @@ var wordList = [
     { english: "Culture", japanese: [["文", "ぶん"], ["化", "か"]] },
     { english: "Chemical", japanese: [["化", "か"], ["学", "がく"]] },
     { english: "Fossil", japanese: [["化", "か"], ["石", "せき"]] },
-    { english: "Change", japanese: [["変", "へん"], ["化", "か"]] },
+    { english: "Change (Natural)", japanese: [["変", "へん"], ["化", "か"]] },
     { english: "Makeup", japanese: [["化", "け"], ["粧", "しょう"]] },
     { english: "Cosmetics", japanese: [["化", "け"], ["粧", "しょう"], ["品", "ひん"]] },
     
@@ -824,14 +978,14 @@ var wordList = [
 
     // #region Kanji N4-9
     { english: "Motion, Exercise", japanese: [["運", "うん"], ["動", "どう"]], tags: ["N4-9"] },
-    { english: "Driver", japanese: [["運", "うん"], ["転", "てん"], ["者", "しゃ"]], tags: ["N4-9"] },
+    { english: "Person Driving", japanese: [["運", "うん"], ["転", "てん"], ["者", "しゃ"]], tags: ["N4-9"] },
     { english: "Animal", japanese: [["動", "どう"], ["物", "ぶつ"]], tags: ["N4-9"] },
     { english: "Operation", japanese: [["動", "どう"], ["作", "さ"]], tags: ["N4-9"] },
     
     { english: "Practice", japanese: [["練", "れん"], ["習", "しゅう"]], tags: ["N4-9"] },
     { english: "Training", japanese: [["訓", "くん"], ["練", "れん"]], tags: ["N4-9"] },
     { english: "Learning", japanese: [["学", "がく"], ["習", "しゅう"]], tags: ["N4-9"] },
-    { english: "Calligraphy", japanese: [["習", "しゅう"], ["字", "じ"]], tags: ["N4-9"] },
+    { english: "Calligraphy (Practical)", japanese: [["習", "しゅう"], ["字", "じ"]], tags: ["N4-9"] },
     { english: "Preparation", japanese: [["予", "よ"], ["習", "しゅう"]], tags: ["N4-9"] },
     { english: "Habits", japanese: [["習", "しゅう"], ["慣", "かん"]], tags: ["N4-9"] },
     { english: "Evacuation Drills", japanese: [["避", "ひ"], ["難", "なん"], ["訓", "くん"], ["練", "れん"]], tags: ["N4-9"] },
@@ -905,5 +1059,79 @@ var wordList = [
     { english: "", japanese: [["", ""], ["", ""]], tags: ["N4-9"] },
     // #endregion
 
-    // { english: "", japanese: [["", ""], ["", ""]], tags: [""] },
+    // #region Unlearned (N5)
+    { english: "Bath", japanese: [["風", "ふ"], ["呂", "ろ"]], tags: ["N5"] },
+
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N5"] },
+    // #endregion
+
+    // #region Unlearned (N4)
+    { english: "Freedom", japanese: [["自", "じ"], ["由", "ゆう"]], tags: ["N4"] },
+    { english: "Economics", japanese: [["経", "けい"], ["済", "ざい"]], tags: ["N4"] },
+    { english: "War", japanese: [["戦", "せん"], ["争", "そう"]], tags: ["N4"] },
+    { english: "Easy", japanese: [["簡", "かん"], ["単", "たん"]], tags: ["N4"] },
+    { english: "Promise, Obligation", japanese: [["約", "やく"], ["束", "そく"]], tags: ["N4"] },
+    { english: "Reservation", japanese: [["予", "よ"], ["約", "やく"]], tags: ["N4"] },
+    { english: "Schedule", japanese: [["予", "よ"], ["定", "てい"]], tags: ["N4"] },
+    { english: "Failure", japanese: [["失", "しっ"], ["敗", "ぱい"]], tags: ["N4"] },
+    { english: "Era", japanese: [["時", "じ"], ["代", "だい"]], tags: ["N4"] },
+
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N4"] },
+    // #endregion
+
+    // #region Unlearned (N3)
+    { english: "Peace", japanese: [["平", "へい"], ["和", "わ"]], tags: ["N3"] },
+    { english: "Living Room", japanese: [["居", "い"], ["間", "ま"]], tags: ["N3"] },
+    { english: "Future (Distant)", japanese: [["未", "み"], ["来", "らい"]], tags: ["N3"] },
+    { english: "Management", japanese: [["経", "けい"], ["営", "えい"]], tags: ["N3"] },
+    { english: "Experience", japanese: [["経", "けい"], ["験", "けん"]], tags: ["N3"] },
+    { english: "Via (by way of)", japanese: [["経", "けい"], ["由", "ゆ"]], tags: ["N3"] },
+    { english: "Change (Alternation)", japanese: [["変", "へん"], ["更", "こう"]], tags: ["N3"] },
+    { english: "Expert, Doctor", japanese: [["博", "はか"], ["士", "せ"]], tags: ["N3"] },
+    { english: "Museum", japanese: [["博", "はく"], ["物", "ぶつ"], ["館", "かん"]], tags: ["N3"] },
+    { english: "Major Subject", japanese: [["専", "せん"], ["攻", "こう"]], tags: ["N3"] },
+    { english: "Possible", japanese: [["可", "か"], ["能", "のう"]], tags: ["N3"] },
+    { english: "Permission", japanese: [["許", "きょ"], ["可", "か"]], tags: ["N3"] },
+    { english: "License", japanese: [["免", "めん"], ["許", "きょ"]], tags: ["N3"] },
+    { english: "Independence", japanese: [["独", "どく"], ["立", "りつ"]], tags: ["N3"] },
+    { english: "Unique, Distinctive", japanese: [["独", "どく"], ["特", "とく"]], tags: ["N3"] },
+    { english: "Competition", japanese: [["競", "きょう"], ["争", "そう"]], tags: ["N3"] },
+    { english: "Stability", japanese: [["安", "あん"], ["定", "てい"]], tags: ["N3"] },
+    { english: "Capital", japanese: [["首", "しゅ"], ["都", "と"]], tags: ["N3"] },
+    { english: "Scholar", japanese: [["学", "がく"], ["者", "しゃ"]], tags: ["N3"] },
+    { english: "Central", japanese: [["中", "ちゅう"], ["央", "おう"]], tags: ["N3"] },
+    { english: "Weapon", japanese: [["武", "ぶ"], ["器", "き"]], tags: ["N3"] },
+    { english: "Salary", japanese: [["給", "きゅう"], ["料", "りょう"]], tags: ["N3"] },
+    { english: "Present Day (Era)", japanese: [["現", "げん"], ["代", "だい"]], tags: ["N3"] },
+    { english: "Eternity", japanese: [["永", "えい"], ["遠", "えん"]], tags: ["N3"] },
+
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3"] },
+    // #endregion
+
+    // #region Unlearned (N2)
+    { english: "Weekdays", japanese: [["平", "へい"], ["日", "じつ"]], tags: ["N2"] },
+    { english: "All at Once", japanese: [["一", "いっ"], ["斉", "せい"]], tags: ["N2"] },
+    { english: "Horse Racing", japanese: [["競", "けい"], ["馬", "ば"]], tags: ["N2"] },
+    { english: "Full Name", japanese: [["氏", "し"], ["名", "めい"]], tags: ["N2"] },
+    { english: "Urgent", japanese: [["至", "し"], ["急", "きゅう"]], tags: ["N2"] },
+    { english: "Storm Shutter", japanese: [["雨", "あま"], ["戸", "ど"]], tags: ["N2"] },
+    { english: "Size (Dimensions)", japanese: [["寸", "すん"], ["法", "ぽう"]], tags: ["N2"] },
+    { english: "Tools (Specialized)", japanese: [["器", "き"], ["具", "ぐ"]], tags: ["N2"] },
+    { english: "Negligence", japanese: [["過", "か"], ["失", "しつ"]], tags: ["N2"] },
+    { english: "Compensation (Broad)", japanese: [["給", "きゅう"], ["与", "よ"]], tags: ["N2"] },
+
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N2"] },
+    // #endregion
+
+    // #region Unlearned (N1)
+    { english: "Peer", japanese: [["同", "どう"], ["士", "し"]], tags: ["N1"] },
+    { english: "Monopoly", japanese: [["独", "どく"], ["占", "せん"]], tags: ["N1"] },
+    { english: "Unique, Original", japanese: [["独", "どく"], ["自", "じ"]], tags: ["N1"] },
+    { english: "Tactics, Strategy", japanese: [["作", "さく"], ["戦", "せん"]], tags: ["N1"] },
+    { english: "Superior (Work)", japanese: [["上", "じょう"], ["司", "し"]], tags: ["N1"] },
+    { english: "Organ", japanese: [["器", "き"], ["官", "かん"]], tags: ["N1"] },
+    { english: "Generation", japanese: [["世", "せ"], ["代", "だい"]], tags: ["N1"] },
+
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N1"] },
+    // #endregion
 ];
