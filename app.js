@@ -24,3 +24,4 @@ var store = localStorage.store ? JSON.parse(localStorage.store) : {
 dom.search.addEventListener("input", drawList);
 loadStatuses();
 drawList();
+document.body.style = "opacity: 1;"

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nion</title>
+    <style>body { opacity: 0; transition: .3s opacity ease-in-out; }</style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -91,17 +92,19 @@
                 </div>
                 <div class="types-filters w-20">
                     <div class="types-filters-title">Types</div>
-                    <div class="filter pointer" onclick="toggleFilter('Academic', this)">Academic</div>
-                    <div class="filter pointer" onclick="toggleFilter('Animals', this)">Animals</div>
-                    <div class="filter pointer" onclick="toggleFilter('Body', this)">Body</div>
-                    <div class="filter pointer" onclick="toggleFilter('Elements', this)">Elements</div>
-                    <div class="filter pointer" onclick="toggleFilter('Measures', this)">Measures</div>
-                    <div class="filter pointer" onclick="toggleFilter('Movement', this)">Movement</div>
-                    <div class="filter pointer" onclick="toggleFilter('Objects', this)">Objects</div>
-                    <div class="filter pointer" onclick="toggleFilter('People', this)">People</div>
-                    <div class="filter pointer" onclick="toggleFilter('Places', this)">Places</div>
-                    <div class="filter pointer" onclick="toggleFilter('Time', this)">Time</div>
-                    <div class="filter pointer" onclick="toggleFilter('Weather', this)">Weather</div>
+                    <div class="filter-list scroll-20-10">
+                        <div class="filter pointer" onclick="toggleFilter('Academic', this)">Academic</div>
+                        <div class="filter pointer" onclick="toggleFilter('Animals', this)">Animals</div>
+                        <div class="filter pointer" onclick="toggleFilter('Body', this)">Body</div>
+                        <div class="filter pointer" onclick="toggleFilter('Elements', this)">Elements</div>
+                        <div class="filter pointer" onclick="toggleFilter('Measures', this)">Measures</div>
+                        <div class="filter pointer" onclick="toggleFilter('Movement', this)">Movement</div>
+                        <div class="filter pointer" onclick="toggleFilter('Objects', this)">Objects</div>
+                        <div class="filter pointer" onclick="toggleFilter('People', this)">People</div>
+                        <div class="filter pointer" onclick="toggleFilter('Places', this)">Places</div>
+                        <div class="filter pointer" onclick="toggleFilter('Time', this)">Time</div>
+                        <div class="filter pointer" onclick="toggleFilter('Weather', this)">Weather</div>    
+                    </div>
                 </div>
                 <div class="status-filters w-20">
                     <div class="status-filters-title">Status</div>
