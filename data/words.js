@@ -1064,6 +1064,8 @@ var wordList = [
     { english: "Wallet", japanese: [["財", "さい"], ["布", "ふ"]], tags: ["N5"] },
     { english: "Post Office", japanese: [["郵", "ゆう"], ["便", "びん"], ["局", "きょく"]], tags: ["N5"] },
     { english: "Class", japanese: [["授", "じゅ"], ["業", "ぎょう"]], tags: ["N5"] },
+    { english: "Work, Job", japanese: [["仕", "し"], ["事", "ごと"]], tags: ["N5"] },
+    { english: "Fine, Nice", japanese: [["結", "けっ"], ["構", "こう"]], tags: ["N5"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N5"] },
     // #endregion
@@ -1091,6 +1093,9 @@ var wordList = [
     { english: "Next Time", japanese: [["今", "こん"], ["度", "ど"]], tags: ["N4"] },
     { english: "Technology", japanese: [["技", "ぎ"], ["術", "じゅつ"]], tags: ["N4"] },
     { english: "Meeting Room", japanese: [["会", "かい"], ["議", "ぎ"], ["室", "しつ"]], tags: ["N4"] },
+    { english: "Accident", japanese: [["事", "じ"], ["故", "こ"]], tags: ["N4"] },
+    { english: "Way, Method", japanese: [["仕", "し"], ["方", "かた"]], tags: ["N4"] },
+    { english: "Citizen", japanese: [["市", "し"], ["民", "みん"]], tags: ["N4"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N4"] },
     // #endregion
@@ -1161,6 +1166,20 @@ var wordList = [
     { english: "Solution, Settlement", japanese: [["解", "かい"], ["決", "けつ"]], tags: ["N3"] },
     { english: "Viewpoint (Opinion)", japanese: [["見", "けん"], ["解", "かい"]], tags: ["N3"] },
     { english: "Broadcast", japanese: [["放", "ほう"], ["送", "そう"]], tags: ["N3"] },
+    { english: "Botanical Garden", japanese: [["植", "しょく"], ["物", "ぶつ"], ["園", "えん"]], tags: ["N3"] },
+    { english: "Resident", japanese: [["住", "じゅう"], ["民", "みん"]], tags: ["N3"] },
+    { english: "Training, Drilling", japanese: [["訓", "くん"], ["練", "れん"]], tags: ["N3"] },
+    { english: "Correspondence", japanese: [["通", "つう"], ["信", "しん"]], tags: ["N3"] },
+    { english: "Article, News Story", japanese: [["記", "き"], ["事", "じ"]], tags: ["N3"] },
+    { english: "Reporter", japanese: [["記", "き"], ["者", "しゃ"]], tags: ["N3"] },
+    { english: "Earth (Globe)", japanese: [["地", "ち"], ["球", "きゅう"]], tags: ["N3"] },
+    { english: "Savings", japanese: [["貯", "ちょ"], ["金", "きん"]], tags: ["N3"] },
+    { english: "Scene (Crime, Accident)", japanese: [["現", "げん"], ["場", "ば"]], tags: ["N3"] },
+    { english: "Delivery", japanese: [["配", "はい"], ["達", "たつ"]], tags: ["N3"] },
+    { english: "Worry, Concern", japanese: [["心", "しん"], ["配", "ぱい"]], tags: ["N3"] },
+    { english: "Attendance", japanese: [["出", "しゅっ"], ["席", "せき"]], tags: ["N3"] },
+    { english: "Absence (Non-Attendance)", japanese: [["欠", "けっ"], ["席", "せき"]], tags: ["N3"] },
+    { english: "Twins", japanese: [["双", "ふた"], ["子", "ご"]], tags: ["N3"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3"] },
     // #endregion
@@ -1219,6 +1238,9 @@ var wordList = [
     { english: "Release, Liberation", japanese: [["解", "かい"], ["放", "ほう"]], tags: ["N2"] },
     { english: "Triangle", japanese: [["三", "さん"], ["角", "かく"]], tags: ["N2"] },
     { english: "Square", japanese: [["四", "し"], ["角", "かく"]], tags: ["N2"] },
+    { english: "Picture Book", japanese: [["図", "ず"], ["鑑", "かん"]], tags: ["N2"] },
+    { english: "Dissolution, Break Up (Crowd)", japanese: [["解", "かい"], ["散", "さん"]], tags: ["N2"] },
+    { english: "Light Bulb", japanese: [["電", "でん"], ["球", "きゅう"]], tags: ["N2"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N2"] },
     // #endregion
@@ -1281,6 +1303,12 @@ var wordList = [
     { english: "Joining", japanese: [["加", "か"], ["入", "にゅう"]], tags: ["N1"] },
     { english: "Manufacturing", japanese: [["加", "か"], ["工", "こう"]], tags: ["N1"] },
     { english: "Input, Deposit (Ballot)", japanese: [["投", "とう"], ["入", "にゅう"]], tags: ["N1"] },
+    { english: "Wages", japanese: [["賃", "ちん"], ["金", "ぎん"]], tags: ["N1"] },
+    { english: "Fare", japanese: [["運", "うん"], ["賃", "ちん"]], tags: ["N1"] },
+    { english: "Colony", japanese: [["植", "しょく"], ["民", "みん"], ["地", "ち"]], tags: ["N1"] },
+    { english: "Yearbook", japanese: [["年", "ねん"], ["鑑", "かん"]], tags: ["N1"] },
+    { english: "Evacuation, Take Refuge", japanese: [["避", "ひ"], ["難", "なん"]], tags: ["N1"] },
+    { english: "Self-Confidence", japanese: [["自", "じ"], ["信", "しん"]], tags: ["N1"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N1"] },
     // #endregion
