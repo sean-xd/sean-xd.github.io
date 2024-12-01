@@ -104,7 +104,7 @@ var wordList = [
     { english: "School", japanese: [["学", "がっ"], ["校", "こう"]], tags: ["N5-6"] },
     { english: "University", japanese: [["大", "だい"], ["学", "がく"]], tags: ["N5-6"] },
     { english: "Admission", japanese: [["入", "にゅう"], ["学", "がく"]], tags: ["N5-6"] },
-    { english: "Visit", japanese: [["見", "けん"], ["学", "がく"]], tags: ["N5-6"] },
+    { english: "Visit (School)", japanese: [["見", "けん"], ["学", "がく"]], tags: ["N5-6"] },
     { english: "Principal", japanese: [["校", "こう"], ["長", "ちょう"]], tags: ["N5-6"] },
     { english: "School Closure", japanese: [["休", "きゅう"], ["校", "こう"]], tags: ["N5-6"] },
     { english: "Transfer", japanese: [["転", "てん"], ["校", "こう"]], tags: ["N5-6"] },
@@ -365,7 +365,7 @@ var wordList = [
     { english: "New Year's Gift", japanese: [["お年", "おとし"], ["玉", "だま"]] },
     { english: "Juggling", japanese: [["お手", "おて"], ["玉", "だま"]] },
     
-    { english: "Hair", japanese: [["髪", "かみ"], ["の", "の"], ["毛", "け"]] },
+    { english: "Hair (on head)", japanese: [["髪", "かみ"], ["の", "の"], ["毛", "け"]] },
     { english: "Eyelashes", japanese: [["まつ", "まつ"], ["毛", "げ"]] },
     { english: "Eyebrows", japanese: [["眉", "まゆ"], ["毛", "げ"]] },
     { english: "Dog Hair", japanese: [["犬", "いぬ"], ["の", "の"], ["毛", "け"]] },
@@ -933,7 +933,7 @@ var wordList = [
     { english: "Accurrate", japanese: [["正", "せい"], ["確", "かく"]], tags: ["N4-8"] },
     { english: "Correct Answer", japanese: [["正", "せい"], ["解", "かい"]], tags: ["N4-8"] },
     { english: "New Year (First Month)", japanese: [["正", "しょう"], ["月", "がつ"]], tags: ["N4-8"] },
-    { english: "Shot Put", japanese: [["砲", "ほう"], ["丸", "がん"], ["投", "な"], ["げ", "げ"]], tags: ["N4-8"] },
+    { english: "Shot Put", japanese: [["砲", "ほう"], ["丸", "がん"], ["投げ", "なげ"]], tags: ["N4-8"] },
     
     { english: "Inconvenient", japanese: [["不", "ふ"], ["便", "べん"]], tags: ["N4-8"] },
     { english: "Anxiety", japanese: [["不", "ふ"], ["安", "あん"]], tags: ["N4-8"] },
@@ -1063,6 +1063,7 @@ var wordList = [
     { english: "Refrigerator", japanese: [["冷", "れい"], ["蔵", "ぞう"], ["庫", "こ"]], tags: ["N5"] },
     { english: "Wallet", japanese: [["財", "さい"], ["布", "ふ"]], tags: ["N5"] },
     { english: "Post Office", japanese: [["郵", "ゆう"], ["便", "びん"], ["局", "きょく"]], tags: ["N5"] },
+    { english: "Class", japanese: [["授", "じゅ"], ["業", "ぎょう"]], tags: ["N5"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N5"] },
     // #endregion
@@ -1089,6 +1090,7 @@ var wordList = [
     { english: "Both Sides", japanese: [["両", "りょう"], ["方", "ほう"]], tags: ["N4"] },
     { english: "Next Time", japanese: [["今", "こん"], ["度", "ど"]], tags: ["N4"] },
     { english: "Technology", japanese: [["技", "ぎ"], ["術", "じゅつ"]], tags: ["N4"] },
+    { english: "Meeting Room", japanese: [["会", "かい"], ["議", "ぎ"], ["室", "しつ"]], tags: ["N4"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N4"] },
     // #endregion
@@ -1150,6 +1152,15 @@ var wordList = [
     { english: "Popular (Trend)", japanese: [["流", "りゅう"], ["行", "こう"]], tags: ["N3"] },
     { english: "Obstacle", japanese: [["邪", "じゃ"], ["魔", "ま"]], tags: ["N3"] },
     { english: "Publishing", japanese: [["出", "しゅっ"], ["版", "ぱん"]], tags: ["N3"] },
+    { english: "The Arts", japanese: [["芸", "げい"], ["術", "じゅつ"]], tags: ["N3"] },
+    { english: "Ability, Faculty", japanese: [["能", "のう"], ["力", "りょく"]], tags: ["N3"] },
+    { english: "Fact", japanese: [["事", "じ"], ["実", "じつ"]], tags: ["N3"] },
+    { english: "Reality", japanese: [["現", "げん"], ["実", "じつ"]], tags: ["N3"] },
+    { english: "Participation, Entry", japanese: [["参", "さん"], ["加", "か"]], tags: ["N3"] },
+    { english: "Clear, Precise", japanese: [["明", "めい"], ["確", "かく"]], tags: ["N3"] },
+    { english: "Solution, Settlement", japanese: [["解", "かい"], ["決", "けつ"]], tags: ["N3"] },
+    { english: "Viewpoint (Opinion)", japanese: [["見", "けん"], ["解", "かい"]], tags: ["N3"] },
+    { english: "Broadcast", japanese: [["放", "ほう"], ["送", "そう"]], tags: ["N3"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3"] },
     // #endregion
@@ -1195,6 +1206,19 @@ var wordList = [
     { english: "High Quality, Luxury", japanese: [["高", "こう"], ["級", "きゅう"]], tags: ["N2"] },
     { english: "Area, Floor Space", japanese: [["面", "めん"], ["積", "せき"]], tags: ["N2"] },
     { english: "Violent, Rowdy", japanese: [["乱", "らん"], ["暴", "ぼう"]], tags: ["N2"] },
+    { english: "Literary Arts", japanese: [["文", "ぶん"], ["芸", "げい"]], tags: ["N2"] },
+    { english: "Industrial Arts, Crafts", japanese: [["工", "こう"], ["芸", "げい"]], tags: ["N2"] },
+    { english: "Performing Arts, Entertainment", japanese: [["芸", "げい"], ["能", "のう"]], tags: ["N2"] },
+    { english: "Real Ability", japanese: [["実", "じつ"], ["力", "りょく"]], tags: ["N2"] },
+    { english: "White Hair, Gray Hair", japanese: [["白", "しら"], ["髪", "が"]], tags: ["N2"] },
+    { english: "Attendance at Work", japanese: [["出", "しゅっ"], ["勤", "きん"]], tags: ["N2"] },
+    { english: "Salty", japanese: [["塩", "しお"], ["辛い", "からい"]], tags: ["N2"] },
+    { english: "Table Salt", japanese: [["食", "しょく"], ["塩", "えん"]], tags: ["N2"] },
+    { english: "The Classics (Works, Books)", japanese: [["古", "こ"], ["典", "てん"]], tags: ["N2"] },
+    { english: "Encyclopedia", japanese: [["百", "ひゃっ"], ["科", "か"], ["事", "じ"], ["典", "てん"]], tags: ["N2"] },
+    { english: "Release, Liberation", japanese: [["解", "かい"], ["放", "ほう"]], tags: ["N2"] },
+    { english: "Triangle", japanese: [["三", "さん"], ["角", "かく"]], tags: ["N2"] },
+    { english: "Square", japanese: [["四", "し"], ["角", "かく"]], tags: ["N2"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N2"] },
     // #endregion
@@ -1226,7 +1250,7 @@ var wordList = [
     { english: "Invalid", japanese: [["無", "む"], ["効", "こう"]], tags: ["N1"] },
     { english: "Cultural Assets", japanese: [["文", "ぶん"], ["化", "か"], ["財", "ざい"]], tags: ["N1"] },
     { english: "Public Corporation", japanese: [["公", "こう"], ["団", "だん"]], tags: ["N1"] },
-    { english: "Viewpoint", japanese: [["観", "かん"], ["点", "てん"]], tags: ["N1"] },
+    { english: "Viewpoint (Perspective)", japanese: [["観", "かん"], ["点", "てん"]], tags: ["N1"] },
     { english: "Balance, Compatibility", japanese: [["両", "りょう"], ["立", "りつ"]], tags: ["N1"] },
     { english: "Speak for", japanese: [["代", "だい"], ["弁", "べん"]], tags: ["N1"] },
     { english: "Sometimes, Occasionally", japanese: [["時", "とき"], ["折", "おり"]], tags: ["N1"] },
@@ -1251,6 +1275,12 @@ var wordList = [
     { english: "Violence", japanese: [["暴", "ぼう"], ["力", "りょく"]], tags: ["N1"] },
     { english: "Riot, Insurrection", japanese: [["暴", "ぼう"], ["動", "どう"]], tags: ["N1"] },
     { english: "Storm, Gale", japanese: [["暴", "ぼう"], ["風", "ふう"]], tags: ["N1"] },
+    { english: "Japanese Style", japanese: [["和", "わ"], ["風", "ふう"]], tags: ["N1"] },
+    { english: "Flattery", japanese: [["世", "せ"], ["辞", "じ"]], tags: ["N1"] },
+    { english: "Shopping District", japanese: [["商", "しょう"], ["店", "てん"], ["街", "まち"]], tags: ["N1"] },
+    { english: "Joining", japanese: [["加", "か"], ["入", "にゅう"]], tags: ["N1"] },
+    { english: "Manufacturing", japanese: [["加", "か"], ["工", "こう"]], tags: ["N1"] },
+    { english: "Input, Deposit (Ballot)", japanese: [["投", "とう"], ["入", "にゅう"]], tags: ["N1"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N1"] },
     // #endregion
