@@ -1096,6 +1096,7 @@ var wordList = [
     { english: "Accident", japanese: [["事", "じ"], ["故", "こ"]], tags: ["N4"] },
     { english: "Way, Method", japanese: [["仕", "し"], ["方", "かた"]], tags: ["N4"] },
     { english: "Citizen", japanese: [["市", "し"], ["民", "みん"]], tags: ["N4"] },
+    { english: "Novel", japanese: [["小", "しょう"], ["説", "せつ"]], tags: ["N4"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N4"] },
     // #endregion
@@ -1180,6 +1181,7 @@ var wordList = [
     { english: "Attendance", japanese: [["出", "しゅっ"], ["席", "せき"]], tags: ["N3"] },
     { english: "Absence (Non-Attendance)", japanese: [["欠", "けっ"], ["席", "せき"]], tags: ["N3"] },
     { english: "Twins", japanese: [["双", "ふた"], ["子", "ご"]], tags: ["N3"] },
+    { english: "Character, Personality", japanese: [["性", "せい"], ["格", "かく"]], tags: ["N3"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3"] },
     // #endregion
@@ -1241,6 +1243,9 @@ var wordList = [
     { english: "Picture Book", japanese: [["図", "ず"], ["鑑", "かん"]], tags: ["N2"] },
     { english: "Dissolution, Break Up (Crowd)", japanese: [["解", "かい"], ["散", "さん"]], tags: ["N2"] },
     { english: "Light Bulb", japanese: [["電", "でん"], ["球", "きゅう"]], tags: ["N2"] },
+    { english: "Autumn Leaves", japanese: [["紅", "こう"], ["葉", "よう"]], tags: ["N2"] },
+    { english: "List Price", japanese: [["定", "てい"], ["価", "か"]], tags: ["N2"] },
+    { english: "Gray", japanese: [["灰", "はい"], ["色", "いろ"]], tags: ["N2"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N2"] },
     // #endregion
@@ -1309,6 +1314,10 @@ var wordList = [
     { english: "Yearbook", japanese: [["年", "ねん"], ["鑑", "かん"]], tags: ["N1"] },
     { english: "Evacuation, Take Refuge", japanese: [["避", "ひ"], ["難", "なん"]], tags: ["N1"] },
     { english: "Self-Confidence", japanese: [["自", "じ"], ["信", "しん"]], tags: ["N1"] },
+    { english: "Blind Spot", japanese: [["盲", "もう"], ["点", "てん"]], tags: ["N1"] },
+    { english: "Introduction, Bringing In", japanese: [["導", "どう"], ["入", "にゅう"]], tags: ["N1"] },
+    { english: "Leadership, Initiative", japanese: [["主", "しゅ"], ["導", "どう"]], tags: ["N1"] },
+    { english: "Intellectual", japanese: [["知", "ち"], ["的", "てき"]], tags: ["N1"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N1"] },
     // #endregion
