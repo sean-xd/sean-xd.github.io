@@ -43,10 +43,15 @@ function componentListTemplate(kObj){
 }
 
 function componentTemplate(cObj){
-    var cDefinition = reduce(cObj.K, (str, e) => (str ? e ? [str, e].join(", ") : str : e), "");
+    var cDefinition = [], cReadings = [];
+    each(cObj.K, (cE, cK) => {
+        if(cE) cDefinition.push(cE);
+        if(cK && cK !== "_") cReadings.push(cK);
+    });
     return t("div", { class: "component-container" }, [
         t("div", { class: "component-kanji inline b-10" }, cObj._),
-        t("div", { class: "component-definition inline v-top c-green" }, cDefinition)
+        t("div", { class: "component-definition inline v-top c-green" }, cDefinition.join(", ")),
+        // t("div", { class: "component-readings" }, cReadings.concat(cObj.O).join(", "))
     ]);
 }
 

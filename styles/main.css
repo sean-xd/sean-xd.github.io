@@ -42,7 +42,7 @@ body { overflow-x: hidden; }
 #search { height: 60px; padding-left: 16px; z-index: 1; }
 
 .show-filters #list { height: 50% !important; }
-.show-filters .actions { height: 50%; }
+.show-filters #right .actions { height: 50%; }
 .show-filters .filters-title { background: rgb(200,200,200); color: rgb(10,10,10); }
 
 .lessons-filters, .types-filters, .status-filters { height: calc(100% - 60px); position: absolute; top: 0; }
