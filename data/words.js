@@ -51,7 +51,7 @@ var wordList = [
     
     { english: "Firepower", japanese: [["火", "か"], ["力", "りょく"]], tags: ["N5-3"] },
     { english: "Cooperation", japanese: [["協", "きょう"], ["力", "りょく"]], tags: ["N5-3"] },
-    { english: "Eyesight", japanese: [["視", "し"], ["力", "りょく"]], tags: ["N5-3"] },
+    { english: "Eyesight (Ability)", japanese: [["視", "し"], ["力", "りょく"]], tags: ["N5-3"] },
     { english: "Academic Ability", japanese: [["学", "がく"], ["力", "りょく"]], tags: ["N5-3"] },
     { english: "King", japanese: [["王", "おう"], ["様", "さま"]], tags: ["N5-3"] },
     // #endregion
@@ -1064,7 +1064,6 @@ var wordList = [
     { english: "Wallet", japanese: [["財", "さい"], ["布", "ふ"]], tags: ["N5"] },
     { english: "Post Office", japanese: [["郵", "ゆう"], ["便", "びん"], ["局", "きょく"]], tags: ["N5"] },
     { english: "Class", japanese: [["授", "じゅ"], ["業", "ぎょう"]], tags: ["N5"] },
-    { english: "Work, Job", japanese: [["仕", "し"], ["事", "ごと"]], tags: ["N5"] },
     { english: "Fine, Nice", japanese: [["結", "けっ"], ["構", "こう"]], tags: ["N5"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N5"] },
@@ -1119,7 +1118,6 @@ var wordList = [
     { english: "Unique, Distinctive", japanese: [["独", "どく"], ["特", "とく"]], tags: ["N3"] },
     { english: "Competition", japanese: [["競", "きょう"], ["争", "そう"]], tags: ["N3"] },
     { english: "Stability", japanese: [["安", "あん"], ["定", "てい"]], tags: ["N3"] },
-    { english: "Capital", japanese: [["首", "しゅ"], ["都", "と"]], tags: ["N3"] },
     { english: "Scholar", japanese: [["学", "がく"], ["者", "しゃ"]], tags: ["N3"] },
     { english: "Central", japanese: [["中", "ちゅう"], ["央", "おう"]], tags: ["N3"] },
     { english: "Weapon", japanese: [["武", "ぶ"], ["器", "き"]], tags: ["N3"] },
@@ -1246,6 +1244,7 @@ var wordList = [
     { english: "Autumn Leaves", japanese: [["紅", "こう"], ["葉", "よう"]], tags: ["N2"] },
     { english: "List Price", japanese: [["定", "てい"], ["価", "か"]], tags: ["N2"] },
     { english: "Gray", japanese: [["灰", "はい"], ["色", "いろ"]], tags: ["N2"] },
+    { english: "Magnet", japanese: [["磁", "じ"], ["石", "しゃく"]], tags: ["N2"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N2"] },
     // #endregion
@@ -1318,6 +1317,8 @@ var wordList = [
     { english: "Introduction, Bringing In", japanese: [["導", "どう"], ["入", "にゅう"]], tags: ["N1"] },
     { english: "Leadership, Initiative", japanese: [["主", "しゅ"], ["導", "どう"]], tags: ["N1"] },
     { english: "Intellectual", japanese: [["知", "ち"], ["的", "てき"]], tags: ["N1"] },
+    { english: "Eyesight, Vision (Sense)", japanese: [["視", "し"], ["覚", "かく"]], tags: ["N1"] },
+    { english: "Taste, Palate (Sense)", japanese: [["味", "み"], ["覚", "かく"]], tags: ["N1"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N1"] },
     // #endregion

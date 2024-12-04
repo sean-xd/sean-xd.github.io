@@ -1,12 +1,21 @@
+/* --- General --- */
+
 body { overflow-x: hidden; }
-#left, #right { transition: .3s all ease-in-out; }
+#left, #right, #grammar { transition: .3s all ease-in-out; }
 
-/* --- Left --- */
+#main { height: calc(100% - 60px); position: relative; }
 
-#left { left: -100%; }
-.open-kanji #left { transform: translate3d(100%, 0, 0); }
+.actions { box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2); display: flex; font-size: 14px; height: 60px; }
+.action { height: 60px; padding-top: 20px; }
+.open-grammar .action-kanji { background: rgb(10,10,10); }
+.open-grammar .action-grammar { background: black; }
 
-#single { height: calc(100% - 60px); position: relative; }
+/* --- Left (Single Kanji) --- */
+
+#left { left: -100%; opacity: 0; }
+.open-kanji #left { opacity: 1; transform: translate3d(100%, 0, 0); }
+
+#single { height: 100%; position: relative; }
 .single-left { padding: 16px 0 0 16px; }
 .single-right { padding: 16px 16px 0 0; }
 
@@ -17,47 +26,50 @@ body { overflow-x: hidden; }
 .status-button { padding: 6px 0; }
 .active-status.status-button { color: rgb(220,220,220); }
 
+.single-left-container { height: calc(100% - 231px); }
+
 .components-title { padding: 12px 0; }
-.component-container { height: 60px; margin-bottom: 12px; overflow: hidden; }
-.component-kanji { font-size: 2em; padding: 4px 12px 0 6px; }
-.component-definition { padding-top: 6px; width: calc(100% - 60px); }
+.component-container { margin-bottom: 12px; min-height: 54px; padding-left: 56px; }
+.component-kanji { font-size: 2em; padding: 2px 12px 6px 12px; }
+.component-definition { padding: 6px 0 0 6px; width: calc(100% - 60px); }
+.component-readings { padding-left: 6px; }
 
 .kunyomi, .onyomi, .words { padding: 0 0 12px 12px; }
 .reading-title, .word { padding-bottom: 12px; }
 .reading-hiragana, .reading-kanji { font-size: 1.25em; padding-right: 6px; }
 .reading-definition { padding-top: 2px; }
+.word .reading-hiragana { font-size: 14px; }
 
-/* --- Right --- */
+/* --- Right (Kanji List) --- */
 
-.open-kanji #right { transform: translate3d(100%, 0, 0); }
+#right { opacity: 1; overflow: hidden; }
+.open-kanji #right { opacity: 0; transform: translate3d(100%, 0, 0); }
+.open-grammar #right { opacity: 0; transform: translate3d(-100%, 0, 0); }
 
-#list { height: calc(100% - 60px); padding-top: 16px; transition: .3s height ease-in-out; }
+#list { padding-top: 16px; transition: .3s height ease-in-out; }
 #list .kanji { font-size: 3em; padding-bottom: 8px; }
 
-.actions { font-size: 14px; height: 60px; overflow: hidden; transition: .3s height ease-in-out; }
-
-#filters { height: 50vh; }
-.filters-title { height: 60px; padding-top: 20px; z-index: 1; }
-
-#search { height: 60px; padding-left: 16px; z-index: 1; }
-
+#filters { font-size: 14px; top: calc(100vh - 30px); transition: .3s transform ease-in-out; }
 .show-filters #list { height: 50% !important; }
-.show-filters #right .actions { height: 50%; }
-.show-filters .filters-title { background: rgb(200,200,200); color: rgb(10,10,10); }
+.show-filters #filters { transform: translate3d(0, -50vh, 0); }
+.show-filters .action-filter { background: rgb(200,200,200); color: rgb(10,10,10); }
 
-.lessons-filters, .types-filters, .status-filters { height: calc(100% - 60px); position: absolute; top: 0; }
+#search { font-size: 1em; height: 50px; padding-left: 16px; }
+.filter-container { height: calc(100% - 50px); padding: 12px 0 0 16px; position: absolute; top: 50px; }
 .lessons-filters { left: 0; }
 .types-filters { left: 20%; }
 .status-filters { left: 40%; }
 
-.lessons-filters-title, .types-filters-title, .status-filters-title { height: 40px; padding-top: 12px; }
-
-.filter-list { height: calc(100% - 40px); padding-bottom: 12px; }
-
+.filter-title { height: 30px; }
+.filter-list { height: calc(100% - 30px); padding-bottom: 12px; }
 .filter { color: rgb(100,100,100); padding: 6px 0; }
 .filter-selected.filter { color: rgb(220,220,220); }
 
+/* --- Grammar View --- */
+
+#grammar { right: -100%; opacity: 0; }
+.open-grammar #grammar { opacity: 1; transform: translate3d(-100%, 0, 0); }
+
 @media (min-width: 600px) {
     #list .kanji { font-size: 4em; }
-    .filter-list { padding-left: 10px; }
 }

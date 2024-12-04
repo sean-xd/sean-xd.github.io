@@ -17,7 +17,7 @@
 
         /* --- Scripts --- */
 
-        var scripts = ["util/util", "util/dom", "data/kanji", "data/words", "services/actions", "services/templates", "app"];
+        var scripts = ["util/util", "util/dom", "data/kanji", "data/words", "services/templates", "services/actions", "app"];
         var loadScripts = wait(scripts.length, contents => scripts.forEach(name => appendHead("script", contents[name])));
         scripts.forEach(name => loadFile("script", name));
 
@@ -49,20 +49,16 @@
     </script>
 </head>
 <body class="b-20 c-220">
-    <div id="left" class="abs-tl h-100 w-100 b-10">
-        <div id="single"></div>
-        <div class="actions b-20 text-center">
-            <div class="filters-title pointer w-20" onclick="selectKanji()">List</div>
+    <div id="main" class="w-100">
+        <div id="left" class="abs-tl h-100 w-100 b-10">
+            <div id="single"></div>
         </div>
-    </div>
-    <div id="right" class="abs-tr h-100 w-100 b-20">
-        <div id="list" class="w-100 scroll-10-20"></div>
-        <div class="actions abs-bl w-100 b-10">
-            <div id="filters" class="w-100 text-center">
-                <div class="filters-title w-20 abs-bl pointer b-10" onclick="toggleFilter()">Filter</div>
-                <input id="search" class="abs-br w-80 b-10 c-200" placeholder="Search Kanji">
-                <div class="lessons-filters w-20">
-                    <div class="lessons-filters-title">Lessons</div>
+        <div id="right" class="abs-tr h-100 w-100 b-20">
+            <div id="list" class="h-100 w-100 scroll-10-20"></div>
+            <div id="filters" class="abs-tl h-50 w-100 b-10">
+                <input id="search" class="w-100 b-0 c-200" placeholder="Search Kanji">
+                <div class="filter-container lessons-filters w-20">
+                    <div class="filter-title">Lessons</div>
                     <div class="filter-list scroll-20-10">
                         <div class="filter pointer" onclick="toggleFilter('N5-1', this)">N5-1</div>
                         <div class="filter pointer" onclick="toggleFilter('N5-2', this)">N5-2</div>
@@ -94,8 +90,8 @@
                         <div class="filter pointer" onclick="toggleFilter('N1', this)">N1</div>
                     </div>
                 </div>
-                <div class="types-filters w-20">
-                    <div class="types-filters-title">Types</div>
+                <div class="filter-container types-filters w-20">
+                    <div class="filter-title">Types</div>
                     <div class="filter-list scroll-20-10">
                         <div class="filter pointer" onclick="toggleFilter('Academic', this)">Academic</div>
                         <div class="filter pointer" onclick="toggleFilter('Animals', this)">Animals</div>
@@ -110,14 +106,23 @@
                         <div class="filter pointer" onclick="toggleFilter('Weather', this)">Weather</div>    
                     </div>
                 </div>
-                <div class="status-filters w-20">
-                    <div class="status-filters-title">Status</div>
-                    <div class="filter pointer" onclick="toggleFilter('Known', this)">Known</div>
-                    <div class="filter pointer" onclick="toggleFilter('Learning', this)">Learning</div>
-                    <div class="filter pointer" onclick="toggleFilter('Unknown', this)">Unknown</div>
+                <div class="filter-container status-filters w-20">
+                    <div class="filter-title">Status</div>
+                    <div class="filter-list scroll-20-10">
+                        <div class="filter pointer" onclick="toggleFilter('Known', this)">Known</div>
+                        <div class="filter pointer" onclick="toggleFilter('Learning', this)">Learning</div>
+                        <div class="filter pointer" onclick="toggleFilter('Unknown', this)">Unknown</div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div id="grammar" class="abs-tr h-100 w-100 b-10">
+
+        </div>
+    </div>
+    <div class="actions rel w-100 b-10 text-center">
+        <div class="action action-kanji h-100 w-20 pointer b-0" onclick="selectKanji()">Kanji</div>
+        <div class="action action-grammar h-100 w-20 pointer b-10" onclick="openGrammarView()">Grammar</div>
     </div>
 </body>
 </html>

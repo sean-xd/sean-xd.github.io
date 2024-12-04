@@ -24,7 +24,10 @@ function singleKanjiTemplate(kStr){
                 t("div", { class: `status-button pointer ${isIn(kObj.T || [], "Learning") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Learning')` }, "Learning"),
                 t("div", { class: `status-button pointer ${isIn(kObj.T || [], "Unknown") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Unknown')` }, "Unknown"),
             ]),
-            componentListTemplate(kObj)
+            t("div", { class: "single-left-container scroll-20-10" }, [
+                componentListTemplate(kObj),
+                compositionListTemplate(kObj)
+            ])
         ]),
         t("div", { class: "single-right abs-tr h-100 w-50 scroll-20-10" }, [
             kunyomiTemplate(kObj),
@@ -37,21 +40,31 @@ function singleKanjiTemplate(kStr){
 function componentListTemplate(kObj){
     return t("div", { class: "components" }, !kObj.C ? undefined : kObj.C.reduce((result, c) => {
         var cObj = kanji.filter(e => e._ === c)[0];
-        cObj ?  result.push(componentTemplate(cObj)) : console.log({ kObj, c });
+        cObj ?  result.push(componentTemplate(cObj, kObj)) : console.log({ kObj, c });
         return result;
     }, [t("div", { class: "components-title"}, "Components")]));
 }
 
-function componentTemplate(cObj){
+function compositionListTemplate(kObj){
+    var compositions = kanji.filter(pObj => isIn(pObj.C, kObj._));
+    if(compositions.length) compositions = [t("div", { class: "components-title" }, "Compositions")].concat(compositions.map(cObj => componentTemplate(cObj, kObj)));
+    return t("div", { class: "compositions" }, compositions);
+}
+
+function componentTemplate(cObj, kObj){
     var cDefinition = [], cReadings = [];
     each(cObj.K, (cE, cK) => {
         if(cE) cDefinition.push(cE);
-        if(cK && cK !== "_") cReadings.push(cK);
+        if(cK && cK !== "_") cReadings.push(cK.replace("_", ""));
     });
-    return t("div", { class: "component-container" }, [
-        t("div", { class: "component-kanji inline b-10" }, cObj._),
-        t("div", { class: "component-definition inline v-top c-green" }, cDefinition.join(", ")),
-        // t("div", { class: "component-readings" }, cReadings.concat(cObj.O).join(", "))
+    var coloredReadings = cReadings.concat(cObj.O).map(cR => {
+        var parentReadings = Object.keys(kObj.K).map(e => e.replace("_", "")).concat(kObj.O);
+        return isIn(parentReadings, cR) ? `<span class='c-blue'>${cR}</span>` : cR;
+    });
+    return t("div", { class: "component-container rel" }, [
+        t("div", { class: "component-kanji abs-tl b-20 jp pointer", onclick: `selectKanji('${cObj._}')` }, cObj._),
+        t("div", { class: "component-definition v-top c-green" }, cDefinition.join(", ")),
+        t("div", { class: "component-readings c-100" }, coloredReadings.join(", "))
     ]);
 }
 

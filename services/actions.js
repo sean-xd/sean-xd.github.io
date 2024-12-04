@@ -56,9 +56,12 @@ function toggleFilter(fStr, fElem){
 }
 
 function selectKanji(kStr){
-    if(!kStr) return cl(document.body, { "open-kanji": false });
+    var kanjiSingle = cl(document.body, { "open-kanji": "?" });
+    var grammarOpen = cl(document.body, { "open-grammar": "?" });
+    if(!kStr && kanjiSingle || grammarOpen ) return cl(document.body, { "open-kanji": false, "open-grammar": false });
+    if(!kStr) return toggleFilter();
     clear(dom.single);
-    cl(document.body, { ["open-kanji"]: true });
+    cl(document.body, { "open-kanji": true });
     append(dom.single, singleKanjiTemplate(kStr));
 }
 
@@ -79,4 +82,8 @@ function loadStatuses(){
         kObj.T = (kObj.T || []).concat(status);
     });
     localStorage.store = JSON.stringify(store);
+}
+
+function openGrammarView(){
+    cl(document.body, { "open-grammar": true, "open-kanji": false });
 }
