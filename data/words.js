@@ -358,7 +358,6 @@ var wordList = [
     { english: "Casual Clothes", japanese: [["私", "し"], ["服", "ふく"]] },
     
     { english: "Short Tempered", japanese: [["短", "たん"], ["気", "き"]] },
-    { english: "Negative Points", japanese: [["短", "たん"], ["所", "しょ"]] },
     { english: "Polka Dots", japanese: [["水", "みず"], ["玉", "たま"]] },
     { english: "Onion", japanese: [["玉", "たま"], ["ねぎ", "ねぎ"]] },
     { english: "10yen Coin", japanese: [["十", "じゅう"], ["円", "えん"], ["玉", "だま"]] },
@@ -1062,7 +1061,6 @@ var wordList = [
     { english: "Meaning", japanese: [["意", "い"], ["味", "み"]], tags: ["N5"] },
     { english: "Refrigerator", japanese: [["冷", "れい"], ["蔵", "ぞう"], ["庫", "こ"]], tags: ["N5"] },
     { english: "Wallet", japanese: [["財", "さい"], ["布", "ふ"]], tags: ["N5"] },
-    { english: "Post Office", japanese: [["郵", "ゆう"], ["便", "びん"], ["局", "きょく"]], tags: ["N5"] },
     { english: "Class", japanese: [["授", "じゅ"], ["業", "ぎょう"]], tags: ["N5"] },
     { english: "Fine, Nice", japanese: [["結", "けっ"], ["構", "こう"]], tags: ["N5"] },
 
