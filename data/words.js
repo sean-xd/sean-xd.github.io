@@ -1057,12 +1057,12 @@ var wordList = [
     // #endregion
 
     // #region Unlearned (N5)
-    { english: "Bath", japanese: [["風", "ふ"], ["呂", "ろ"]], tags: ["N5"] },
-    { english: "Meaning", japanese: [["意", "い"], ["味", "み"]], tags: ["N5"] },
-    { english: "Refrigerator", japanese: [["冷", "れい"], ["蔵", "ぞう"], ["庫", "こ"]], tags: ["N5"] },
-    { english: "Wallet", japanese: [["財", "さい"], ["布", "ふ"]], tags: ["N5"] },
-    { english: "Class", japanese: [["授", "じゅ"], ["業", "ぎょう"]], tags: ["N5"] },
-    { english: "Fine, Nice", japanese: [["結", "けっ"], ["構", "こう"]], tags: ["N5"] },
+    { english: "Bath", japanese: [["風", "ふ"], ["呂", "ろ"]], tags: ["N5", "Objects"] },
+    { english: "Meaning", japanese: [["意", "い"], ["味", "み"]], tags: ["N5", "Academic"] },
+    { english: "Refrigerator", japanese: [["冷", "れい"], ["蔵", "ぞう"], ["庫", "こ"]], tags: ["N5", "Objects"] },
+    { english: "Wallet", japanese: [["財", "さい"], ["布", "ふ"]], tags: ["N5", "Objects"] },
+    { english: "Class", japanese: [["授", "じゅ"], ["業", "ぎょう"]], tags: ["N5", "Academic", "Places"] },
+    { english: "Fine, Nice", japanese: [["結", "けっ"], ["構", "こう"]], tags: ["N5", "Measures"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N5"] },
     // #endregion

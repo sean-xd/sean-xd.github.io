@@ -63,8 +63,8 @@ function componentTemplate(cObj, kObj){
     });
     return t("div", { class: "component-container rel" }, [
         t("div", { class: "component-kanji abs-tl b-20 jp pointer", onclick: `selectKanji('${cObj._}')` }, cObj._),
-        t("div", { class: "component-definition v-top c-green" }, cDefinition.join(", ")),
-        t("div", { class: "component-readings c-100" }, coloredReadings.join(", "))
+        t("div", { class: "component-definition v-top f-14 c-green" }, cDefinition.join(", ")),
+        t("div", { class: "component-readings f-14 c-100" }, coloredReadings.join(", "))
     ]);
 }
 
@@ -104,7 +104,7 @@ function kanjiWordsTemplate(kObj){
         var hText = japanese.map(e => isIn(e[0], kObj._) ? e[1] : `<span class='c-100'>${e[1]}</span>`).join("");
         return t("div", { class: "word" }, [
             t("div", { class: "reading-kanji inline" }, kText),
-            t("div", { class: "reading-definition inline v-top c-green" }, english),
+            t("div", { class: "reading-definition inline v-top f-14 c-green" }, english),
             t("div", { class: "reading-hiragana c-blue" }, hText)
         ]);
     })));
