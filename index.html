@@ -9,47 +9,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script>
-        /* --- Styles ---*/
-        
-        var styles = ["styles/reset.css", "styles/main.css", "styles/classes.css"];
-        var loadStyles = wait(styles.length, contents => styles.forEach(name => appendHead("style", contents[name])));
-        styles.forEach(name => loadFile("style", loadStyles, name));
-
-        /* --- Scripts --- */
-
-        var scripts = [
+        function wait(n, f) {
+            var o = {}, i = 0;
+            return e => { Object.keys(e || {}).forEach(k => o[k] = e[k]); (i + 1) === n ? f(o) : i += 1; };
+        }
+        var files = [
+            "styles/reset.css", "styles/main.css", "styles/classes.css",
             "util/util.js", "util/dom.js",
             "data/kanji.js", "data/words.js", "data/lessons.js",
             "services/templates.js", "services/actions.js", "app.js"
         ];
-        var loadScripts = wait(scripts.length, contents => scripts.forEach(name => appendHead("script", contents[name])));
-        scripts.forEach(name => loadFile("script", loadScripts, name));
-
-        /* --- Utilities --- */
-        
-        function loadFile(tag, fn, filename){
-            var success = res => fn({ [filename]: res });
+        var loadFiles = wait(files.length, contents => files.forEach(filename => {
+            if(contents[filename].indexOf("<!DOCTYPE html>") > -1) return obj;
+            var element = document.createElement(filename.indexOf(".css") > -1 ? "style" : "script");
+            element.innerHTML = contents[filename];
+            document.head.appendChild(element);
+        }));
+        files.forEach(filename => {
             var req = new XMLHttpRequest();
-            req.addEventListener("load", event => success(((event || {}).target || {}).responseText || ""));
+            req.addEventListener("load", event => loadFiles({ [filename]: ((event || {}).target || {}).responseText || "" }));
             req.open("GET", `${location.origin}/${filename}?c=${Date.now()}`);
             req.send(null);
-        }
-        function appendHead(tag, content){
-            if(content.indexOf("<!DOCTYPE html>") > -1) return;
-            var element = document.createElement(tag);              // Create element.
-            if(tag === "script") element.setAttribute("defer", ""); // Add defer tag to script elements.
-            element.innerHTML = content;                            // Add content to element.
-            document.head.appendChild(element);                     // Add element to head.
-        }
-        function wait(num, fn){
-            var i = 0;
-            var obj = {};
-            return (addObj) => {
-                if(addObj) Object.keys(addObj).forEach(key => obj[key] = addObj[key]);
-                i += 1;
-                if(i === num) fn(obj);
-            };
-        }
+        });
     </script>
 </head>
 <body class="b-20 c-220">
