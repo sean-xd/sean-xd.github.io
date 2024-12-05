@@ -114,3 +114,9 @@ function stripHiragana(kStr){
     if(kStr[0] === "お") return kStr[1];
     else return kStr[0];
 }
+
+/* --- Grammar --- */
+
+function lessonTemplate(){
+    
+}

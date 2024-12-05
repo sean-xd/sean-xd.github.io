@@ -11,23 +11,27 @@
     <script>
         /* --- Styles ---*/
         
-        var styles = ["styles/reset", "styles/main", "styles/classes"];
+        var styles = ["styles/reset.css", "styles/main.css", "styles/classes.css"];
         var loadStyles = wait(styles.length, contents => styles.forEach(name => appendHead("style", contents[name])));
-        styles.forEach(name => loadFile("style", name));
+        styles.forEach(name => loadFile("style", loadStyles, name));
 
         /* --- Scripts --- */
 
-        var scripts = ["util/util", "util/dom", "data/kanji", "data/words", "services/templates", "services/actions", "app"];
+        var scripts = [
+            "util/util.js", "util/dom.js",
+            "data/kanji.js", "data/words.js", "data/lessons.js",
+            "services/templates.js", "services/actions.js", "app.js"
+        ];
         var loadScripts = wait(scripts.length, contents => scripts.forEach(name => appendHead("script", contents[name])));
-        scripts.forEach(name => loadFile("script", name));
+        scripts.forEach(name => loadFile("script", loadScripts, name));
 
         /* --- Utilities --- */
         
-        function loadFile(tag, name){
-            var success = res => (tag === "style" ? loadStyles : loadScripts)({ [name]: res });
+        function loadFile(tag, fn, filename){
+            var success = res => fn({ [filename]: res });
             var req = new XMLHttpRequest();
             req.addEventListener("load", event => success(((event || {}).target || {}).responseText || ""));
-            req.open("GET", `${location.origin}/${name}${tag === "style" ? ".css" : ".js"}?c=${Date.now()}`);
+            req.open("GET", `${location.origin}/${filename}?c=${Date.now()}`);
             req.send(null);
         }
         function appendHead(tag, content){
