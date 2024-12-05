@@ -22,9 +22,10 @@ body { overflow-x: hidden; }
 #single .rank { left: 24px; top: 24px; }
 #single .kanji { font-size: 8em; height: 200px; }
 
-.status { display: flex; justify-content: space-between; }
-.status-button { padding: 6px 0; }
-.active-status.status-button { color: rgb(220,220,220); }
+.status { align-items: center; display: flex; height: 40px; justify-content: space-around; }
+.status-button { height: 100%; width: calc(100% / 3); }
+.status-button:not(.active-status) { color: rgb(100,100,100); }
+.status-button.active-status { background: rgb(20,20,20); }
 
 .single-left-container { height: calc(100% - 231px); }
 

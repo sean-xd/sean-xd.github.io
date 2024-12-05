@@ -19,10 +19,10 @@ function singleKanjiTemplate(kStr){
         t("div", { class: "single-left abs-tl h-100 w-50" }, [
             t("div", { class: "rank abs-tl c-100" }, kObj.R),
             t("div", { class: "kanji jp text-center b-20" }, kObj._),
-            t("div", { class: "status c-100 f-14" }, [
-                t("div", { class: `status-button pointer ${isIn(kObj.T || [], "Known") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Known')` }, "Known"),
-                t("div", { class: `status-button pointer ${isIn(kObj.T || [], "Learning") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Learning')` }, "Learning"),
-                t("div", { class: `status-button pointer ${isIn(kObj.T || [], "Unknown") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Unknown')` }, "Unknown"),
+            t("div", { class: "status f-14 b-0" }, [
+                t("div", { class: `status-button c-green flex-center pointer ${isIn(kObj.T || [], "Known") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Known')` }, "Known"),
+                t("div", { class: `status-button c-yellow flex-center pointer ${isIn(kObj.T || [], "Learning") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Learning')` }, "Learning"),
+                t("div", { class: `status-button c-red flex-center pointer ${isIn(kObj.T || [], "Unknown") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Unknown')` }, "Unknown"),
             ]),
             t("div", { class: "single-left-container scroll-20-10" }, [
                 componentListTemplate(kObj),

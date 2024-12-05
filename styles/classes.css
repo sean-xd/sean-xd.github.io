@@ -33,6 +33,7 @@
 .p-16 { padding: 16px; }
 
 .bold { font-weight: bold; }
+.flex-center { align-items: center; display: flex; justify-content: center; }
 .inline { display: inline-block; }
 .pointer { cursor: pointer; }
 .scroll { overflow-y: scroll; }
