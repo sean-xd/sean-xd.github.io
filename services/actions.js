@@ -68,20 +68,19 @@ function selectKanji(kStr){
 function updateStatus(kStr, sStr){
     var kObj = kanji.filter(e => e._ === kStr)[0];
     kObj.T = (kObj.T || []).filter(e => !isIn(["Known", "Learning", "Unknown"], e));
-    if(sStr) kObj.T.push(sStr);    
-    store.status[kStr] = sStr;
+    if(sStr) kObj.T.push(sStr);
+    if(sStr !== "Unknown") store.status[kStr] = sStr;
+    else store.status = reduce(store.status, (obj, e, key) => {
+        if(key !== kStr) obj[key] = e;
+        return obj;
+    }, {});
     localStorage.store = JSON.stringify(store);
     drawList();
     selectKanji(kStr);
 }
 
 function loadStatuses(){
-    kanji.forEach(kObj => {
-        var status = store.status[kObj._];
-        if(!status) status = store.status[kObj._] = "Unknown";
-        kObj.T = (kObj.T || []).concat(status);
-    });
-    localStorage.store = JSON.stringify(store);
+    kanji.forEach(kObj => { kObj.T = (kObj.T || []).concat(store.status[kObj._] || "Unknown"); });
 }
 
 function openGrammarView(){

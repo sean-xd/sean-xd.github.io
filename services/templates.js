@@ -7,7 +7,7 @@ function listTemplate(arr){
 
 function listKanjiTemplate(obj){
     var statusColors = { Known: "c-green", Learning: "c-yellow", Unknown: "c-red" };
-    var className = "kanji w-20 jp pointer inline text-center " + statusColors[store.status[obj._]];
+    var className = "kanji w-20 jp pointer inline text-center " + statusColors[store.status[obj._] || "Unknown"];
     return t("div", { class: className, onclick: `selectKanji("${obj._}")` }, obj._);
 }
 

@@ -926,7 +926,8 @@ var wordList = [
     
     { english: "Answer", japanese: [["回", "かい"], ["答", "とう"]], tags: ["N4-8"] },
     { english: "Way of Thinking", japanese: [["考え", "かんがえ"], ["方", "かた"]], tags: ["N4-8"] },
-    { english: "References", japanese: [["参", "さん"], ["考", "こう"], ["資", "し"], ["料", "りょう"]], tags: ["N4-8"] },
+    { english: "Reference (Model)", japanese: [["参", "さん"], ["考", "こう"]], tags: ["N4-8"] },
+    { english: "Reference Material", japanese: [["参", "さん"], ["考", "こう"], ["資", "し"], ["料", "りょう"]], tags: ["N4-8"] },
     { english: "Thinking", japanese: [["思", "し"], ["考", "こう"]], tags: ["N4-8"] },
     
     { english: "Accurrate", japanese: [["正", "せい"], ["確", "かく"]], tags: ["N4-8"] },
@@ -1007,7 +1008,7 @@ var wordList = [
     { english: "Automobile", japanese: [["自", "じ"], ["動", "どう"], ["車", "しゃ"]], tags: ["N4-9"] },
     { english: "Self-Study", japanese: [["自", "じ"], ["習", "しゅう"]], tags: ["N4-9"] },
     { english: "Self-Help", japanese: [["自", "じ"], ["力", "りき"]], tags: ["N4-9"] },
-    { english: "Nature", japanese: [["自", "じ"], ["然", "ぜん"]], tags: ["N4-9"] },
+    { english: "Nature", japanese: [["自", "し"], ["然", "ぜん"]], tags: ["N4-9"] },
     { english: "Natural Monuments", japanese: [["天", "てん"], ["然", "ねん"], ["記", "き"], ["念", "ねん"], ["物", "ぶつ"]], tags: ["N4-9"] },
     { english: "Of Course", japanese: [["当", "とう"], ["然", "ぜん"]], tags: ["N4-9"] },
     { english: "Natural Water", japanese: [["天", "てん"], ["然", "ねん"], ["水", "すい"]], tags: ["N4-9"] },
@@ -1058,11 +1059,12 @@ var wordList = [
 
     // #region Unlearned (N5)
     { english: "Bath", japanese: [["風", "ふ"], ["呂", "ろ"]], tags: ["N5", "Objects"] },
-    { english: "Meaning", japanese: [["意", "い"], ["味", "み"]], tags: ["N5", "Academic"] },
     { english: "Refrigerator", japanese: [["冷", "れい"], ["蔵", "ぞう"], ["庫", "こ"]], tags: ["N5", "Objects"] },
     { english: "Wallet", japanese: [["財", "さい"], ["布", "ふ"]], tags: ["N5", "Objects"] },
     { english: "Class", japanese: [["授", "じゅ"], ["業", "ぎょう"]], tags: ["N5", "Academic", "Places"] },
     { english: "Fine, Nice", japanese: [["結", "けっ"], ["構", "こう"]], tags: ["N5", "Measures"] },
+    { english: "Day Before Yesterday", japanese: [["一", "お"], ["昨", "と"], ["日", "とい"]], tags: ["N5", "Time"] },
+    { english: "Year Before Last", japanese: [["一", "お"], ["昨", "と"], ["年", "とし"]], tags: ["N5", "Time"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N5"] },
     // #endregion
@@ -1094,6 +1096,9 @@ var wordList = [
     { english: "Way, Method", japanese: [["仕", "し"], ["方", "かた"]], tags: ["N4"] },
     { english: "Citizen", japanese: [["市", "し"], ["民", "みん"]], tags: ["N4"] },
     { english: "Novel", japanese: [["小", "しょう"], ["説", "せつ"]], tags: ["N4"] },
+    { english: "Graduate", japanese: [["卒", "そつ"], ["業", "ぎょう"]], tags: ["N4"] },
+    { english: "Scenery", japanese: [["景", "けい"], ["色", "しき"]], tags: ["N4"] },
+    { english: "Program (TV)", japanese: [["番", "ばん"], ["組", "ぐみ"]], tags: ["N4"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N4"] },
     // #endregion
@@ -1143,7 +1148,6 @@ var wordList = [
     { english: "Business, Commerce", japanese: [["商", "しょう"], ["売", "ばい"]], tags: ["N3"] },
     { english: "Aviation", japanese: [["航", "こう"], ["空", "くう"]], tags: ["N3"] },
     { english: "Serious, Severe", japanese: [["深", "しん"], ["刻", "こく"]], tags: ["N3"] },
-    { english: "Lateness", japanese: [["遅", "ち"], ["刻", "こく"]], tags: ["N3"] },
     { english: "This Time", japanese: [["今", "こん"], ["回", "かい"]], tags: ["N3"] },
     { english: "Recovery", japanese: [["回", "かい"], ["復", "ふく"]], tags: ["N3"] },
     { english: "Scene", japanese: [["場", "ば"], ["面", "めん"]], tags: ["N3"] },
@@ -1317,6 +1321,7 @@ var wordList = [
     { english: "Intellectual", japanese: [["知", "ち"], ["的", "てき"]], tags: ["N1"] },
     { english: "Eyesight, Vision (Sense)", japanese: [["視", "し"], ["覚", "かく"]], tags: ["N1"] },
     { english: "Taste, Palate (Sense)", japanese: [["味", "み"], ["覚", "かく"]], tags: ["N1"] },
+    { english: "Local, Hometown", japanese: [["地", "じ"], ["元", "もと"]], tags: ["N1"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N1"] },
     // #endregion

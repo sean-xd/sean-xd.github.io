@@ -5,7 +5,7 @@ body { overflow-x: hidden; }
 
 #main { height: calc(100% - 60px); overflow: hidden; position: relative; }
 
-.actions { box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2); display: flex; font-size: 14px; height: 60px; }
+.actions { display: flex; font-size: 14px; height: 60px; }
 .action { height: 60px; padding-top: 20px; }
 .open-grammar .action-kanji { background: rgb(10,10,10); }
 .open-grammar .action-grammar { background: black; }
@@ -35,10 +35,14 @@ body { overflow-x: hidden; }
 .component-definition { padding: 6px 0 0 6px; width: calc(100% - 60px); }
 .component-readings { padding-left: 6px; }
 
-.kunyomi, .onyomi, .words { padding: 0 0 12px 12px; }
-.reading-title, .word { padding-bottom: 12px; }
+.kunyomi, .onyomi { padding: 0 0 12px 12px; }
+.reading-title { padding-bottom: 12px; }
 .reading-hiragana, .reading-kanji { font-size: 1.25em; padding-right: 6px; }
 .reading-definition { padding-top: 2px; }
+
+.words { padding-left: 6px; }
+.words .reading-title { padding: 0 0 6px 6px; }
+.word { padding: 6px; }
 .word .reading-hiragana { font-size: 14px; }
 
 /* --- Right (Kanji List) --- */
