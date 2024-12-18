@@ -1099,6 +1099,7 @@ var wordList = [
     { english: "Graduate", japanese: [["卒", "そつ"], ["業", "ぎょう"]], tags: ["N4"] },
     { english: "Scenery", japanese: [["景", "けい"], ["色", "しき"]], tags: ["N4"] },
     { english: "Program (TV)", japanese: [["番", "ばん"], ["組", "ぐみ"]], tags: ["N4"] },
+    { english: "Caution", japanese: [["注", "ちゅう"], ["意", "い"]], tags: ["N4"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N4"] },
     // #endregion
@@ -1247,6 +1248,7 @@ var wordList = [
     { english: "List Price", japanese: [["定", "てい"], ["価", "か"]], tags: ["N2"] },
     { english: "Gray", japanese: [["灰", "はい"], ["色", "いろ"]], tags: ["N2"] },
     { english: "Magnet", japanese: [["磁", "じ"], ["石", "しゃく"]], tags: ["N2"] },
+    { english: "Antarctica", japanese: [["南", "なん"], ["極", "きょく"]], tags: ["N2"] },
 
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N2"] },
     // #endregion
