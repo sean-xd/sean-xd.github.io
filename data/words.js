@@ -1070,6 +1070,163 @@ var wordList = [
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N5"] },
     // #endregion
 
+    // #region Kanji N3-1
+    { english: "Bedroom", japanese: [["寝", "しん"], ["室", "しつ"]], tags: ["N3-1"] },
+    { english: "Bathing", japanese: [["入", "にゅう"], ["浴", "よく"]], tags: ["N3-1"] },
+    { english: "Boot (PC)", japanese: [["起", "き"], ["動", "どう"]], tags: ["N3-1"] },
+    { english: "Nap", japanese: [["昼", "ひる"], ["寝", "ね"]], tags: ["N3-1"] },
+    { english: "Bathroom", japanese: [["浴", "よく"], ["室", "しつ"]], tags: ["N3-1"] },
+    { english: "Bathtub", japanese: [["湯", "ゆ"], ["船", "ぶね"]], tags: ["N3-1"] },
+    { english: "Boiling Water", japanese: [["熱", "ねっ"], ["湯", "とう"]], tags: ["N3-1"] },
+    
+    { english: "Washing Machine", japanese: [["洗", "せん"], ["濯", "たっ"], ["器", "き"]], tags: ["N3-1"] },
+    { english: "Dried Fish", japanese: [["干", "ひ"], ["物", "もの"]], tags: ["N3-1"] },
+    { english: "Daily Life", japanese: [["生", "せい"], ["活", "かつ"]], tags: ["N3-1"] },
+    { english: "Active", japanese: [["活", "かっ"], ["発", "ぱつ"]], tags: ["N3-1"] },
+    { english: "Laundry", japanese: [["洗", "せん"], ["濯", "たく"], ["物", "もの"]], tags: ["N3-1"] },
+    { english: "Diet", japanese: [["食", "しょく"], ["生", "せい"], ["活", "かつ"]], tags: ["N3-1"] },
+    { english: "Vibrancy", japanese: [["活", "かっ"], ["気", "き"]], tags: ["N3-1"] },
+    { english: "Activities", japanese: [["活", "かつ"], ["動", "どう"]], tags: ["N3-1"] },
+    
+    { english: "Rounding (Up)", japanese: [["四", "し"], ["捨", "しゃ"], ["五", "ご"], ["入", "にゅう"]], tags: ["N3-1"] },
+    { english: "Paper Bag", japanese: [["紙", "かみ"], ["袋", "ぶくろ"]], tags: ["N3-1"] },
+    { english: "Non-flammable", japanese: [["不", "ふ"], ["燃", "ねん"]], tags: ["N3-1"] },
+
+    { english: "Last Night", japanese: [["昨", "さく"], ["晩", "ばん"]], tags: ["N3-1"] },
+    { english: "Next Week", japanese: [["翌", "よく"], ["週", "しゅう"]], tags: ["N3-1"] },
+    { english: "End of Month", japanese: [["月", "げつ"], ["末", "まつ"]], tags: ["N3-1"] },
+    { english: "New Year's Holiday", japanese: [["年", "ねん"], ["末", "まつ"], ["年", "ねん"], ["始", "し"]], tags: ["N3-1"] },
+    { english: "Next Year", japanese: [["翌", "よく"], ["年", "とし"]], tags: ["N3-1"] },
+
+    { english: "For Children", japanese: [["子", "こ"], ["供", "ども"], ["用", "よう"]], tags: ["N3-1"] },
+    { english: "Important", japanese: [["大", "だい"], ["事な", "じな"]], tags: ["N3-1"] },
+    { english: "Events", japanese: [["行", "ぎょう"], ["事", "じ"]], tags: ["N3-1"] },
+    // #endregion
+
+    // #region Kanji N3-2
+    { english: "Temperature (Body)", japanese: [["温", "おん"], ["度", "ど"]], tags: ["N3-2"] },
+    { english: "Temperature (Air)", japanese: [["気", "き"], ["温", "おん"]], tags: ["N3-2"] },
+    { english: "Thermometer", japanese: [["体", "たい"], ["温", "おん"], ["計", "けい"]], tags: ["N3-2"] },
+    
+    { english: "Material", japanese: [["材", "ざい"], ["料", "りょう"]], tags: ["N3-2"] },
+    { english: "Lumber", japanese: [["木", "もく"], ["材", "ざい"]], tags: ["N3-2"] },
+    { english: "Sentence Pattern", japanese: [["文", "ぶん"], ["型", "けい"]], tags: ["N3-2"] },
+    { english: "Combustion", japanese: [["燃", "ねん"], ["焼", "しょう"]], tags: ["N3-2"] },
+    { english: "Tablewear", japanese: [["食", "しょっ"], ["器", "き"]], tags: ["N3-2"] },
+
+    { english: "Egg White", japanese: [["卵", "らん"], ["白", "ぱく"]], tags: ["N3-2"] },
+    { english: "Egg Yolk", japanese: [["卵", "らん"], ["黄", "おう"]], tags: ["N3-2"] },
+    { english: "Salt Content", japanese: [["塩", "えん"], ["分", "ぶん"]], tags: ["N3-2"] },
+    
+    { english: "Blossoms", japanese: [["菜", "な"], ["の", "の"], ["花", "はな"]], tags: ["N3-2"] },
+    { english: "Soy", japanese: [["大", "だい"], ["豆", "ず"]], tags: ["N3-2"] },
+    { english: "Vegetable Garden", japanese: [["菜", "さい"], ["園", "えん"]], tags: ["N3-2"] },
+    
+    { english: "Lightweight", japanese: [["軽", "けい"], ["量", "りょう"]], tags: ["N3-2"] },
+    { english: "Weighing", japanese: [["計", "けい"], ["量", "りょう"]], tags: ["N3-2"] },
+    // #endregion
+
+    // #region Kanji N3-3
+    { english: "Initials", japanese: [["頭", "かしら"], ["文", "も"], ["字", "じ"]], tags: ["N3-3"] },
+    { english: "Smile", japanese: [["笑", "え"], ["顔", "がお"]], tags: ["N3-3"] },
+    { english: "Radical", japanese: [["部", "ぶ"], ["首", "しゅ"]], tags: ["N3-3"] },
+
+    { english: "Rest", japanese: [["休", "きゅう"], ["息", "そく"]], tags: ["N3-3"] },
+    { english: "Breathing", japanese: [["呼", "こ"], ["吸", "きゅう"]], tags: ["N3-3"] },
+    { english: "Interest", japanese: [["利", "り"], ["息", "そく"]], tags: ["N3-3"] },
+    
+    { english: "Inspection", japanese: [["検", "けん"], ["査", "さ"]], tags: ["N3-3"] },
+    { english: "Tartar", japanese: [["歯", "し"], ["石", "せき"]], tags: ["N3-3"] },
+    { english: "Dentistry", japanese: [["歯", "し"], ["科", "か"]], tags: ["N3-3"] },
+    
+    { english: "Stop Bleeding", japanese: [["止", "し"], ["血", "けつ"]], tags: ["N3-3"] },
+    { english: "Blood", japanese: [["血", "けつ"], ["液", "えき"]], tags: ["N3-3"] },
+    { english: "Liquid", japanese: [["液", "えき"], ["体", "たい"]], tags: ["N3-3"] },
+    { english: "Bandage", japanese: [["包", "ほう"], ["帯", "たい"]], tags: ["N3-3"] },
+    
+    { english: "Advice", japanese: [["助", "じょ"], ["言", "げん"]], tags: ["N3-3"] },
+    { english: "Rescue", japanese: [["救", "きゅう"], ["助", "じょ"]], tags: ["N3-3"] },
+    { english: "Death", japanese: [["死", "し"], ["亡", "ぼう"]], tags: ["N3-3"] },
+    // #endregion
+
+    // #region Kanji N3-4
+    { english: "Angle", japanese: [["角", "かく"], ["度", "ど"]], tags: ["N3-4"] },
+    { english: "Masterpiece", japanese: [["名", "めい"], ["曲", "きょく"]], tags: ["N3-4"] },
+    { english: "Waterway", japanese: [["水", "すい"], ["路", "ろ"]], tags: ["N3-4"] },
+    { english: "Homeward", japanese: [["家", "いえ"], ["路", "じ"]], tags: ["N3-4"] },
+    { english: "Direction", japanese: [["方", "ほう"], ["角", "がく"]], tags: ["N3-4"] },
+    { english: "Aisle", japanese: [["通", "つう"], ["路", "ろ"]], tags: ["N3-4"] },
+    
+    { english: "Rear End Collision", japanese: [["追", "つい"], ["突", "とつ"]], tags: ["N3-4"] },
+    { english: "Suddenly", japanese: [["突", "とつ"], ["然", "ぜん"]], tags: ["N3-4"] },
+    { english: "Turn Over", japanese: [["転", "てん"], ["倒", "とう"]], tags: ["N3-4"] },
+    { english: "Retake", japanese: [["追", "つい"], ["試", "し"]], tags: ["N3-4"] },
+    { english: "Gust of Wind", japanese: [["突", "とっ"], ["風", "ぷう"]], tags: ["N3-4"] },
+    
+    { english: "Position", japanese: [["位", "い"], ["置", "ち"]], tags: ["N3-4"] },
+    { english: "Top", japanese: [["上", "じょう"], ["位", "い"]], tags: ["N3-4"] },
+    { english: "Rollover", japanese: [["横", "おう"], ["転", "てん"]], tags: ["N3-4"] },
+    { english: "Profile", japanese: [["横", "よこ"], ["顔", "がお"]], tags: ["N3-4"] },
+    { english: "Status", japanese: [["地", "ち"], ["位", "い"]], tags: ["N3-4"] },
+
+    { english: "Last Minute", japanese: [["直", "ちょく"], ["前", "ぜん"]], tags: ["N3-4"] },
+    { english: "Route Map", japanese: [["路", "ろ"], ["線", "ぜん"], ["図", "ず"]], tags: ["N3-4"] },
+    { english: "Breech", japanese: [["逆", "さか"], ["子", "ご"]], tags: ["N3-4"] },
+    { english: "Straight Line", japanese: [["直", "ちょく"], ["線", "せん"]], tags: ["N3-4"] },
+    { english: "Immediately After", japanese: [["直", "ちょく"], ["後", "ご"]], tags: ["N3-4"] },
+
+    { english: "Attention", japanese: [["注", "ちゅう"], ["目", "もく"]], tags: ["N3-4"] },
+    { english: "Further Education", japanese: [["進", "しん"], ["学", "がく"]], tags: ["N3-4"] },
+    { english: "Progress", japanese: [["進", "しん"], ["歩", "ぽ"]], tags: ["N3-4"] },
+    { english: "Order (Restaurant)", japanese: [["注", "ちゅう"], ["文", "もん"]], tags: ["N3-4"] },
+    { english: "Railway Bridge", japanese: [["鉄", "てっ"], ["橋", "きょう"]], tags: ["N3-4"] },
+    { english: "Pedestrian Bridge", japanese: [["歩", "ほ"], ["道", "どう"], ["橋", "きゅう"]], tags: ["N3-4"] },
+    { english: "Course", japanese: [["進", "しん"], ["路", "ろ"]], tags: ["N3-4"] },
+    // #endregion
+
+    // #region Kanji N3-5
+    { english: "Losing Battle", japanese: [["負け", "まけ"], ["戦", "いくさ"]], tags: ["N3-5"] },
+    { english: "Operation", japanese: [["作", "さく"], ["戦", "せん"]], tags: ["N3-5"] },
+    { english: "Finals", japanese: [["決", "けっ"], ["定", "てい"], ["戦", "せん"]], tags: ["N3-5"] },
+    { english: "Determination", japanese: [["決", "けつ"], ["意", "い"]], tags: ["N3-5"] },
+    { english: "Competition", japanese: [["勝", "しょう"], ["負", "ぶ"]], tags: ["N3-5"] },
+    { english: "Decision", japanese: [["決", "けっ"], ["心", "しん"]], tags: ["N3-5"] },
+    { english: "Majority Vote", japanese: [["多", "た"], ["数", "すう"], ["決", "けつ"]], tags: ["N3-5"] },
+    { english: "Final", japanese: [["決", "けっ"], ["勝", "しょう"]], tags: ["N3-5"] },
+
+    { english: "Meal Expenses", japanese: [["食", "しょく"], ["事", "じ"], ["代", "だい"]], tags: ["N3-5"] },
+    { english: "Era", japanese: [["時", "じ"], ["代", "だい"]], tags: ["N3-5"] },
+    { english: "Substitution", japanese: [["交", "こう"], ["代", "たい"]], tags: ["N3-5"] },
+    { english: "Representative", japanese: [["代", "だい"], ["表", "ひょう"]], tags: ["N3-5"] },
+
+    { english: "Recording (Sound)", japanese: [["録", "ろく"], ["音", "おん"]], tags: ["N3-5"] },
+    { english: "Recording (Video)", japanese: [["録", "ろく"], ["画", "が"]], tags: ["N3-5"] },
+    { english: "Victory", japanese: [["優", "ゆう"], ["勝", "しょう"]], tags: ["N3-5"] },
+    { english: "Priority", japanese: [["優", "ゆう"], ["先", "せん"]], tags: ["N3-5"] },
+    { english: "Diary", japanese: [["日", "にっ"], ["記", "き"]], tags: ["N3-5"] },
+    { english: "Memorial", japanese: [["記", "き"], ["念", "ねん"]], tags: ["N3-5"] },
+    { english: "Prize Money", japanese: [["賞", "しょう"], ["金", "きん"]], tags: ["N3-5"] },
+
+    { english: "Sunlight", japanese: [["日", "ひ"], ["差し", "ざし"]], tags: ["N3-5"] },
+    { english: "Prediction", japanese: [["予", "よ"], ["測", "そく"]], tags: ["N3-5"] },
+    { english: "Measurement", japanese: [["測", "そく"], ["定", "てい"]], tags: ["N3-5"] },
+    { english: "Order (Turn)", japanese: [["順", "じゅん"], ["番", "ばん"]], tags: ["N3-5"] },
+    { english: "By a Large Margin", japanese: [["大", "たい"], ["差", "さ"]], tags: ["N3-5"] },
+    { english: "Surveying", japanese: [["測", "そく"], ["量", "りょう"]], tags: ["N3-5"] },
+    { english: "Measurement", japanese: [["計", "けい"], ["測", "そく"]], tags: ["N3-5"] },
+    { english: "Irregular", japanese: [["不", "ふ"], ["順", "じゅん"]], tags: ["N3-5"] },
+
+    { english: "Pinch Hitter", japanese: [["代", "だい"], ["打", "だ"]], tags: ["N3-5"] },
+    { english: "Pitch & Bat", japanese: [["投", "とう"], ["打", "だ"]], tags: ["N3-5"] },
+    { english: "Tie", japanese: [["同", "どう"], ["点", "てん"]], tags: ["N3-5"] },
+    { english: "Pitcher", japanese: [["投", "とう"], ["手", "しゅ"]], tags: ["N3-5"] },
+    // #endregion
+
+    // #region Kanji N3-6
+    
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3-6"] },
+    // #endregion
+
     // #region Unlearned (N4)
     { english: "Freedom", japanese: [["自", "じ"], ["由", "ゆう"]], tags: ["N4"] },
     { english: "Economics", japanese: [["経", "けい"], ["済", "ざい"]], tags: ["N4"] },
