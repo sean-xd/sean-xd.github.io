@@ -1,3 +1,43 @@
+/* --- Main --- */
+
+function nionMain(){
+    var lessons = ["N5", "N4", "N3-7", "N3-8", "N3-9", "N3-10", "N3-11", "N3", "N2", "N1"];
+    var types = ["Abstract", "Academic", "Animals", "Body", "Elements", "Landscape", "Measures", "Movement", "Objects", "People", "Places", "Position", "Time", "Weather"];
+    var statuses = ["Known", "Learning", "Unknown"];
+    return t("div", { id: "nion", class: "h-100 w-100" }, [
+        t("div", { id: "main", class: "w-100" }, [
+            t("div", { id: "left", class: "abs-tl h-100 w-100 b-10" }, [t("div", { id: "single" })]),
+            t("div", { id: "right", class: "abs-tr h-100 w-100 b-20" }, [
+                t("div", { id: "list", class: "h-100 w-100 scroll-10-20" }),
+                t("div", { id: "filters", class: "abs-tl h-50 w-100 b-10" }, [
+                    t("input", { id: "search", class: "w-100 b-0 c-200", placeholder: "Search Kanji" }),
+                    t("div", { class: "filter-container lessons-filters w-20" }, [
+                        t("div", { class: "filter-title" }, "Lessons"),
+                        t("div", { class: "filter-list scroll-20-10" }, lessons.map(filterTemplate))
+                    ]),
+                    t("div", { class: "filter-container types-filters w-20" }, [
+                        t("div", { class: "filter-title" }, "Types"),
+                        t("div", { class: "filter-list scroll-20-10" }, types.map(filterTemplate))
+                    ]),
+                    t("div", { class: "filter-container status-filters w-20" }, [
+                        t("div", { class: "filter-title" }, "Types"),
+                        t("div", { class: "filter-list scroll-20-10" }, statuses.map(filterTemplate))
+                    ])
+                ])
+            ]),
+            t("div", { id: "grammar", class: "abs-tr h-100 w-100 b-10" })
+        ]),
+        t("div", { class: "actions rel w-100 b-10 text-center" }, [
+            t("div", { class: "action action-kanji h-100 w-20 pointer b-0", onclick: "selectKanji()" }, "Kanji"),
+            t("div", { class: "action action-grammar h-100 w-20 pointer b-10", onclick: "opeenGrammarView()" }, "Grammar")
+        ])
+    ]);
+}
+
+function filterTemplate(e){
+    return t("div", { class: "filter pointer", onclick: `toggleFilter('${e}', this)` }, e);
+}
+
 /* --- List --- */
 
 function listTemplate(arr){
@@ -7,7 +47,7 @@ function listTemplate(arr){
 
 function listKanjiTemplate(obj){
     var statusColors = { Known: "c-green", Learning: "c-yellow", Unknown: "c-red" };
-    var className = "kanji w-20 jp pointer inline text-center " + statusColors[store.status[obj._] || "Unknown"];
+    var className = "kanji w-20 jp pointer inline text-center " + statusColors[store.nion.status[obj._] || "Unknown"];
     return t("div", { class: className, onclick: `selectKanji("${obj._}")` }, obj._);
 }
 

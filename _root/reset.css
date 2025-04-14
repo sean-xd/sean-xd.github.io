@@ -1,7 +1,7 @@
 /* --- Reset --- */
 
 html, body { height: 100%; width: 100%; }
-body { font-family: "Noto Sans"; font-size: 16px; margin: 0; }
+body { font-family: "Noto Sans"; font-size: 16px; margin: 0; overflow: hidden; }
 * { box-sizing: border-box; }
 
 /* --- Elements --- */

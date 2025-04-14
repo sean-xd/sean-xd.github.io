@@ -1227,6 +1227,84 @@ var wordList = [
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3-6"] },
     // #endregion
 
+    // #region Kanji N3-7
+    { english: "Wedding Ceremony", japanese: [["結", "けっ"], ["婚", "こん"], ["式", "しき"]], tags: ["N3-7"] },
+    { english: "Result", japanese: [["結", "けっ"], ["果", "か"]], tags: ["N3-7"] },
+    { english: "Newlyweds", japanese: [["新", "しん"], ["婚", "こん"]], tags: ["N3-7"] },
+    { english: "Introduction", japanese: [["紹", "しょう"], ["介", "かい"]], tags: ["N3-7"] },
+    { english: "Agency Fee", japanese: [["仲", "ちゅう"], ["介", "かい"], ["料", "りょう"]], tags: ["N3-7"] },
+    { english: "Outcome, Conclusion", japanese: [["結", "けつ"], ["末", "まつ"]], tags: ["N3-7"] },
+    { english: "Engagement", japanese: [["婚", "こん"], ["約", "やく"]], tags: ["N3-7"] },
+    { english: "Seafood", japanese: [["魚", "ぎょ"], ["介", "かい"]], tags: ["N3-7"] },
+    
+    { english: "Single", japanese: [["独", "どく"], ["身", "しん"]], tags: ["N3-7"] },
+    { english: "Independence", japanese: [["独", "どく"], ["立", "りつ"]], tags: ["N3-7"] },
+    { english: "Talking to Self", japanese: [["独り", "ひとり"], ["言", "ごと"]], tags: ["N3-7"] },
+    { english: "Familiar", japanese: [["身", "み"], ["近な", "ぢかな"]], tags: ["N3-7"] },
+    { english: "Height", japanese: [["身", "しん"], ["長", "ちょう"]], tags: ["N3-7"] },
+    { english: "Savings", japanese: [["貯", "ちょ"], ["金", "きん"]], tags: ["N3-7"] },
+    { english: "End of Term", japanese: [["期", "き"], ["末", "まつ"]], tags: ["N3-7"] },
+    { english: "Expectations", japanese: [["期", "き"], ["待", "たい"]], tags: ["N3-7"] },
+    { english: "Standing on One's Own", japanese: [["独り", "ひとり"], ["立ち", "だち"]], tags: ["N3-7"] },
+    { english: "Origin, Birthplace", japanese: [["出", "しゅっ"], ["身", "しん"]], tags: ["N3-7"] },
+    { english: "Status", japanese: [["身", "み"], ["分", "ぶん"]], tags: ["N3-7"] },
+    { english: "Contents", japanese: [["中", "なか"], ["身", "み"]], tags: ["N3-7"] },
+    { english: "New Semester", japanese: [["新", "しん"], ["学", "がっ"], ["期", "き"]], tags: ["N3-7"] },
+    
+    { english: "Bouquet", japanese: [["花", "はな"], ["束", "たば"]], tags: ["N3-7"] },
+    { english: "Promise", japanese: [["約", "やく"], ["束", "そく"]], tags: ["N3-7"] },
+    { english: "Sure Victory", japanese: [["必", "ひっ"], ["勝", "しょう"]], tags: ["N3-7"] },
+    { english: "Lullaby", japanese: [["子", "こ"], ["守", "もり"], ["歌", "うた"]], tags: ["N3-7"] },
+    { english: "Unity", japanese: [["結", "けっ"], ["束", "そく"]], tags: ["N3-7"] },
+    { english: "Desperation", japanese: [["必", "ひっ"], ["死", "し"]], tags: ["N3-7"] },
+    
+    { english: "Official, Formal", japanese: [["正", "せい"], ["式", "しき"]], tags: ["N3-7"] },
+    { english: "Format", japanese: [["書", "しょ"], ["式", "しき"]], tags: ["N3-7"] },
+    { english: "Matrix, Procession", japanese: [["行", "ぎょう"], ["列", "れつ"]], tags: ["N3-7"] },
+    { english: "Archipelago", japanese: [["列", "れっ"], ["島", "とう"]], tags: ["N3-7"] },
+    { english: "Hangover", japanese: [["二", "ふつ"], ["日", "か"], ["酔い", "よい"]], tags: ["N3-7"] },
+    { english: "Complete Set", japanese: [["一", "いっ"], ["式", "しき"]], tags: ["N3-7"] },
+    { english: "One Row", japanese: [["一", "いち"], ["列", "れつ"]], tags: ["N3-7"] },
+    { english: "Train", japanese: [["列", "れっ"], ["車", "しゃ"]], tags: ["N3-7"] },
+    { english: "Holiday", japanese: [["祝", "しゅく"], ["日", "じつ"]], tags: ["N3-7"] },
+    { english: "Drunk", japanese: [["酔っ", "よっ"], ["払い", "ぱらい"]], tags: ["N3-7"] },
+    
+    { english: "Eternity", japanese: [["永", "えい"], ["遠", "えん"]], tags: ["N3-7"] },
+    { english: "Permanent Residence", japanese: [["永", "えい"], ["住", "じゅう"]], tags: ["N3-7"] },
+    { english: "Application (Written)", japanese: [["願", "がん"], ["書", "しょ"]], tags: ["N3-7"] },
+    { english: "Good Luck", japanese: [["幸", "こう"], ["運", "うん"]], tags: ["N3-7"] },
+    { english: "Forever", japanese: [["末", "すえ"], ["永く", "ながく"]], tags: ["N3-7"] },
+    { english: "Wish, Prayer", japanese: [["願い", "ねがい"], ["事", "ごと"]], tags: ["N3-7"] },
+    { english: "Application (Request)", japanese: [["出", "しゅつ"], ["願", "がん"]], tags: ["N3-7"] },
+    { english: "Misfortune", japanese: [["不", "ふ"], ["幸", "こう"]], tags: ["N3-7"] },
+    { english: "Happy", japanese: [["幸", "こう"], ["福な", "ふくな"]], tags: ["N3-7"] },
+    { english: "Blessing", japanese: [["祝", "しゅく"], ["福", "ふく"]], tags: ["N3-7"] },
+
+    { english: "Watch Over", japanese: [["見", "み"], ["守って", "まもって"]], tags: ["N3-7"] },
+    
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3-7"] },
+    // #endregion
+
+    // #region Kanji N3-8
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3-8"] },
+
+    // #endregion
+
+    // #region Kanji N3-9
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3-9"] },
+
+    // #endregion
+
+    // #region Kanji N3-10
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3-10"] },
+
+    // #endregion
+
+    // #region Kanji N3-11
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3-11"] },
+
+    // #endregion
+
     // #region Unlearned (N4)
     { english: "Freedom", japanese: [["自", "じ"], ["由", "ゆう"]], tags: ["N4"] },
     { english: "Economics", japanese: [["経", "けい"], ["済", "ざい"]], tags: ["N4"] },

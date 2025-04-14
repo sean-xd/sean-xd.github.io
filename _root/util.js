@@ -49,20 +49,20 @@ function mergeNest(arr){
 //#endregion
 
 //#region - Object
-function v(store, key, fallback) {
+function v(parent, key, fallback) {
     if (isNum(key)) key = toStr(key);
     if (isStr(key)) {
-        const isEvent = store instanceof Event;
+        const isEvent = parent instanceof Event;
         for (let i = 0, keys = key.split("."), l = keys.length; i < l; i++) {               // Iterate over property array
-            if (!store || (!isEvent && !store.hasOwnProperty(keys[i]))) return fallback;    // If store doesn't contain property, return fallback.
-            if (!isVal(store[keys[i]])) return fallback;                                    // If no value exists at store[prop], return fallback.
-            store = store[keys[i]];                                                         // Otherwise set store to store[prop] and continue iteration.
+            if (!parent || (!isEvent && !parent.hasOwnProperty(keys[i]))) return fallback;    // If parent doesn't contain property, return fallback.
+            if (!isVal(parent[keys[i]])) return fallback;                                    // If no value exists at parent[prop], return fallback.
+            parent = parent[keys[i]];                                                         // Otherwise set parent to parent[prop] and continue iteration.
         }
-        return store;
+        return parent;
     }
-    if (isArr(key)) return key.slice(-1)[0].apply(null, key.slice(0,-1).map(val => v(store, val))); // [values..., fn]
+    if (isArr(key)) return key.slice(-1)[0].apply(null, key.slice(0,-1).map(val => v(parent, val))); // [values..., fn]
     if (isObj(key)) return reduce(key, (obj, val, prop) => {
-        const result = (isStr(val) || isNum(val) || isBool(val) || isArr(val)) ? v(store, val) : undefined;
+        const result = (isStr(val) || isNum(val) || isBool(val) || isArr(val)) ? v(parent, val) : undefined;
         if (isVal(result)) obj[prop] = result;
         return obj;
     }, {});
