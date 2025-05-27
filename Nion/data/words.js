@@ -1355,8 +1355,47 @@ var wordList = [
     // #endregion
 
     // #region Kanji N3-9
-    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3-9"] },
-
+    { english: "Childhood", japanese: [["幼", "よう"], ["少", "しょう"], ["期", "き"]], tags: ["N3-9"] },
+    { english: "Infant", japanese: [["幼", "よう"], ["児", "じ"]], tags: ["N3-9"] },
+    { english: "Children", japanese: [["児", "じ"], ["童", "どう"]], tags: ["N3-9"] },
+    { english: "Infant", japanese: [["乳", "にゅう"], ["児", "じ"]], tags: ["N3-9"] },
+    { english: "Childcare", japanese: [["育", "いく"], ["育", "じ"]], tags: ["N3-9"] },
+    { english: "Pediatrics", japanese: [["小", "しょう"], ["児", "に"], ["科", "か"]], tags: ["N3-9"] },
+    { english: "Fairy Tale", japanese: [["童", "どう"], ["話", "わ"]], tags: ["N3-9"] },
+    { english: "Children's Song", japanese: [["童", "わらべ"], ["歌", "うた"]], tags: ["N3-9"] },
+    { english: "Childish", japanese: [["童", "どう"], ["心", "しん"]], tags: ["N3-9"] },
+    { english: "Student", japanese: [["生", "せい"], ["徒", "と"]], tags: ["N3-9"] },
+    { english: "On Foot", japanese: [["徒", "と"], ["歩", "ほ"]], tags: ["N3-9"] },
+    
+    { english: "In Charge", japanese: [["担", "たん"], ["当", "とう"]], tags: ["N3-9"] },
+    { english: "Burden", japanese: [["負", "ふ"], ["担", "たん"]], tags: ["N3-9"] },
+    { english: "Doctor", japanese: [["医", "い"], ["師", "し"]], tags: ["N3-9"] },
+    { english: "Assemble", japanese: [["組み", "くみ"], ["立てる", "たてる"]], tags: ["N3-9"] },
+    { english: "Homeroom Teacher", japanese: [["担", "たん"], ["任", "にん"]], tags: ["N3-9"] },
+    { english: "Teacher", japanese: [["教", "きょう"], ["師", "し"]], tags: ["N3-9"] },
+    { english: "Cook", japanese: [["調", "ちょう"], ["理", "り"], ["師", "し"]], tags: ["N3-9"] },
+    { english: "Combination", japanese: [["組み", "くみ"], ["合わせ", "あわせ"]], tags: ["N3-9"] },
+    { english: "Program (show)", japanese: [["番", "ばん"], ["組", "ぐみ"]], tags: ["N3-9"] },
+    
+    { english: "Constellation", japanese: [["星", "せい"], ["座", "ざ"]], tags: ["N3-9"] },
+    { english: "Formal Sitting Posture", japanese: [["正", "せい"], ["座", "ざ"]], tags: ["N3-9"] },
+    { english: "Blackboard", japanese: [["黒", "こく"], ["板", "ばん"]], tags: ["N3-9"] },
+    { english: "Fountain Pen", japanese: [["万", "まん"], ["年", "ねん"], ["筆", "ひつ"]], tags: ["N3-9"] },
+    { english: "Blackboard Writing", japanese: [["板", "ばん"], ["書", "しょ"]], tags: ["N3-9"] },
+    { english: "Written Test", japanese: [["筆", "ひっ"], ["記", "き"], ["試", "し"], ["験", "けん"]], tags: ["N3-9"] },
+    
+    { english: "Politics", japanese: [["政", "せい"], ["治", "じ"]], tags: ["N3-9"] },
+    { english: "Experience", japanese: [["経", "けい"], ["験", "けん"]], tags: ["N3-9"] },
+    { english: "Repayment", japanese: [["返", "へん"], ["済", "さい"]], tags: ["N3-9"] },
+    { english: "Government", japanese: [["政", "せい"], ["府", "ふ"]], tags: ["N3-9"] },
+    { english: "Economy", japanese: [["経", "けい"], ["済", "ざい"]], tags: ["N3-9"] },
+    
+    { english: "Furniture", japanese: [["家", "か"], ["具", "ぐ"]], tags: ["N3-9"] },
+    { english: "Horizontal Bars", japanese: [["鉄", "てつ"], ["棒", "ぼう"]], tags: ["N3-9"] },
+    { english: "Tool", japanese: [["道", "どう"], ["具", "ぐ"]], tags: ["N3-9"] },
+    { english: "Stationary Store", japanese: [["文", "ぶん"], ["具", "ぐ"], ["店", "てん"]], tags: ["N3-9"] },
+    { english: "Empty Box", japanese: [["空き", "あき"], ["箱", "ばこ"]], tags: ["N3-9"] },
+    { english: "Extend (offer)", japanese: [["差し", "さし"], ["伸べる", "のべる"]], tags: ["N3-9"] },
     // #endregion
 
     // #region Kanji N3-10
