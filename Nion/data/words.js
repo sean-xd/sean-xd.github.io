@@ -1399,8 +1399,60 @@ var wordList = [
     // #endregion
 
     // #region Kanji N3-10
-    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3-10"] },
-
+    { english: "Rare", japanese: [["希", "き"], ["少", "しょう"]], tags: ["N3-10"] },
+    { english: "Hope", japanese: [["希", "き"], ["望", "ぼう"]], tags: ["N3-10"] },
+    { english: "Enthusiasm", japanese: [["夢", "む"], ["中", "ちゅう"]], tags: ["N3-10"] },
+    { english: "Nationally", japanese: [["全", "ぜん"], ["国", "こく"], ["的に", "てきに"]], tags: ["N3-10"] },
+    { english: "Purpose", japanese: [["目", "もく"], ["的", "てき"]], tags: ["N3-10"] },
+    { english: "Bullseye", japanese: [["的", "てき"], ["中", "ちゅう"]], tags: ["N3-10"] },
+    { english: "Typical", japanese: [["代", "だい"], ["表", "ひょう"], ["的な", "てきな"]], tags: ["N3-10"] },
+    { english: "Planned", japanese: [["計", "けい"], ["画", "かく"], ["的に", "てきに"]], tags: ["N3-10"] },
+    
+    { english: "Possible", japanese: [["可", "か"], ["能な", "のうな"]], tags: ["N3-10"] },
+    { english: "Possibility", japanese: [["可", "か"], ["能な", "のうな"], ["性", "せい"]], tags: ["N3-10"] },
+    { english: "Talent", japanese: [["才", "さい"], ["能", "のう"]], tags: ["N3-10"] },
+    { english: "Aptitude Test", japanese: [["能", "のう"], ["力", "りょく"], ["試", "し"], ["験", "けん"]], tags: ["N3-10"] },
+    { english: "Condition", japanese: [["調", "ちょう"], ["子", "し"]], tags: ["N3-10"] },
+    { english: "Investigation", japanese: [["調", "ちょう"], ["査", "さ"]], tags: ["N3-10"] },
+    { english: "Impossible", japanese: [["不", "ふ"], ["可", "か"], ["能な", "のうな"]], tags: ["N3-10"] },
+    { english: "Ability", japanese: [["能", "のう"], ["力", "りょく"]], tags: ["N3-10"] },
+    { english: "Performance", japanese: [["性", "せい"], ["能", "のう"]], tags: ["N3-10"] },
+    { english: "Physical Condition", japanese: [["体", "たい"], ["調", "ちょう"]], tags: ["N3-10"] },
+    { english: "Proper Condition", japanese: [["順", "じゅん"], ["調", "ちょう"]], tags: ["N3-10"] },
+    { english: "Athlete", japanese: [["選", "せん"], ["手", "しゅ"]], tags: ["N3-10"] },
+    
+    { english: "Interview", japanese: [["面", "めん"], ["接", "せつ"]], tags: ["N3-10"] },
+    { english: "Long Face", japanese: [["面", "おも"], ["長", "なが"]], tags: ["N3-10"] },
+    { english: "Outward Appearance", japanese: [["外", "そと"], ["面", "づら"]], tags: ["N3-10"] },
+    { english: "Approach", japanese: [["接", "せっ"], ["近", "きん"]], tags: ["N3-10"] },
+    { english: "Examination", japanese: [["受", "じゅ"], ["験", "けん"]], tags: ["N3-10"] },
+    { english: "Front, Facade", japanese: [["正", "しょう"], ["面", "めん"]], tags: ["N3-10"] },
+    { english: "Reception", japanese: [["受", "じゅ"], ["信", "しん"]], tags: ["N3-10"] },
+    { english: "Rakugo (Performance)", japanese: [["落", "らく"], ["語", "ご"]], tags: ["N3-10"] },
+    
+    { english: "Double", japanese: [["二", "に"], ["倍", "ばい"]], tags: ["N3-10"] },
+    { english: "Multiple, Ratio", japanese: [["倍", "ばい"], ["率", "りつ"]], tags: ["N3-10"] },
+    { english: "More than anyone else", japanese: [["人", "ひと"], ["一", "いち"], ["倍", "ばい"]], tags: ["N3-10"] },
+    { english: "Average Employee", japanese: [["平", "ひら"], ["社", "しゃ"], ["員", "いん"]], tags: ["N3-10"] },
+    { english: "Weekday", japanese: [["平", "へい"], ["日", "じつ"]], tags: ["N3-10"] },
+    { english: "Average", japanese: [["平", "へい"], ["均", "きん"]], tags: ["N3-10"] },
+    { english: "Uniform", japanese: [["均", "きん"], ["一", "いつ"]], tags: ["N3-10"] },
+    { english: "Supervisor", japanese: [["引", "いん"], ["率", "そつ"]], tags: ["N3-10"] },
+    { english: "Peaceful", japanese: [["平", "へい"], ["和な", "わな"]], tags: ["N3-10"] },
+    { english: "Heisei (Era)", japanese: [["平", "へい"], ["成", "せい"]], tags: ["N3-10"] },
+    
+    { english: "Success", japanese: [["成", "せい"], ["功", "こう"]], tags: ["N3-10"] },
+    { english: "Results", japanese: [["成", "せい"], ["績", "せき"]], tags: ["N3-10"] },
+    { english: "Satisfactory", japanese: [["良", "りょう"], ["好", "こう"]], tags: ["N3-10"] },
+    { english: "Malice", japanese: [["悪", "わる"], ["気", "ぎ"]], tags: ["N3-10"] },
+    { english: "Chills", japanese: [["悪", "お"], ["寒", "かん"]], tags: ["N3-10"] },
+    { english: "Completion", japanese: [["完", "かん"], ["成", "せい"]], tags: ["N3-10"] },
+    { english: "Growth", japanese: [["成", "せい"], ["長", "ちょう"]], tags: ["N3-10"] },
+    { english: "Achievement", japanese: [["達", "たっ"], ["成", "せい"]], tags: ["N3-10"] },
+    { english: "Coming-of-age Ceremony", japanese: [["成", "せい"], ["人", "じん"], ["式", "しき"]], tags: ["N3-10"] },
+    { english: "Defective Product", japanese: [["不", "ふ"], ["良", "りょう"], ["品", "ひん"]], tags: ["N3-10"] },
+    { english: "Bad Mouthing", japanese: [["悪", "わる"], ["口", "ぐち"]], tags: ["N3-10"] },
+    { english: "Deterioration", japanese: [["悪", "あっ"], ["化", "か"]], tags: ["N3-10"] },
     // #endregion
 
     // #region Kanji N3-11
