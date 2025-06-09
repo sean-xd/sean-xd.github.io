@@ -133,7 +133,6 @@ var wordList = [
     { english: "Friend", japanese: [["友", "とも"], ["達", "だち"]], tags: ["N5-7"] },
 
     { english: "Entrance", japanese: [["入", "いり"], ["口", "ぐち"]], tags: ["N5-7"] },
-    { english: "Attendance", japanese: [["出", "しゅうっ"], ["席", "せき"]], tags: ["N5-7"] },
     
     { english: "School Gate", japanese: [["校", "こう"], ["門", "もん"]], tags: ["N5-7"] },
     { english: "Main Gate", japanese: [["正", "せい"], ["門", "もん"]], tags: ["N5-7"] },
@@ -312,7 +311,6 @@ var wordList = [
     { english: "Bath", japanese: [["風", "ふ"], ["呂", "ろ"]], tags: ["N5", "Objects"] },
     { english: "Refrigerator", japanese: [["冷", "れい"], ["蔵", "ぞう"], ["庫", "こ"]], tags: ["N5", "Objects"] },
     { english: "Wallet", japanese: [["財", "さい"], ["布", "ふ"]], tags: ["N5", "Objects"] },
-    { english: "Class", japanese: [["授", "じゅ"], ["業", "ぎょう"]], tags: ["N5", "Academic", "Places"] },
     { english: "Fine, Nice", japanese: [["結", "けっ"], ["構", "こう"]], tags: ["N5", "Measures"] },
     { english: "Day Before Yesterday", japanese: [["一", "お"], ["昨", "と"], ["日", "とい"]], tags: ["N5", "Time"] },
     { english: "Year Before Last", japanese: [["一", "お"], ["昨", "と"], ["年", "とし"]], tags: ["N5", "Time"] },
@@ -1064,7 +1062,6 @@ var wordList = [
     // #endregion
 
     // #region Unlearned (N4)
-    { english: "Freedom", japanese: [["自", "じ"], ["由", "ゆう"]], tags: ["N4"] },
     { english: "War", japanese: [["戦", "せん"], ["争", "そう"]], tags: ["N4"] },
     { english: "Easy", japanese: [["簡", "かん"], ["単", "たん"]], tags: ["N4"] },
     { english: "Reservation", japanese: [["予", "よ"], ["約", "やく"]], tags: ["N4"] },
@@ -1085,8 +1082,6 @@ var wordList = [
     { english: "Accident", japanese: [["事", "じ"], ["故", "こ"]], tags: ["N4"] },
     { english: "Way, Method", japanese: [["仕", "し"], ["方", "かた"]], tags: ["N4"] },
     { english: "Citizen", japanese: [["市", "し"], ["民", "みん"]], tags: ["N4"] },
-    { english: "Novel", japanese: [["小", "しょう"], ["説", "せつ"]], tags: ["N4"] },
-    { english: "Graduate", japanese: [["卒", "そつ"], ["業", "ぎょう"]], tags: ["N4"] },
     { english: "Scenery", japanese: [["景", "けい"], ["色", "しき"]], tags: ["N4"] },
     { english: "Caution", japanese: [["注", "ちゅう"], ["意", "い"]], tags: ["N4"] },
     { english: "Roughly, Approximately", japanese: [["大", "だい"], ["体", "たい"]], tags: ["N4", "Adverb"] },
@@ -1405,7 +1400,7 @@ var wordList = [
     { english: "Planned", japanese: [["計", "けい"], ["画", "かく"], ["的に", "てきに"]], tags: ["N3-10"] },
     
     { english: "Possible", japanese: [["可", "か"], ["能な", "のうな"]], tags: ["N3-10"] },
-    { english: "Possibility", japanese: [["可", "か"], ["能な", "のうな"], ["性", "せい"]], tags: ["N3-10"] },
+    { english: "Possibility", japanese: [["可", "か"], ["能", "のう"], ["性", "せい"]], tags: ["N3-10"] },
     { english: "Aptitude Test", japanese: [["能", "のう"], ["力", "りょく"], ["試", "し"], ["験", "けん"]], tags: ["N3-10"] },
     { english: "Condition", japanese: [["調", "ちょう"], ["子", "し"]], tags: ["N3-10"] },
     { english: "Investigation", japanese: [["調", "ちょう"], ["査", "さ"]], tags: ["N3-10"] },
@@ -1432,7 +1427,7 @@ var wordList = [
     { english: "Average", japanese: [["平", "へい"], ["均", "きん"]], tags: ["N3-10"] },
     { english: "Uniform", japanese: [["均", "きん"], ["一", "いつ"]], tags: ["N3-10"] },
     { english: "Supervisor", japanese: [["引", "いん"], ["率", "そつ"]], tags: ["N3-10"] },
-    { english: "Peaceful", japanese: [["平", "へい"], ["和な", "わな"]], tags: ["N3-10"] },
+    { english: "Peace", japanese: [["平", "へい"], ["和な", "わ"]], tags: ["N3-10"] },
     { english: "Heisei (Era)", japanese: [["平", "へい"], ["成", "せい"]], tags: ["N3-10"] },
     
     { english: "Success", japanese: [["成", "せい"], ["功", "こう"]], tags: ["N3-10"] },
@@ -1453,18 +1448,16 @@ var wordList = [
     { english: "Academics", japanese: [["学", "がく"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
     { english: "Class", japanese: [["授", "じゅ"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
     { english: "Overtime", japanese: [["残", "ざん"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
-    { english: "Beginner", japanese: [["初", "しょ"], ["級", "きゅう"]], tags: ["N3", "N3-11"] },
+    { english: "Beginner Level", japanese: [["初", "しょ"], ["級", "きゅう"]], tags: ["N3", "N3-11"] },
     { english: "Luxury", japanese: [["高", "こう"], ["級な", "きゅうな"]], tags: ["N3", "N3-11"] },
-    { english: "Classmate", japanese: [["同", "どう"], ["級", "きゅう"], ["生", "せい"]], tags: ["N3", "N3-11"] },
     { english: "New Graduates", japanese: [["新", "しん"], ["卒", "そつ"]], tags: ["N3", "N3-11"] },
-    { english: "Graduation", japanese: [["卒", "そつ"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
-    { english: "Professor", japanese: [["教", "きょう"], ["授", "じゅ"]], tags: ["N3", "N3-11"] },
+    { english: "Graduate", japanese: [["卒", "そつ"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
     { english: "Closed", japanese: [["休", "きゅう"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
     { english: "Industry", japanese: [["業", "ぎょう"], ["界", "かい"]], tags: ["N3", "N3-11"] },
     { english: "Intermediate", japanese: [["中", "ちゅう"], ["級", "きゅう"]], tags: ["N3", "N3-11"] },
     { english: "Advancement", japanese: [["進", "しん"], ["級", "きゅう"]], tags: ["N3", "N3-11"] },
     
-    { english: "Absence", japanese: [["欠", "けっ"], ["席", "せき"]], tags: ["N3", "N3-11"] },
+    { english: "Absence (Non-attendance)", japanese: [["欠", "けっ"], ["席", "せき"]], tags: ["N3", "N3-11"] },
     { english: "Attendance", japanese: [["出", "しゅっ"], ["席", "せき"]], tags: ["N3", "N3-11"] },
     { english: "Via, By way of", japanese: [["経", "けい"], ["由", "ゆ"]], tags: ["N3", "N3-11"] },
     { english: "Cons", japanese: [["欠", "けっ"], ["点", "てん"]], tags: ["N3", "N3-11"] },
@@ -1480,7 +1473,6 @@ var wordList = [
     { english: "Easily", japanese: [["安", "あん"], ["易に", "いに"]], tags: ["N3", "N3-11"] },
     { english: "Commentary", japanese: [["解", "かい"], ["説", "せつ"]], tags: ["N3", "N3-11"] },
     { english: "Reading Comprehension", japanese: [["読", "どっ"], ["解", "かい"]], tags: ["N3", "N3-11"] },
-    { english: "Explanation", japanese: [["説", "せつ"], ["明", "めい"]], tags: ["N3", "N3-11"] },
     { english: "Novel", japanese: [["小", "しょう"], ["説", "せつ"]], tags: ["N3", "N3-11"] },
     
     { english: "Discovery", japanese: [["発", "はっ"], ["覚", "かく"]], tags: ["N3", "N3-11"] },
@@ -1489,7 +1481,7 @@ var wordList = [
     { english: "Year End Party", japanese: [["忘", "ぼう"], ["年", "ねん"], ["会", "かい"]], tags: ["N3", "N3-11"] },
     { english: "Continuous", japanese: [["連", "れん"], ["続", "ぞく"]], tags: ["N3", "N3-11"] },
     { english: "Feelings", japanese: [["感", "かん"], ["覚", "かく"]], tags: ["N3", "N3-11"] },
-    { english: "Taste", japanese: [["味", "み"], ["覚", "かく"]], tags: ["N3", "N3-11"] },
+    { english: "Taste, Palate", japanese: [["味", "み"], ["覚", "かく"]], tags: ["N3", "N3-11"] },
     { english: "Effort", japanese: [["努", "ど"], ["力", "りょく"]], tags: ["N3", "N3-11"] },
     { english: "Resuming", japanese: [["続", "ぞっ"], ["行", "こう"]], tags: ["N3", "N3-11"] },
     
@@ -1502,19 +1494,16 @@ var wordList = [
     { english: "Major", japanese: [["主", "しゅ"], ["要な", "ような"]], tags: ["N3", "N3-11"] },
     { english: "Be Careful", japanese: [["要", "よう"], ["注", "ちゅう"], ["意", "い"]], tags: ["N3", "N3-11"] },
     { english: "Recovery", japanese: [["回", "かい"], ["復", "ふく"]], tags: ["N3", "N3-11"] },
-    { english: "Enable", japanese: [["有", "ゆう"], ["効に", "こうに"]], tags: ["N3", "N3-11"] },
+    { english: "Valid", japanese: [["有", "ゆう"], ["効に", "こう"]], tags: ["N3", "N3-11"] },
     // #endregion
 
     // #region Unlearned (N3)
-    { english: "Peace", japanese: [["平", "へい"], ["和", "わ"]], tags: ["N3"] },
     { english: "Living Room", japanese: [["居", "い"], ["間", "ま"]], tags: ["N3"] },
     { english: "Future (Distant)", japanese: [["未", "み"], ["来", "らい"]], tags: ["N3"] },
     { english: "Management", japanese: [["経", "けい"], ["営", "えい"]], tags: ["N3"] },
-    { english: "Via (by way of)", japanese: [["経", "けい"], ["由", "ゆ"]], tags: ["N3"] },
     { english: "Change (Alternation)", japanese: [["変", "へん"], ["更", "こう"]], tags: ["N3"] },
     { english: "Expert, Doctor", japanese: [["博", "はか"], ["士", "せ"]], tags: ["N3"] },
     { english: "Major Subject", japanese: [["専", "せん"], ["攻", "こう"]], tags: ["N3"] },
-    { english: "Possible", japanese: [["可", "か"], ["能", "のう"]], tags: ["N3"] },
     { english: "Permission", japanese: [["許", "きょ"], ["可", "か"]], tags: ["N3"] },
     { english: "License", japanese: [["免", "めん"], ["許", "きょ"]], tags: ["N3"] },
     { english: "Unique, Distinctive", japanese: [["独", "どく"], ["特", "とく"]], tags: ["N3"] },
@@ -1537,14 +1526,12 @@ var wordList = [
     { english: "Safe (Box)", japanese: [["金", "きん"], ["庫", "こ"]], tags: ["N3"] },
     { english: "Consideration", japanese: [["考", "こう"], ["慮", "りょ"]], tags: ["N3"] },
     { english: "Limit (Restriction)", japanese: [["制", "せい"], ["限", "げん"]], tags: ["N3"] },
-    { english: "Valid", japanese: [["有", "ゆう"], ["効", "こう"]], tags: ["N3"] },
     { english: "Audience, Spectator", japanese: [["観", "かん"], ["客", "きゃく"]], tags: ["N3"] },
     { english: "Currency Exchange", japanese: [["両", "りょう"], ["替", "がえ"]], tags: ["N3"] },
     { english: "Business, Commerce", japanese: [["商", "しょう"], ["売", "ばい"]], tags: ["N3"] },
     { english: "Aviation", japanese: [["航", "こう"], ["空", "くう"]], tags: ["N3"] },
     { english: "Serious, Severe", japanese: [["深", "しん"], ["刻", "こく"]], tags: ["N3"] },
     { english: "This Time", japanese: [["今", "こん"], ["回", "かい"]], tags: ["N3"] },
-    { english: "Recovery", japanese: [["回", "かい"], ["復", "ふく"]], tags: ["N3"] },
     { english: "Scene", japanese: [["場", "ば"], ["面", "めん"]], tags: ["N3"] },
     { english: "Beautiful Person", japanese: [["美", "び"], ["人", "じん"]], tags: ["N3"] },
     { english: "Discrimination", japanese: [["差", "さ"], ["別", "べつ"]], tags: ["N3"] },
@@ -1568,7 +1555,6 @@ var wordList = [
     { english: "Scene (Crime, Accident)", japanese: [["現", "げん"], ["場", "ば"]], tags: ["N3"] },
     { english: "Delivery", japanese: [["配", "はい"], ["達", "たつ"]], tags: ["N3"] },
     { english: "Worry, Concern", japanese: [["心", "しん"], ["配", "ぱい"]], tags: ["N3"] },
-    { english: "Absence (Non-Attendance)", japanese: [["欠", "けっ"], ["席", "せき"]], tags: ["N3"] },
     { english: "Direct, Immediate", japanese: [["直", "ちょく"], ["接", "せつ"]], tags: ["N3"] },
     { english: "Honestly", japanese: [["正", "しょう"], ["直", "じき"]], tags: ["N3", "Adverb"] },
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3"] },
@@ -1606,9 +1592,7 @@ var wordList = [
     { english: "Form, Format", japanese: [["形", "けい"], ["式", "しき"]], tags: ["N2"] },
     { english: "Weight", japanese: [["重", "じゅう"], ["量", "りょう"]], tags: ["N2"] },
     { english: "Serving Size", japanese: [["分", "ぶん"], ["量", "りょう"]], tags: ["N2"] },
-    { english: "Beginner's Level", japanese: [["初", "しょ"], ["級", "きゅう"]], tags: ["N2"] },
     { english: "One Way (Trip)", japanese: [["片", "かた"], ["道", "みち"]], tags: ["N2"] },
-    { english: "High Quality, Luxury", japanese: [["高", "こう"], ["級", "きゅう"]], tags: ["N2"] },
     { english: "Area, Floor Space", japanese: [["面", "めん"], ["積", "せき"]], tags: ["N2"] },
     { english: "Violent, Rowdy", japanese: [["乱", "らん"], ["暴", "ぼう"]], tags: ["N2"] },
     { english: "Literary Arts", japanese: [["文", "ぶん"], ["芸", "げい"]], tags: ["N2"] },
@@ -1706,7 +1690,6 @@ var wordList = [
     { english: "Leadership, Initiative", japanese: [["主", "しゅ"], ["導", "どう"]], tags: ["N1"] },
     { english: "Intellectual", japanese: [["知", "ち"], ["的", "てき"]], tags: ["N1"] },
     { english: "Eyesight, Vision (Sense)", japanese: [["視", "し"], ["覚", "かく"]], tags: ["N1"] },
-    { english: "Taste, Palate (Sense)", japanese: [["味", "み"], ["覚", "かく"]], tags: ["N1"] },
     { english: "Local, Hometown", japanese: [["地", "じ"], ["元", "もと"]], tags: ["N1"] },
     { english: "National Diet Building", japanese: [["国", "こっ"], ["会", "かい"], ["議", "ぎ"], ["事", "じ"], ["堂", "どう"]], tags: ["N1"] },
     { english: "Insurance, Warranty", japanese: [["保", "ほ"], ["険", "けん"]], tags: ["N1"] },
@@ -1720,7 +1703,7 @@ function checkWords() {
     var hold = [];
     var dupes = [];
     wordList.forEach(e => {
-        var kanji = e.japanese.map(j => j[0]).join("");
+        var kanji = e.japanese.map(j => j[0]).join("").replace("な", "").replace("に", "");
         if(hold.indexOf(kanji) > -1) dupes.push(kanji);
         else hold.push(kanji);
     })
