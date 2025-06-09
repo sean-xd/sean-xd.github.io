@@ -1450,8 +1450,59 @@ var wordList = [
     // #endregion
 
     // #region Kanji N3-11
-    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3-11"] },
+    { english: "Academics", japanese: [["学", "がく"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
+    { english: "Class", japanese: [["授", "じゅ"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
+    { english: "Overtime", japanese: [["残", "ざん"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
+    { english: "Beginner", japanese: [["初", "しょ"], ["級", "きゅう"]], tags: ["N3", "N3-11"] },
+    { english: "Luxury", japanese: [["高", "こう"], ["級な", "きゅうな"]], tags: ["N3", "N3-11"] },
+    { english: "Classmate", japanese: [["同", "どう"], ["級", "きゅう"], ["生", "せい"]], tags: ["N3", "N3-11"] },
+    { english: "New Graduates", japanese: [["新", "しん"], ["卒", "そつ"]], tags: ["N3", "N3-11"] },
+    { english: "Graduation", japanese: [["卒", "そつ"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
+    { english: "Professor", japanese: [["教", "きょう"], ["授", "じゅ"]], tags: ["N3", "N3-11"] },
+    { english: "Closed", japanese: [["休", "きゅう"], ["業", "ぎょう"]], tags: ["N3", "N3-11"] },
+    { english: "Industry", japanese: [["業", "ぎょう"], ["界", "かい"]], tags: ["N3", "N3-11"] },
+    { english: "Intermediate", japanese: [["中", "ちゅう"], ["級", "きゅう"]], tags: ["N3", "N3-11"] },
+    { english: "Advancement", japanese: [["進", "しん"], ["級", "きゅう"]], tags: ["N3", "N3-11"] },
+    
+    { english: "Absence", japanese: [["欠", "けっ"], ["席", "せき"]], tags: ["N3", "N3-11"] },
+    { english: "Attendance", japanese: [["出", "しゅっ"], ["席", "せき"]], tags: ["N3", "N3-11"] },
+    { english: "Via, By way of", japanese: [["経", "けい"], ["由", "ゆ"]], tags: ["N3", "N3-11"] },
+    { english: "Cons", japanese: [["欠", "けっ"], ["点", "てん"]], tags: ["N3", "N3-11"] },
+    { english: "Seating", japanese: [["座", "ざ"], ["席", "せき"]], tags: ["N3", "N3-11"] },
+    { english: "Freedom", japanese: [["自", "じ"], ["由", "ゆう"]], tags: ["N3", "N3-11"] },
+    { english: "Origin", japanese: [["由", "ゆ"], ["来", "らい"]], tags: ["N3", "N3-11"] },
+    { english: "Interpretation", japanese: [["通", "つう"], ["訳", "やく"]], tags: ["N3", "N3-11"] },
+    { english: "Excuse", japanese: [["言い", "いい"], ["訳", "わけ"]], tags: ["N3", "N3-11"] },
 
+    { english: "Every Year", japanese: [["例", "れい"], ["年", "ねん"]], tags: ["N3", "N3-11"] },
+    { english: "Understanding", japanese: [["理", "り"], ["解", "かい"]], tags: ["N3", "N3-11"] },
+    { english: "Exception", japanese: [["例", "れい"], ["外", "がい"]], tags: ["N3", "N3-11"] },
+    { english: "Easily", japanese: [["安", "あん"], ["易に", "いに"]], tags: ["N3", "N3-11"] },
+    { english: "Commentary", japanese: [["解", "かい"], ["説", "せつ"]], tags: ["N3", "N3-11"] },
+    { english: "Reading Comprehension", japanese: [["読", "どっ"], ["解", "かい"]], tags: ["N3", "N3-11"] },
+    { english: "Explanation", japanese: [["説", "せつ"], ["明", "めい"]], tags: ["N3", "N3-11"] },
+    { english: "Novel", japanese: [["小", "しょう"], ["説", "せつ"]], tags: ["N3", "N3-11"] },
+    
+    { english: "Discovery", japanese: [["発", "はっ"], ["覚", "かく"]], tags: ["N3", "N3-11"] },
+    { english: "Awareness", japanese: [["自", "じ"], ["覚", "かく"]], tags: ["N3", "N3-11"] },
+    { english: "Lost Item", japanese: [["忘れ", "わすれ"], ["物", "もの"]], tags: ["N3", "N3-11"] },
+    { english: "Year End Party", japanese: [["忘", "ぼう"], ["年", "ねん"], ["会", "かい"]], tags: ["N3", "N3-11"] },
+    { english: "Continuous", japanese: [["連", "れん"], ["続", "ぞく"]], tags: ["N3", "N3-11"] },
+    { english: "Feelings", japanese: [["感", "かん"], ["覚", "かく"]], tags: ["N3", "N3-11"] },
+    { english: "Taste", japanese: [["味", "み"], ["覚", "かく"]], tags: ["N3", "N3-11"] },
+    { english: "Effort", japanese: [["努", "ど"], ["力", "りょく"]], tags: ["N3", "N3-11"] },
+    { english: "Resuming", japanese: [["続", "ぞっ"], ["行", "こう"]], tags: ["N3", "N3-11"] },
+    
+    { english: "Necessary", japanese: [["必", "ひつ"], ["要な", "ような"]], tags: ["N3", "N3-11"] },
+    { english: "Summary", japanese: [["要", "よう"], ["約", "やく"]], tags: ["N3", "N3-11"] },
+    { english: "Return, Reinstatement", japanese: [["復", "ふっ"], ["帰", "き"]], tags: ["N3", "N3-11"] },
+    { english: "Supplementary Lessons", japanese: [["補", "ほ"], ["習", "しゅう"]], tags: ["N3", "N3-11"] },
+    { english: "Efficacy", japanese: [["効き", "きき"], ["目", "め"]], tags: ["N3", "N3-11"] },
+    { english: "Effective", japanese: [["効", "こう"], ["果", "か"], ["的な", "てきな"]], tags: ["N3", "N3-11"] },
+    { english: "Major", japanese: [["主", "しゅ"], ["要な", "ような"]], tags: ["N3", "N3-11"] },
+    { english: "Be Careful", japanese: [["要", "よう"], ["注", "ちゅう"], ["意", "い"]], tags: ["N3", "N3-11"] },
+    { english: "Recovery", japanese: [["回", "かい"], ["復", "ふく"]], tags: ["N3", "N3-11"] },
+    { english: "Enable", japanese: [["有", "ゆう"], ["効に", "こうに"]], tags: ["N3", "N3-11"] },
     // #endregion
 
     // #region Unlearned (N3)
@@ -1520,7 +1571,6 @@ var wordList = [
     { english: "Absence (Non-Attendance)", japanese: [["欠", "けっ"], ["席", "せき"]], tags: ["N3"] },
     { english: "Direct, Immediate", japanese: [["直", "ちょく"], ["接", "せつ"]], tags: ["N3"] },
     { english: "Honestly", japanese: [["正", "しょう"], ["直", "じき"]], tags: ["N3", "Adverb"] },
-
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3"] },
     // #endregion
 
