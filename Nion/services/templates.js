@@ -1,7 +1,7 @@
 /* --- Main --- */
 
 function nionMain(){
-    var lessons = ["N5", "N4", "N3-7", "N3-8", "N3-9", "N3-10", "N3-11", "N3", "N2", "N1"];
+    var lessons = ["N5", "N4", "N3-12", "N3", "N2", "N1"];
     var types = ["Abstract", "Academic", "Animals", "Body", "Elements", "Landscape", "Measures", "Movement", "Objects", "People", "Places", "Position", "Time", "Weather"];
     var statuses = ["Known", "Learning", "Unknown"];
     return t("div", { id: "nion", class: "h-100 w-100" }, [
