@@ -988,7 +988,7 @@ var wordList = [
     { english: "Training", japanese: [["訓", "くん"], ["練", "れん"]], tags: ["N4-9"] },
     { english: "Learning", japanese: [["学", "がく"], ["習", "しゅう"]], tags: ["N4-9"] },
     { english: "Calligraphy (Practical)", japanese: [["習", "しゅう"], ["字", "じ"]], tags: ["N4-9"] },
-    { english: "Preparation", japanese: [["予", "よ"], ["習", "しゅう"]], tags: ["N4-9"] },
+    { english: "Preparation (before class)", japanese: [["予", "よ"], ["習", "しゅう"]], tags: ["N4-9"] },
     { english: "Habits", japanese: [["習", "しゅう"], ["慣", "かん"]], tags: ["N4-9"] },
     { english: "Evacuation Drills", japanese: [["避", "ひ"], ["難", "なん"], ["訓", "くん"], ["練", "れん"]], tags: ["N4-9"] },
     { english: "Review", japanese: [["復", "ふく"], ["習", "しゅう"]], tags: ["N4-9"] },
@@ -1498,7 +1498,6 @@ var wordList = [
     // #endregion
 
     // #region Kanji N3-12
-
     { english: "Variety", japanese: [["品", "ひん"], ["種", "しゅ"]], tags: ["N3", "N3-12"] },
     { english: "Application Documents", japanese: [["出", "しゅつ"], ["願", "がん"], ["書", "しょ"], ["類", "るい"]], tags: ["N3", "N3-12"] },
     { english: "Kinds", japanese: [["種", "しゅ"], ["類", "るい"]], tags: ["N3", "N3-12"] },
@@ -1511,7 +1510,6 @@ var wordList = [
     { english: "Conservation", japanese: [["温", "おん"], ["存", "ぞん"]], tags: ["N3", "N3-12"] },
     { english: "At home", japanese: [["在", "ざい"], ["宅", "たく"]], tags: ["N3", "N3-12"] },
     
-    { english: "Sun", japanese: [["太", "陽"], ["たい", "よう"]], tags: ["N3", "N3-12"] },
     { english: "Sanyo Region", japanese: [["山", "さん"], ["陽", "よう"], ["地", "ち"], ["方", "ほう"]], tags: ["N3", "N3-12"] },
     { english: "Cheerful", japanese: [["陽", "よう"], ["気な", "きな"]], tags: ["N3", "N3-12"] },
     { english: "Giant (A)", japanese: [["巨", "きょ"], ["大な", "だいな"]], tags: ["N3", "N3-12"] },
@@ -1556,6 +1554,61 @@ var wordList = [
     { english: "Equinox", japanese: [["お彼", "おひ"], ["岸", "がん"]], tags: ["N3", "N3-12"] },
     // #endregion
 
+    // #region Kanji N3-13
+    { english: "Preparation (general)", japanese: [["準", "じゅん"], ["備", "び"]], tags: ["N3", "N3-13"] },
+    { english: "Greet", japanese: [["出", "で"], ["迎え", "むかえ"]], tags: ["N3", "N3-13"] },
+    { english: "Pickup and Dropoff", japanese: [["送", "そう"], ["迎", "げい"]], tags: ["N3", "N3-13"] },
+    { english: "Runner-up", japanese: [["準", "じゅん"], ["優", "ゆう"], ["勝", "しょう"]], tags: ["N3", "N3-13"] },
+    { english: "Spare", japanese: [["予", "よ"], ["備", "び"]], tags: ["N3", "N3-13"] },
+
+    { english: "Migration", japanese: [["移", "い"], ["住", "じゅう"]], tags: ["N3", "N3-13"] },
+    { english: "Mountain Trail", japanese: [["登", "と"], ["山", "ざん"], ["道", "どう"]], tags: ["N3", "N3-13"] },
+    { english: "2 Nights, 3 Days", japanese: [["二", "に"], ["泊", "はく"], ["三", "みっ"], ["日", "か"]], tags: ["N3", "N3-13"] },
+    { english: "Movement (Relocation)", japanese: [["移", "い"], ["動", "どう"]], tags: ["N3", "N3-13"] },
+    { english: "Transfer", japanese: [["移", "い"], ["転", "てん"]], tags: ["N3", "N3-13"] },
+    { english: "Registration", japanese: [["登", "とう"], ["録", "ろく"]], tags: ["N3", "N3-13"] },
+    
+    { english: "Group", japanese: [["団", "だん"], ["体", "たい"]], tags: ["N3", "N3-13"] },
+    { english: "Unity", japanese: [["団", "だん"], ["結", "けつ"]], tags: ["N3", "N3-13"] },
+    { english: "Orchestra", japanese: [["楽", "がく"], ["団", "だん"]], tags: ["N3", "N3-13"] },
+    { english: "Schedule, Agenda", japanese: [["日", "にっ"], ["程", "てい"]], tags: ["N3", "N3-13"] },
+    { english: "Some Time Ago", japanese: [["先", "さき"], ["程", "ほど"]], tags: ["N3", "N3-13"] },
+    { english: "Europe", japanese: [["欧", "おう"], ["州", "しゅう"]], tags: ["N3", "N3-13"] },
+    { english: "Kyushu", japanese: [["九", "きゅう"], ["州", "しゅう"]], tags: ["N3", "N3-13"] },
+    { english: "Delta (River)", japanese: [["三", "さん"], ["角", "かく"], ["州", "す"]], tags: ["N3", "N3-13"] },
+    { english: "Housing Complex", japanese: [["団", "だん"], ["地", "ち"]], tags: ["N3", "N3-13"] },
+    { english: "Degree, Extent", japanese: [["程", "てい"], ["度", "ど"]], tags: ["N3", "N3-13"] },
+    { english: "Westernization", japanese: [["欧", "おう"], ["米", "べい"], ["化", "か"]], tags: ["N3", "N3-13"] },
+    { english: "Honshu", japanese: [["本", "ほん"], ["州", "しゅう"]], tags: ["N3", "N3-13"] },
+    
+    { english: "Tourist Spot", japanese: [["観", "かん"], ["光", "こう"], ["地", "ち"]], tags: ["N3", "N3-13"] },
+    { english: "Subjective", japanese: [["主", "しゅ"], ["観", "かん"], ["的", "てき"]], tags: ["N3", "N3-13"] },
+    { english: "Audience", japanese: [["観", "かん"], ["客", "きゃく"]], tags: ["N3", "N3-13"] },
+    { english: "Small Boat", japanese: [["小", "こ"], ["舟", "ぶね"]], tags: ["N3", "N3-13"] },
+    { english: "Gardening", japanese: [["園", "えん"], ["芸", "げい"]], tags: ["N3", "N3-13"] },
+    { english: "Speech, Address", japanese: [["演", "えん"], ["説", "ぜつ"]], tags: ["N3", "N3-13"] },
+    { english: "Literature", japanese: [["文", "ぶん"], ["芸", "げい"]], tags: ["N3", "N3-13"] },
+    { english: "Opening", japanese: [["開", "かい"], ["演", "えん"]], tags: ["N3", "N3-13"] },
+    
+    { english: "Buddha", japanese: [["仏", "ほとけ"], ["様", "さま"]], tags: ["N3", "N3-13"] },
+    { english: "Merciful Heart", japanese: [["仏", "ほとけ"], ["心", "ごころ"]], tags: ["N3", "N3-13"] },
+    { english: "Great Buddha", japanese: [["大", "だい"], ["仏", "ぶつ"]], tags: ["N3", "N3-13"] },
+    { english: "Nervous", japanese: [["神", "しん"], ["経", "けい"], ["質", "しつ"]], tags: ["N3", "N3-13"] },
+    { english: "Summer Festival", japanese: [["夏", "なつ"], ["祭り", "まつり"]], tags: ["N3", "N3-13"] },
+    { english: "Holiday", japanese: [["祭", "さい"], ["日", "じつ"]], tags: ["N3", "N3-13"] },
+    { english: "Painting", japanese: [["絵", "かい"], ["画", "が"]], tags: ["N3", "N3-13"] },
+    { english: "Oil Painting", japanese: [["油", "あぶら"], ["絵", "え"]], tags: ["N3", "N3-13"] },
+    { english: "Buddhist Chanting", japanese: [["念", "ねん"], ["仏", "ぶつ"]], tags: ["N3", "N3-13"] },
+    { english: "Fainting", japanese: [["失", "しっ"], ["神", "しん"]], tags: ["N3", "N3-13"] },
+    { english: "Cultural Festival", japanese: [["文", "ぶん"], ["化", "か"], ["祭", "さい"]], tags: ["N3", "N3-13"] },
+    { english: "Snow Festival", japanese: [["雪", "ゆき"], ["祭り", "まつり"]], tags: ["N3", "N3-13"] },
+    { english: "Picture Book", japanese: [["絵", "え"], ["本", "ほん"]], tags: ["N3", "N3-13"] },
+    { english: "Paint(s)", japanese: [["絵", "え"], ["の", "の"], ["具", "ぐ"]], tags: ["N3", "N3-13"] },
+    
+    { english: "Celebrity", japanese: [["芸", "げい"], ["能", "のう"], ["人", "じん"]], tags: ["N3", "N3-13"] },
+    { english: "Tourist", japanese: [["観", "かん"], ["光", "こう"], ["客", "きゃく"]], tags: ["N3", "N3-13"] },
+    // #endregion
+
     // #region Unlearned (N3)
     { english: "Living Room", japanese: [["居", "い"], ["間", "ま"]], tags: ["N3"] },
     { english: "Future (Distant)", japanese: [["未", "み"], ["来", "らい"]], tags: ["N3"] },
@@ -1585,7 +1638,6 @@ var wordList = [
     { english: "Safe (Box)", japanese: [["金", "きん"], ["庫", "こ"]], tags: ["N3"] },
     { english: "Consideration", japanese: [["考", "こう"], ["慮", "りょ"]], tags: ["N3"] },
     { english: "Limit (Restriction)", japanese: [["制", "せい"], ["限", "げん"]], tags: ["N3"] },
-    { english: "Audience, Spectator", japanese: [["観", "かん"], ["客", "きゃく"]], tags: ["N3"] },
     { english: "Currency Exchange", japanese: [["両", "りょう"], ["替", "がえ"]], tags: ["N3"] },
     { english: "Business, Commerce", japanese: [["商", "しょう"], ["売", "ばい"]], tags: ["N3"] },
     { english: "Aviation", japanese: [["航", "こう"], ["空", "くう"]], tags: ["N3"] },
@@ -1652,7 +1704,6 @@ var wordList = [
     { english: "One Way (Trip)", japanese: [["片", "かた"], ["道", "みち"]], tags: ["N2"] },
     { english: "Area, Floor Space", japanese: [["面", "めん"], ["積", "せき"]], tags: ["N2"] },
     { english: "Violent, Rowdy", japanese: [["乱", "らん"], ["暴", "ぼう"]], tags: ["N2"] },
-    { english: "Literary Arts", japanese: [["文", "ぶん"], ["芸", "げい"]], tags: ["N2"] },
     { english: "Industrial Arts, Crafts", japanese: [["工", "こう"], ["芸", "げい"]], tags: ["N2"] },
     { english: "Performing Arts, Entertainment", japanese: [["芸", "げい"], ["能", "のう"]], tags: ["N2"] },
     { english: "Real Ability", japanese: [["実", "じつ"], ["力", "りょく"]], tags: ["N2"] },
