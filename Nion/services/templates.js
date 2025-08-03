@@ -131,7 +131,7 @@ function readingTemplate(hiragana, def){
 }
 
 function kanjiWordsTemplate(kObj){
-    var words = wordList.filter(e => isIn(mergeNest(e.japanese), kObj._));
+    var words = wordList.filter(e => isIn(mergeNest(e.japanese).join(), kObj._));
     return t("div", { class: "words" }, [t("div", { class: "reading-title" }, "Words")].concat(words.map(wObj => {
         var { japanese, english } = wObj;
         var kText = japanese.map(e => {
