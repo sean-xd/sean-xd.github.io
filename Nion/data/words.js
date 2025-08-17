@@ -89,7 +89,7 @@ var wordList = [
     { english: "Outside, Outer", japanese: [["外", "そと"], ["側", "がわ"]], tags: ["N5-5"] },
     { english: "Going Out", japanese: [["外", "がい"], ["出", "しゅつ"]], tags: ["N5-5"] },
     { english: "Inside, Inner", japanese: [["内", "うち"], ["側", "がわ"]], tags: ["N5-5"] },
-    { english: "Inside the Premises", japanese: [["構", "こう"], ["内", "ない"]], tags: ["N5-5"] },
+    { english: "On-site", japanese: [["構", "こう"], ["内", "ない"]], tags: ["N5-5"] },
     { english: "Domestic", japanese: [["国", "こく"], ["内", "ない"]], tags: ["N5-5"] },
 
     { english: "Underwater", japanese: [["水", "すい"], ["中", "ちゅう"]], tags: ["N5-5"] },
@@ -1609,6 +1609,56 @@ var wordList = [
     { english: "Tourist", japanese: [["観", "かん"], ["光", "こう"], ["客", "きゃく"]], tags: ["N3", "N3-13"] },
     // #endregion
 
+    // #region Kanji N3-14
+    { english: "Forceful", japanese: [["強", "ごう"], ["引", "いん"]], tags: ["N3"] },
+    { english: "Interview", japanese: [["取", "しゅ"], ["材", "ざい"]], tags: ["N3"] },
+    { english: "Ignition", japanese: [["引", "いん"], ["火", "か"]], tags: ["N3"] },
+    { english: "Quotation", japanese: [["引", "いん"], ["用", "よう"]], tags: ["N3"] },
+    { english: "Digestion", japanese: [["消", "しょう"], ["化", "か"]], tags: ["N3"] },
+    
+    { english: "Door (Abstract)", japanese: [["門", "もん"], ["戸", "こ"]], tags: ["N3"] },
+    { english: "Car Window", japanese: [["車", "しゃ"], ["窓", "そう"]], tags: ["N3"] },
+    { english: "Stairs", japanese: [["階", "かい"], ["段", "だん"]], tags: ["N3"] },
+    { english: "Stone Steps", japanese: [["石", "いし"], ["段", "だん"]], tags: ["N3"] },
+    { english: "Means", japanese: [["手", "しゅ"], ["段", "だん"]], tags: ["N3"] },
+    { english: "Alumni Association", japanese: [["同", "どう"], ["窓", "そう"], ["会", "かい"]], tags: ["N3"] },
+    { english: "Step, Grade", japanese: [["段", "だん"], ["階", "かい"]], tags: ["N3"] },
+
+    { english: "Plant (General)", japanese: [["植", "しょく"], ["物", "ぶつ"]], tags: ["N3"] },
+    { english: "Fallen Leaves", japanese: [["落ち", "おち"], ["葉", "ば"]], tags: ["N3"] },
+    { english: "Parents Home", japanese: [["実", "じっ"], ["家", "か"]], tags: ["N3"] },
+    { english: "Base (Root)", japanese: [["根", "ね"], ["元", "もと"]], tags: ["N3"] },
+    { english: "Bulbs", japanese: [["球", "きゅう"], ["根", "こん"]], tags: ["N3"] },
+    { english: "Planted Tree", japanese: [["植", "うえ"], ["木", "き"]], tags: ["N3"] },
+    { english: "Real Ability", japanese: [["実", "じつ"], ["力", "りょく"]], tags: ["N3"] },
+    { english: "Foundation (Root)", japanese: [["根", "こん"], ["本", "ぽん"]], tags: ["N3"] },
+    
+    { english: "Erected", japanese: [["建", "こん"], ["立", "りゅう"]], tags: ["N3"] },
+    { english: "New Construction", japanese: [["新", "しん"], ["築", "ちく"]], tags: ["N3"] },
+    { english: "Structure", japanese: [["構", "こう"], ["造", "ぞう"]], tags: ["N3"] },
+    { english: "Building", japanese: [["建", "たて"], ["物", "もの"]], tags: ["N3"] },
+    { english: "Wooden", japanese: [["木", "もく"], ["造", "ぞう"]], tags: ["N3"] },
+    { english: "Artificial Flowers", japanese: [["造", "ぞう"], ["花", "か"]], tags: ["N3"] },
+    { english: "Architecture", japanese: [["建", "けん"], ["築", "ちく"]], tags: ["N3"] },
+    { english: "Composition", japanese: [["構", "こう"], ["成", "せい"]], tags: ["N3"] },
+    { english: "Constructed Structure", japanese: [["建", "けん"], ["造", "ぞう"], ["物", "ぶつ"]], tags: ["N3"] },
+    { english: "Shipbuilding Industry", japanese: [["造", "ぞう"], ["船", "せん"], ["業", "ぎょう"]], tags: ["N3"] },
+    
+    { english: "Construction", japanese: [["建", "けん"], ["設", "せつ"]], tags: ["N3"] },
+    { english: "Setting", japanese: [["設", "せっ"], ["定", "てい"]], tags: ["N3"] },
+    { english: "Utility Pole", japanese: [["電", "でん"], ["柱", "ちゅう"]], tags: ["N3"] },
+    { english: "Safe, Vault", japanese: [["金", "きん"], ["庫", "こ"]], tags: ["N3"] },
+    { english: "Design, Plan", japanese: [["設", "せっ"], ["計", "けい"]], tags: ["N3"] },
+    { english: "Establishment", japanese: [["設", "せつ"], ["立", "りつ"]], tags: ["N3"] },
+    { english: "Central Pillar", japanese: [["大", "だい"], ["黒", "こく"], ["柱", "ばしら"]], tags: ["N3"] },
+    { english: "Garage", japanese: [["車", "しゃ"], ["庫", "こ"]], tags: ["N3"] },
+    { english: "Ambition", japanese: [["向", "こう"], ["上", "じょう"], ["心", "しん"]], tags: ["N3"] },
+    // #endregion
+
+    // #region Kanji N3-15
+    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3"] },
+    // #endregion
+
     // #region Unlearned (N3)
     { english: "Living Room", japanese: [["居", "い"], ["間", "ま"]], tags: ["N3"] },
     { english: "Future (Distant)", japanese: [["未", "み"], ["来", "らい"]], tags: ["N3"] },
@@ -1635,7 +1685,6 @@ var wordList = [
     { english: "Principles", japanese: [["主", "しゅ"], ["義", "ぎ"]], tags: ["N3"] },
     { english: "Absolutely, Definitely", japanese: [["絶", "ぜっ"], ["対", "たい"]], tags: ["N3"] },
     { english: "Cabinet Minister", japanese: [["大", "だい"], ["臣", "じん"]], tags: ["N3"] },
-    { english: "Safe (Box)", japanese: [["金", "きん"], ["庫", "こ"]], tags: ["N3"] },
     { english: "Consideration", japanese: [["考", "こう"], ["慮", "りょ"]], tags: ["N3"] },
     { english: "Limit (Restriction)", japanese: [["制", "せい"], ["限", "げん"]], tags: ["N3"] },
     { english: "Currency Exchange", japanese: [["両", "りょう"], ["替", "がえ"]], tags: ["N3"] },
@@ -1667,7 +1716,6 @@ var wordList = [
     { english: "Worry, Concern", japanese: [["心", "しん"], ["配", "ぱい"]], tags: ["N3"] },
     { english: "Direct, Immediate", japanese: [["直", "ちょく"], ["接", "せつ"]], tags: ["N3"] },
     { english: "Honestly", japanese: [["正", "しょう"], ["直", "じき"]], tags: ["N3", "Adverb"] },
-    // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3"] },
     // #endregion
 
     // #region Unlearned (N2)
@@ -1683,7 +1731,6 @@ var wordList = [
     { english: "Important Point (Priority)", japanese: [["重", "じゅう"], ["点", "てん"]], tags: ["N2"] },
     { english: "Head (of a line)", japanese: [["先", "せん"], ["頭", "とう"]], tags: ["N2"] },
     { english: "Cooking (Kitchen Work)", japanese: [["炊", "すい"], ["事", "じ"]], tags: ["N2"] },
-    { english: "Garage", japanese: [["車", "しゃ"], ["庫", "こ"]], tags: ["N2"] },
     { english: "System, Structure", japanese: [["体", "たい"], ["制", "せい"]], tags: ["N2"] },
     { english: "Infinite, Limitless", japanese: [["無", "む"], ["限", "げん"]], tags: ["N2"] },
     { english: "Efficacy", japanese: [["効", "こう"], ["力", "りょく"]], tags: ["N2"] },
@@ -1706,7 +1753,6 @@ var wordList = [
     { english: "Violent, Rowdy", japanese: [["乱", "らん"], ["暴", "ぼう"]], tags: ["N2"] },
     { english: "Industrial Arts, Crafts", japanese: [["工", "こう"], ["芸", "げい"]], tags: ["N2"] },
     { english: "Performing Arts, Entertainment", japanese: [["芸", "げい"], ["能", "のう"]], tags: ["N2"] },
-    { english: "Real Ability", japanese: [["実", "じつ"], ["力", "りょく"]], tags: ["N2"] },
     { english: "White Hair, Gray Hair", japanese: [["白", "しら"], ["髪", "が"]], tags: ["N2"] },
     { english: "Attendance at Work", japanese: [["出", "しゅっ"], ["勤", "きん"]], tags: ["N2"] },
     { english: "Salty", japanese: [["塩", "しお"], ["辛い", "からい"]], tags: ["N2"] },
