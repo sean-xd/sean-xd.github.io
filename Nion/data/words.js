@@ -934,7 +934,7 @@ var wordList = [
     { english: "Reference Material", japanese: [["参", "さん"], ["考", "こう"], ["資", "し"], ["料", "りょう"]], tags: ["N4-8"] },
     { english: "Thinking", japanese: [["思", "し"], ["考", "こう"]], tags: ["N4-8"] },
     
-    { english: "Accurrate", japanese: [["正", "せい"], ["確", "かく"]], tags: ["N4-8"] },
+    { english: "Accurate", japanese: [["正", "せい"], ["確", "かく"]], tags: ["N4-8"] },
     { english: "Correct Answer", japanese: [["正", "せい"], ["解", "かい"]], tags: ["N4-8"] },
     { english: "New Year (First Month)", japanese: [["正", "しょう"], ["月", "がつ"]], tags: ["N4-8"] },
     { english: "Shot Put", japanese: [["砲", "ほう"], ["丸", "がん"], ["投げ", "なげ"]], tags: ["N4-8"] },
@@ -1709,6 +1709,60 @@ var wordList = [
     // #endregion
     
     // #region Kanji N3-16
+    { english: "Record of Proceedings", japanese: [["議", "ぎ"], ["事", "じ"], ["録", "ろく"]], tags: ["N3"] },
+    { english: "Agreement", japanese: [["賛", "さん"], ["成", "せい"]], tags: ["N3"] },
+    { english: "Support", japanese: [["賛", "さん"], ["同", "どう"]], tags: ["N3"] },
+    { english: "Curved, Arching", japanese: [["反り", "そり"], ["返って", "かえって"]], tags: ["N3"] },
+    { english: "Opposition", japanese: [["反", "はん"], ["対", "たい"]], tags: ["N3"] },
+    { english: "Agenda", japanese: [["議", "ぎ"], ["題", "だい"]], tags: ["N3"] },
+    { english: "Self-praise", japanese: [["自", "じ"], ["画", "が"], ["自", "じ"], ["賛", "さん"]], tags: ["N3"] },
+    { english: "Conflict", japanese: [["対", "たい"], ["立", "りつ"]], tags: ["N3"] },
+    
+    { english: "Positive", japanese: [["肯", "こう"], ["定", "てい"], ["的", "てき"]], tags: ["N3"] },
+    { english: "Denial", japanese: [["否", "ひ"], ["定", "てい"]], tags: ["N3"] },
+    { english: "Pros and Cons", japanese: [["賛", "さん"], ["否", "ぴ"]], tags: ["N3"] },
+    { english: "Preservation", japanese: [["保", "ほ"], ["存", "ぞん"]], tags: ["N3"] },
+    { english: "Registered Mail", japanese: [["書", "かき"], ["留", "とめ"]], tags: ["N3"] },
+    { english: "On Hold", japanese: [["保", "ほ"], ["留", "りゅう"]], tags: ["N3"] },
+    { english: "Absence (away)", japanese: [["留", "る"], ["守", "す"]], tags: ["N3"] },
+    { english: "Affirmative Side", japanese: [["肯", "こう"], ["定", "てい"], ["側", "がわ"]], tags: ["N3"] },
+    { english: "Pass/fail", japanese: [["合", "ごう"], ["否", "ひ"]], tags: ["N3"] },
+    { english: "Nursery School", japanese: [["保", "ほ"], ["育", "いく"], ["園", "えん"]], tags: ["N3"] },
+    { english: "Attention", japanese: [["留", "りゅう"], ["意", "い"]], tags: ["N3"] },
+    { english: "Study Abroad", japanese: [["留", "りゅう"], ["学", "がく"]], tags: ["N3"] },
+    { english: "House Sitting", japanese: [["留", "る"], ["守", "す"], ["番", "ばん"]], tags: ["N3"] },
+    
+    { english: "Judgement (Court)", japanese: [["判", "はん"], ["決", "けつ"]], tags: ["N3"] },
+    { english: "Judgement (Decision)", japanese: [["判", "はん"], ["定", "てい"]], tags: ["N3"] },
+    { english: "Assertion", japanese: [["断", "だん"], ["定", "てい"]], tags: ["N3"] },
+    { english: "Probability", japanese: [["確", "かく"], ["率", "りつ"]], tags: ["N3"] },
+    { english: "Recognition", japanese: [["認", "にん"], ["識", "しき"]], tags: ["N3"] },
+    { english: "Judgement (Personal)", japanese: [["判", "はん"], ["断", "だん"]], tags: ["N3"] },
+    { english: "Disconnect", japanese: [["切", "せつ"], ["断", "だん"]], tags: ["N3"] },
+    { english: "Confirmation", japanese: [["確", "かく"], ["認", "にん"]], tags: ["N3"] },
+    
+    { english: "Information", japanese: [["情", "じょう"], ["報", "ほう"]], tags: ["N3"] },
+    { english: "Report", japanese: [["報", "ほう"], ["告", "こく"]], tags: ["N3"] },
+    { english: "Contact Method", japanese: [["連", "れん"], ["絡", "らく"], ["手", "しゅ"], ["段", "だん"]], tags: ["N3"] },
+    { english: "Breaking News", japanese: [["速", "そく"], ["報", "ほう"]], tags: ["N3"] },
+    { english: "Forecast", japanese: [["予", "よ"], ["報", "ほう"]], tags: ["N3"] },
+    { english: "Advertisement", japanese: [["広", "こう"], ["告", "こく"]], tags: ["N3"] },
+    { english: "Consecutive Holidays", japanese: [["連", "れん"], ["休", "きゅう"]], tags: ["N3"] },
+    
+    { english: "Partner", japanese: [["相", "あい"], ["手", "て"]], tags: ["N3"] },
+    { english: "Compatibility", japanese: [["相", "あい"], ["性", "しょう"]], tags: ["N3"] },
+    { english: "Truth, Real Situation", japanese: [["真", "しん"], ["相", "そう"]], tags: ["N3"] },
+    { english: "Prime Minister", japanese: [["首", "しゅ"], ["相", "しょう"]], tags: ["N3"] },
+    { english: "Thumb", japanese: [["親", "おや"], ["指", "ゆび"]], tags: ["N3"] },
+    { english: "Designation, Specification", japanese: [["指", "し"], ["定", "てい"]], tags: ["N3"] },
+    { english: "Allusion, Hint", japanese: [["暗", "あん"], ["示", "じ"]], tags: ["N3"] },
+    { english: "Mutual Love", japanese: [["相", "そう"], ["思", "し"], ["相", "そう"], ["愛", "あい"]], tags: ["N3"] },
+    { english: "Consultation", japanese: [["相", "そう"], ["談", "だん"]], tags: ["N3"] },
+    { english: "Foreign Ministers Meeting", japanese: [["外", "がい"], ["相", "しょう"], ["会", "かい"], ["談", "だん"]], tags: ["N3"] },
+    { english: "Instructions", japanese: [["指", "し"], ["示", "じ"]], tags: ["N3"] },
+    // #endregion
+
+    // #region Kanji N3-17
     // { english: "", japanese: [["", ""], ["", ""]], tags: ["N3"] },
     // #endregion
 
