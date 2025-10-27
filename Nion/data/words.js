@@ -1072,7 +1072,6 @@ var wordList = [
     { english: "Lecture", japanese: [["講", "こう"], ["義", "ぎ"]], tags: ["N4"] },
     { english: "Auditorium", japanese: [["講", "こう"], ["堂", "どう"]], tags: ["N4"] },
     { english: "First, Outset", japanese: [["最", "さい"], ["初", "しょ"]], tags: ["N4"] },
-    { english: "Impossible", japanese: [["無", "む"], ["理", "り"]], tags: ["N4"] },
     { english: "Futon, Duvet", japanese: [["布", "ふ"], ["団", "とん"]], tags: ["N4"] },
     { english: "Both Sides", japanese: [["両", "りょう"], ["方", "ほう"]], tags: ["N4"] },
     { english: "Next Time", japanese: [["今", "こん"], ["度", "ど"]], tags: ["N4"] },
@@ -1824,9 +1823,43 @@ var wordList = [
     { english: "Trading Company", japanese: [["商", "しょう"], ["社", "しゃ"]], tags: ["N3"] },
     // #endregion
 
+    // #region Kanji N3-18
+    { english: "Solo", japanese: [["単", "たん"], ["独", "どく"]], tags: ["N3"] },
+    { english: "Multiple", japanese: [["複", "ふく"], ["数", "すう"]], tags: ["N3"] },
+    { english: "Duplication", japanese: [["重", "ちょう"], ["複", "ふく"]], tags: ["N3"] },
+    { english: "All", japanese: [["全", "ぜん"], ["部", "ぶ"]], tags: ["N3"] },
+    { english: "From then on", japanese: [["以", "い"], ["後", "ご"]], tags: ["N3"] },
+    { english: "Less than or equal", japanese: [["以", "い"], ["下", "か"]], tags: ["N3"] },
+    { english: "Unit", japanese: [["単", "たん"], ["位", "い"]], tags: ["N3"] },
+    { english: "Whole", japanese: [["全", "ぜん"], ["体", "たい"]], tags: ["N3"] },
+    { english: "More than or equal", japanese: [["以", "い"], ["上", "じょう"]], tags: ["N3"] },
+    { english: "Within", japanese: [["以", "い"], ["内", "ない"]], tags: ["N3"] },
+    
+    { english: "Future (Distant)", japanese: [["未", "み"], ["来", "らい"]], tags: ["N3"] },
+    { english: "Less than", japanese: [["未", "み"], ["満", "まん"]], tags: ["N3"] },
+    { english: "Dissatisfaction", japanese: [["不", "ふ"], ["満", "まん"]], tags: ["N3"] },
+    { english: "Satisfaction", japanese: [["満", "まん"], ["足", "ぞく"]], tags: ["N3"] },
+    { english: "Open daily, Nonstop", japanese: [["無", "む"], ["休", "きゅう"]], tags: ["N3"] },
+    { english: "Safe", japanese: [["無", "ぶ"], ["事", "じ"]], tags: ["N3"] },
+    { english: "Unreasonable", japanese: [["非", "ひ"], ["常", "じょう"], ["識", "しき"]], tags: ["N3"] },
+    { english: "Undecided", japanese: [["未", "み"], ["定", "てい"]], tags: ["N3"] },
+    { english: "Minor (age)", japanese: [["未", "み"], ["成", "せい"], ["年", "ねん"]], tags: ["N3"] },
+    { english: "Full", japanese: [["満", "まん"], ["席", "せき"]], tags: ["N3"] },
+    { english: "Silent", japanese: [["無", "む"], ["口", "くち"]], tags: ["N3"] },
+    { english: "Impossible", japanese: [["無", "む"], ["理", "り"]], tags: ["N3"] },
+    { english: "Accusation", japanese: [["非", "ひ"], ["難", "なん"]], tags: ["N3"] },
+    { english: "Emergency Exit", japanese: [["非", "ひ"], ["常", "じょう"], ["口", "ぐち"]], tags: ["N3"] },
+    
+    { english: "One Hundred Million", japanese: [["一", "いち"], ["億", "おく"]], tags: ["N3"] },
+    { english: "Billionaire", japanese: [["億", "おく"], ["万", "まん"], ["長", "ちょう"], ["者", "じゃ"]], tags: ["N3"] },
+    { english: "One Trillion", japanese: [["一", "いっ"], ["兆", "ちょう"]], tags: ["N3"] },
+    { english: "Omens", japanese: [["前", "ぜん"], ["兆", "ちょう"]], tags: ["N3"] },
+    
+    { english: "Hundreds of Millions", japanese: [["何", "なん"], ["億", "おく"]], tags: ["N3"] },
+    // #endregion
+
     // #region Unlearned (N3)
     { english: "Living Room", japanese: [["居", "い"], ["間", "ま"]], tags: ["N3"] },
-    { english: "Future (Distant)", japanese: [["未", "み"], ["来", "らい"]], tags: ["N3"] },
     { english: "Management", japanese: [["経", "けい"], ["営", "えい"]], tags: ["N3"] },
     { english: "Change (Alternation)", japanese: [["変", "へん"], ["更", "こう"]], tags: ["N3"] },
     { english: "Expert, Doctor", japanese: [["博", "はか"], ["士", "せ"]], tags: ["N3"] },
