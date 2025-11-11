@@ -131,20 +131,55 @@ function readingTemplate(hiragana, def){
 }
 
 function kanjiWordsTemplate(kObj){
-    var words = wordList.filter(e => isIn(mergeNest(e.japanese).join(), kObj._));
+    var words = wordList.filter(e => isIn(mergeNest(e.japanese || e.jp).join(), kObj._));
     return t("div", { class: "words" }, [t("div", { class: "reading-title" }, "Words")].concat(words.map(wObj => {
-        var { japanese, english } = wObj;
-        var kText = japanese.map(e => {
-            var ekStr = stripHiragana(e[0]);
-            var isKanji = !!kanji.filter(k => k._ === ekStr)[0];
-            var className = [isKanji ? "pointer" : "", isIn(e[0], kObj._) ? "" : "c-100"].join(" ");
-            var onclick = isKanji ? ` onclick="selectKanji('${ekStr}')"` : "";
-            return `<span class="${className}"${onclick}>${e[0]}</span>`;
-        }).join("");
-        var hText = japanese.map(e => isIn(e[0], kObj._) ? e[1] : `<span class='c-100'>${e[1]}</span>`).join("");
+        var { japanese, english, jp } = wObj;
+        var kText, hText, kRaw;
+
+        if(!jp){
+            kText = japanese.map(e => {
+                var ekStr = stripHiragana(e[0]);
+                var isKanji = !!kanji.filter(k => k._ === ekStr)[0];
+                var className = [isKanji ? "pointer" : "", isIn(e[0], kObj._) ? "" : "c-100"].join(" ");
+                var onclick = isKanji ? ` onclick="selectKanji('${ekStr}')"` : "";
+                return `<span class="${className}"${onclick}>${e[0]}</span>`;
+            }).join("");
+            kRaw = japanese.map(e => e[0]).join("");
+            hText = japanese.map(e => isIn(e[0], kObj._) ? e[1] : `<span class='c-100'>${e[1]}</span>`).join("");
+        }
+        else {
+            var kArr = jp[0].split("");
+            kText = kArr.map(e => {
+                var isKanji = !!kanji.filter(k => k._ === e)[0];
+                var className = [isKanji ? "pointer" : "", isIn(e, kObj._) ? "" : "c-100"].join(" ");
+                var onclick = isKanji ? ` onclick="selectKanji('${e}')"` : "";
+                return `<span class="${className}"${onclick}>${e}</span>`;
+            }).join("");
+            kRaw = jp[0];
+            hText = jp.slice(1).map((e, i) => isIn(kArr[i], kObj._) ? e : `<span class='c-100'>${e}</span>`).join("");
+        }
+
+        // check if kanji are known
+        var known = ["N5-1", "N5-2", "N5-3", "N5-4", "N5-5", "N5-6", "N5-7", "N5-8", "N5-9",
+            "N5-10", "N5-11", "N5-12", "N5-13", "N5-14", "N5-15",
+            "N4-1", "N4-2", "N4-3", "N4-4", "N4-5", "N4-6", "N4-7", "N4-8", "N4-9",
+            "N3-1", "N3-2", "N3-3", "N3-4", "N3-5", "N3-6", "N3-7", "N3-8", "N3-9",
+            "N3-10", "N3-11", "N3-12", "N3-13", "N3-14", "N3-15", "N3-16", "N3-17", "N3-18",
+            "N2-1"
+        ];
+        var hiragana = ["の", "し", "い"];
+        var isKnown = kRaw.split("").reduce((check, k) => {
+            if(!check) return false;
+            if(isIn(hiragana, k)) return true;
+            var kk = kanji.filter(e => e._ === k)[0];
+            if(!kk) console.log({ kRaw, k });
+            return isIn(kk.T, known);
+        }, true);
+        var engColor = isKnown ? "green" : "yellow";
+
         return t("div", { class: "word" }, [
             t("div", { class: "reading-kanji inline" }, kText),
-            t("div", { class: "reading-definition inline v-top f-14 c-green" }, english),
+            t("div", { class: `reading-definition inline v-top f-14 c-${engColor}` }, english),
             t("div", { class: "reading-hiragana c-blue" }, hText)
         ]);
     })));

@@ -1911,6 +1911,58 @@ var wordList = [
     { english: "Honestly", japanese: [["正", "しょう"], ["直", "じき"]], tags: ["N3", "Adverb"] },
     // #endregion
 
+    // #region Kanji N2-1
+    { english: "Gifts", japanese: [["贈", "ぞう"], ["答", "とう"], ["品", "ひん"]], tags: ["N2"] },
+    { english: "Donation", japanese: [["寄", "き"], ["贈", "ぞう"]], tags: ["N2"] },
+    { english: "Voyage, Travel", japanese: [["渡", "と"], ["航", "こう"]], tags: ["N2"] },
+    { english: "Delivery", japanese: [["配", "はい"], ["達", "たつ"]], tags: ["N2"] },
+    { english: "Distribution", japanese: [["配", "はい"], ["付", "ふ"]], tags: ["N2"] },
+    
+    { english: "Home Delivery", jp: ["宅配", "たく", "はい"], tags: ["N2"] },
+    { english: "Absense Notice", jp: ["欠席届", "けっ", "せき", "とどけ"], tags: ["N2"] },
+    { english: "Invitation", jp: ["招待", "しょう", "たい"], tags: ["N2"] },
+    { english: "Written Invitation", jp: ["招待状", "しょう", "たい", "じょう"], tags: ["N2"] },
+    { english: "Convening, Convocation", jp: ["招集", "しょう", "しゅう"], tags: ["N2"] },
+    { english: "Passenger Ticket", jp: ["乗車券", "じょう", "しゃ", "けん"], tags: ["N2"] },
+    { english: "Admission Ticket", jp: ["入場券", "にゅう", "じょう", "けん"], tags: ["N2"] },
+    { english: "Commuter Pass", jp: ["定期券", "てい", "き", "けん"], tags: ["N2"] },
+    { english: "Gift Certificate", jp: ["商品券", "しょう", "ひん", "けん"], tags: ["N2"] },
+    { english: "Passport", jp: ["旅券", "りょ", "けん"], tags: ["N2"] },
+    { english: "Securities Company", jp: ["証券会社", "しょう", "けん", "がい", "しゃ"], tags: ["N2"] },
+    { english: "Tempura Bowl", jp: ["天丼", "てん", "どん"], tags: ["N2"] },
+    { english: "Fruit Juice", jp: ["果汁", "か", "じゅう"], tags: ["N2"] },
+    { english: "Grand, Magnificent", jp: ["盛大", "せい", "だい"], tags: ["N2"] },
+    { english: "Prosperity", jp: ["繁盛", "はん", "じょう"], tags: ["N2"] },
+    { english: "Congestion", jp: ["混雑", "こん", "ざつ"], tags: ["N2"] },
+    { english: "Confusion", jp: ["混乱", "こん", "らん"], tags: ["N2"] },
+    { english: "Lava", jp: ["溶岩", "よう", "がん"], tags: ["N2"] },
+    { english: "Content", jp: ["含有量", "がん", "ゆう", "りょう"], tags: ["N2"] },
+    { english: "Sense of Superiority", jp: ["優越感", "ゆう", "えつ", "かん"], tags: ["N2"] },
+    { english: "Contract", jp: ["契約書", "けい", "やく", "しょ"], tags: ["N2"] },
+    { english: "Opportunity", jp: ["契機", "けい", "き"], tags: ["N2"] },
+    { english: "Rent", jp: ["家賃", "や", "ちん"], tags: ["N2"] },
+    { english: "Fare", jp: ["運賃", "うん", "ちん"], tags: ["N2"] },
+    { english: "Wages", jp: ["賃金", "ちん", "ぎん"], tags: ["N2"] },
+    { english: "Rental, Lease", jp: ["賃貸", "ちん", "たい"], tags: ["N2"] },
+    { english: "Provisional License", jp: ["仮免許", "かり", "めん", "きょ"], tags: ["N2"] },
+    { english: "Assumption", jp: ["仮定", "か", "てい"], tags: ["N2"] },
+    { english: "Hypothesis", jp: ["仮説", "か", "せつ"], tags: ["N2"] },
+    { english: "Faking Illness", jp: ["仮病", "け" ,"びょう"], tags: ["N2"] },
+    { english: "Proof", jp: ["証明", "しょう" ,"めい"], tags: ["N2"] },
+    { english: "Testimony", jp: ["証言", "しょう", "げん"], tags: ["N2"] },
+    { english: "Identification Card", jp: ["身分証明書", "み", "ぶん", "しょう", "めい", "しょ"], tags: ["N2"] },
+    { english: "Drivers License", jp: ["免許証", "めん", "きょ", "しょう"], tags: ["N2"] },
+    { english: "Diploma", jp: ["卒業証書", "そつ", "ぎょう", "しょう", "しょ"], tags: ["N2"] },
+    { english: "Guarantor", jp: ["保証人", "ほ", "しょう", "にん"], tags: ["N2"] },
+    { english: "Local Residents", jp: ["地域住民", "ち", "いき", "じゅう", "みん"], tags: ["N2"] },
+    { english: "Prohibited Area", jp: ["禁止区域", "きん", "し", "く", "いき"], tags: ["N2"] },
+    { english: "Region, Domain", jp: ["領域", "りょう", "いき"], tags: ["N2"] },
+    { english: "Basin", jp: ["流域", "りゅう", "いき"], tags: ["N2"] },
+
+    // { english: "", jp: ["", ""], tags: ["N2"] },
+
+    // #endregion
+
     // #region Unlearned (N2)
     { english: "All at Once", japanese: [["一", "いっ"], ["斉", "せい"]], tags: ["N2"] },
     { english: "Horse Racing", japanese: [["競", "けい"], ["馬", "ば"]], tags: ["N2"] },
@@ -2044,7 +2096,7 @@ function checkWords() {
     var hold = [];
     var dupes = [];
     wordList.forEach(e => {
-        var kanji = e.japanese.map(j => j[0]).join("").replace("な", "").replace("に", "");
+        var kanji = (e.jp ? e.jp[0] : e.japanese.map(j => j[0]).join("")).replace("な", "").replace("に", "");
         if(hold.indexOf(kanji) > -1) dupes.push(kanji);
         else hold.push(kanji);
     })
