@@ -19,6 +19,7 @@
 #nion .single-right { padding: 16px 16px 0 0; }
 
 #nion #single .rank { left: 24px; top: 24px; }
+#nion #single .tag { right: 8px; top: 24px; }
 #nion #single .kanji { font-size: 8em; height: 200px; }
 
 #nion .status { align-items: center; display: flex; height: 40px; justify-content: space-around; }

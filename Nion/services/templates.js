@@ -1,5 +1,23 @@
 /* --- Main --- */
 
+var known = ["N5-1", "N5-2", "N5-3", "N5-4", "N5-5", "N5-6", "N5-7", "N5-8", "N5-9",
+    "N5-10", "N5-11", "N5-12", "N5-13", "N5-14", "N5-15",
+    "N4-1", "N4-2", "N4-3", "N4-4", "N4-5", "N4-6", "N4-7", "N4-8", "N4-9",
+    "N3-1", "N3-2", "N3-3", "N3-4", "N3-5", "N3-6", "N3-7", "N3-8", "N3-9",
+    "N3-10", "N3-11", "N3-12", "N3-13", "N3-14", "N3-15", "N3-16", "N3-17", "N3-18",
+    "N2-1"
+];
+var hiragana = ["あ", "い", "う", "え", "お",
+    "か", "き", "く", "け", "こ",
+    "さ", "し", "す", "せ", "そ", 
+    "た", "ち", "つ", "て", "と", 
+    "な", "に", "ぬ", "ね", "の",
+    "は", "ひ", "ふ", "へ", "ほ",
+    "ま", "み", "む", "め", "も", 
+    "や", "ゆ", "よ",
+    "ら", "り", "る", "れ", "ろ",
+    "わ", "を", "ん"];
+
 function nionMain(){
     var lessons = ["N5", "N4", "N3-17", "N3-18", "N3", "N2-1", "N2", "N1"];
     var types = ["Abstract", "Academic", "Animals", "Body", "Elements", "Landscape", "Measures", "Movement", "Objects", "People", "Places", "Position", "Time", "Weather"];
@@ -55,9 +73,11 @@ function listKanjiTemplate(obj){
 
 function singleKanjiTemplate(kStr){
     var kObj = kanji.filter(e => e._ === kStr)[0];
+    var knownTag = kObj.T.filter(e => isIn(e, "-"))[0];
     return !kObj ? undefined : [
         t("div", { class: "single-left abs-tl h-100 w-50" }, [
             t("div", { class: "rank abs-tl c-100" }, kObj.R),
+            t("div", { class: "tag abs-tr c-100" }, knownTag || ""),
             t("div", { class: "kanji jp text-center b-20" }, kObj._),
             t("div", { class: "status f-14 b-0" }, [
                 t("div", { class: `status-button c-green flex-center pointer ${isIn(kObj.T || [], "Known") ? "active-status" : ""}`, onclick: `updateStatus('${kStr}', 'Known')` }, "Known"),
@@ -159,23 +179,14 @@ function kanjiWordsTemplate(kObj){
             hText = jp.slice(1).map((e, i) => isIn(kArr[i], kObj._) ? e : `<span class='c-100'>${e}</span>`).join("");
         }
 
-        // check if kanji are known
-        var known = ["N5-1", "N5-2", "N5-3", "N5-4", "N5-5", "N5-6", "N5-7", "N5-8", "N5-9",
-            "N5-10", "N5-11", "N5-12", "N5-13", "N5-14", "N5-15",
-            "N4-1", "N4-2", "N4-3", "N4-4", "N4-5", "N4-6", "N4-7", "N4-8", "N4-9",
-            "N3-1", "N3-2", "N3-3", "N3-4", "N3-5", "N3-6", "N3-7", "N3-8", "N3-9",
-            "N3-10", "N3-11", "N3-12", "N3-13", "N3-14", "N3-15", "N3-16", "N3-17", "N3-18",
-            "N2-1"
-        ];
-        var hiragana = ["の", "し", "い"];
         var isKnown = kRaw.split("").reduce((check, k) => {
             if(!check) return false;
             if(isIn(hiragana, k)) return true;
             var kk = kanji.filter(e => e._ === k)[0];
-            if(!kk) console.log({ kRaw, k });
+            if(!kk) return false;
             return isIn(kk.T, known);
         }, true);
-        var engColor = isKnown ? "green" : "yellow";
+        var engColor = isKnown ? "green" : "red";
 
         return t("div", { class: "word" }, [
             t("div", { class: "reading-kanji inline" }, kText),
