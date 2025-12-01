@@ -5,7 +5,7 @@ var known = ["N5-1", "N5-2", "N5-3", "N5-4", "N5-5", "N5-6", "N5-7", "N5-8", "N5
     "N4-1", "N4-2", "N4-3", "N4-4", "N4-5", "N4-6", "N4-7", "N4-8", "N4-9",
     "N3-1", "N3-2", "N3-3", "N3-4", "N3-5", "N3-6", "N3-7", "N3-8", "N3-9",
     "N3-10", "N3-11", "N3-12", "N3-13", "N3-14", "N3-15", "N3-16", "N3-17", "N3-18",
-    "N2-1"
+    "N2-1", "N2-2"
 ];
 var hiragana = ["あ", "い", "う", "え", "お",
     "か", "き", "く", "け", "こ",
@@ -19,7 +19,7 @@ var hiragana = ["あ", "い", "う", "え", "お",
     "わ", "を", "ん"];
 
 function nionMain(){
-    var lessons = ["N5", "N4", "N3-17", "N3-18", "N3", "N2-1", "N2", "N1"];
+    var lessons = ["N5", "N4", "N3-17", "N3-18", "N3", "N2-1", "N2-2", "N2", "N1"];
     var types = ["Abstract", "Academic", "Animals", "Body", "Elements", "Landscape", "Measures", "Movement", "Objects", "People", "Places", "Position", "Time", "Weather"];
     var statuses = ["Known", "Learning", "Unknown"];
     return t("div", { id: "nion", class: "h-100 w-100" }, [
