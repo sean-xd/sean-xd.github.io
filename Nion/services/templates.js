@@ -19,7 +19,7 @@ var hiragana = ["あ", "い", "う", "え", "お",
     "わ", "を", "ん"];
 
 function nionMain(){
-    var lessons = ["N5", "N4", "N3-17", "N3-18", "N3", "N2-1", "N2-2", "N2", "N1"];
+    var lessons = ["N5", "N4", "N3-17", "N3-18", "N3", "N2-1", "N2-2", "N2-3", "N2", "N1"];
     var types = ["Abstract", "Academic", "Animals", "Body", "Elements", "Landscape", "Measures", "Movement", "Objects", "People", "Places", "Position", "Time", "Weather"];
     var statuses = ["Known", "Learning", "Unknown"];
     return t("div", { id: "nion", class: "h-100 w-100" }, [
