@@ -1040,7 +1040,6 @@ var kanji = [
     { _: "昭", K: { _: "Shining, Bright" }, O: ["しょう"], R: 697, C: [], T: ["N2", "N2-3"] },
     { _: "士", K: { _: "Official, Scholar" }, O: ["し"], R: 526, T: ["N3", "N2-3", "People"] },
 
-
     // #endregion
 
     // #region Unlearned Kanji (N2)

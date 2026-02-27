@@ -77,8 +77,9 @@ function toggleFilter(fStr, fElem){
 function selectKanji(kStr){
     var single = el("#single");
     var kanjiSingle = cl(document.body, { "open-kanji": "?" });
+    var wordsOpen = cl(document.body, { "open-words": "?" });
     var grammarOpen = cl(document.body, { "open-grammar": "?" });
-    if(!kStr && kanjiSingle || grammarOpen ) return cl(document.body, { "open-kanji": false, "open-grammar": false });
+    if(!kStr && kanjiSingle || grammarOpen || wordsOpen ) return cl(document.body, { "open-kanji": false, "open-words": false, "open-grammar": false });
     if(!kStr) return toggleFilter();
     clear(single);
     cl(document.body, { "open-kanji": true });
@@ -104,5 +105,9 @@ function loadStatuses(){
 }
 
 function openGrammarView(){
-    cl(document.body, { "open-grammar": true, "open-kanji": false });
+    cl(document.body, { "open-kanji": false, "open-words": false, "open-grammar": true });
+}
+
+function openWordsView(){
+    cl(document.body, { "open-kanji": false, "open-words": true, "open-grammar": false });
 }

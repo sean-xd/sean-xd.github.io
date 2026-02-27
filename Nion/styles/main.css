@@ -1,12 +1,17 @@
 /* --- General --- */
 
-#nion #left, #nion #right, #nion #grammar { transition: .3s all ease-in-out; }
+#nion #left, #nion #right, #nion #words, #nion #grammar { transition: .3s all ease-in-out; }
 
 #nion #main { height: calc(100% - 60px); overflow: hidden; position: relative; }
 
 #nion .actions { display: flex; font-size: 14px; height: 60px; }
 #nion .action { height: 60px; padding-top: 20px; }
+
+/* --- Pages --- */
+
+.open-words #nion .action-kanji,
 .open-grammar #nion .action-kanji { background: rgb(10,10,10); }
+.open-words #nion .action-words,
 .open-grammar #nion .action-grammar { background: black; }
 
 /* --- Left (Single Kanji) --- */
@@ -48,8 +53,7 @@
 /* --- Right (Kanji List) --- */
 
 #nion #right { opacity: 1; overflow: hidden; }
-.open-kanji #nion #right { opacity: 0; transform: translate3d(100%, 0, 0); }
-.open-grammar #nion #right { opacity: 0; transform: translate3d(-100%, 0, 0); }
+.open-kanji #nion #right { transform: translate3d(100%, 0, 0); }
 
 #nion #list { padding-top: 16px; transition: .3s height ease-in-out; }
 #nion #list .kanji { font-size: 3em; padding-bottom: 8px; }
@@ -70,10 +74,19 @@
 #nion .filter { color: rgb(100,100,100); padding: 6px 0; }
 #nion .filter-selected.filter { color: rgb(220,220,220); }
 
+/* --- Words View --- */
+
+#nion #words { right: -100%; }
+.open-words #nion #right { transform: translate3d(-100%, 0, 0); }
+.open-words #nion #words { transform: translate3d(-100%, 0, 0); }
+.open-words #nion #grammar { transform: translate3d(-100%, 0, 0); }
+
 /* --- Grammar View --- */
 
-#nion #grammar { right: -100%; opacity: 0; }
-.open-grammar #nion #grammar { opacity: 1; transform: translate3d(-100%, 0, 0); }
+#nion #grammar { right: -200%; }
+.open-grammar #nion #right { transform: translate3d(-200%, 0, 0); }
+.open-grammar #nion #words { transform: translate3d(-200%, 0, 0); }
+.open-grammar #nion #grammar { transform: translate3d(-200%, 0, 0); }
 
 @media (min-width: 600px) {
     #nion #list .kanji { font-size: 4em; }

@@ -43,11 +43,16 @@ function nionMain(){
                     ])
                 ])
             ]),
+            t("div", { id: "words", class: "abs-tr h-100 w-100 b-10" }, [
+                t("div", {}, "Words"),
+                wordsTemplate
+            ]),
             t("div", { id: "grammar", class: "abs-tr h-100 w-100 b-10" })
         ]),
         t("div", { class: "actions rel w-100 b-10 text-center" }, [
             t("div", { class: "action action-kanji h-100 w-20 pointer b-0", onclick: "selectKanji()" }, "Kanji"),
-            t("div", { class: "action action-grammar h-100 w-20 pointer b-10", onclick: "opeenGrammarView()" }, "Grammar")
+            t("div", { class: "action action-words h-100 w-20 pointer b-10", onclick: "openWordsView()" }, "Words"),
+            t("div", { class: "action action-grammar h-100 w-20 pointer b-10", onclick: "openGrammarView()" }, "Grammar")
         ])
     ]);
 }
@@ -199,6 +204,16 @@ function kanjiWordsTemplate(kObj){
 function stripHiragana(kStr){
     if(kStr[0] === "お") return kStr[1];
     else return kStr[0];
+}
+
+/* --- Words --- */
+
+function wordsTemplate(){
+    return t("div", {}, wordList.map(wObj => {
+        var { japanese, english, jp } = wObj;
+
+
+    }));
 }
 
 /* --- Grammar --- */
